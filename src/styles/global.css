@@ -151,3 +151,7 @@ img { max-width: 100%; }
 .nf { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; padding: 140px var(--gutter) 80px; text-align: center; }
 .nf-title { font-size: clamp(48px, 8vw, 110px); }
 .nf-sub { max-width: 520px; }
+
+/* Lista con ícono (beneficios, precios) */
+.li { display: flex; gap: 10px; align-items: flex-start; font-size: 16px; color: var(--text-secondary); }
+.li svg { flex-shrink: 0; }

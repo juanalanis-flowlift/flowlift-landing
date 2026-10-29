@@ -1,0 +1,342 @@
+{
+ "/assets/photos/barbero.webp": [
+  760,
+  943
+ ],
+ "/assets/photos/c01.webp": [
+  760,
+  1361
+ ],
+ "/assets/photos/c02.webp": [
+  760,
+  1361
+ ],
+ "/assets/photos/c04.webp": [
+  760,
+  1361
+ ],
+ "/assets/photos/c05.webp": [
+  760,
+  1361
+ ],
+ "/assets/photos/c07.webp": [
+  760,
+  1361
+ ],
+ "/assets/photos/c17.webp": [
+  760,
+  760
+ ],
+ "/assets/photos/clase-arte.webp": [
+  900,
+  502
+ ],
+ "/assets/photos/clase-ballet.webp": [
+  900,
+  502
+ ],
+ "/assets/photos/clase-natacion.webp": [
+  768,
+  1376
+ ],
+ "/assets/photos/clase-piano.webp": [
+  900,
+  502
+ ],
+ "/assets/photos/clase-recepcion-papa-hijo.webp": [
+  900,
+  502
+ ],
+ "/assets/photos/clase-salsa.webp": [
+  900,
+  502
+ ],
+ "/assets/photos/clase-taekwondo.webp": [
+  900,
+  502
+ ],
+ "/assets/photos/cliente-pagando.webp": [
+  760,
+  760
+ ],
+ "/assets/photos/consultoria.webp": [
+  760,
+  943
+ ],
+ "/assets/photos/duena-con-telefono.webp": [
+  760,
+  1361
+ ],
+ "/assets/photos/entrada-salon.webp": [
+  760,
+  760
+ ],
+ "/assets/photos/entrenador.webp": [
+  760,
+  943
+ ],
+ "/assets/photos/estilista-y-clienta.webp": [
+  760,
+  1361
+ ],
+ "/assets/photos/estilista.webp": [
+  760,
+  943
+ ],
+ "/assets/photos/eventos.webp": [
+  760,
+  943
+ ],
+ "/assets/photos/fotografa.webp": [
+  760,
+  943
+ ],
+ "/assets/photos/full-barbero.webp": [
+  1024,
+  1024
+ ],
+ "/assets/photos/full-equipo.webp": [
+  1024,
+  1024
+ ],
+ "/assets/photos/full-estilista-hero.webp": [
+  1800,
+  1004
+ ],
+ "/assets/photos/full-fitness.webp": [
+  1024,
+  1024
+ ],
+ "/assets/photos/full-telefono.webp": [
+  1024,
+  1024
+ ],
+ "/assets/photos/inflables.webp": [
+  760,
+  943
+ ],
+ "/assets/photos/recepcionista.webp": [
+  760,
+  760
+ ],
+ "/assets/photos/tatuador.webp": [
+  760,
+  760
+ ],
+ "/assets/photos/unas-estacion.webp": [
+  760,
+  760
+ ],
+ "/assets/photos/unas.webp": [
+  760,
+  943
+ ],
+ "/assets/screens/d-calendario.webp": [
+  1542,
+  797
+ ],
+ "/assets/screens/d-resumen.webp": [
+  1482,
+  812
+ ],
+ "/assets/screens/f-bloqueo.webp": [
+  566,
+  962
+ ],
+ "/assets/screens/f-calendario.webp": [
+  566,
+  962
+ ],
+ "/assets/screens/f-gcal.webp": [
+  566,
+  962
+ ],
+ "/assets/screens/f-nota.webp": [
+  566,
+  962
+ ],
+ "/assets/screens/f-perfil.webp": [
+  566,
+  981
+ ],
+ "/assets/screens/f-resumen.webp": [
+  566,
+  962
+ ],
+ "/assets/screens/flow-1.webp": [
+  566,
+  962
+ ],
+ "/assets/screens/flow-2.webp": [
+  566,
+  962
+ ],
+ "/assets/screens/flow-3.webp": [
+  566,
+  962
+ ],
+ "/assets/screens/flow-4.webp": [
+  566,
+  962
+ ],
+ "/assets/screens/m-reservas.webp": [
+  780,
+  1228
+ ],
+ "/assets/screens/m-servicio.webp": [
+  780,
+  1407
+ ],
+ "/assets/social/r01.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r02.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r03.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r04.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r05.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r06.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r07.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r08.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r09.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r10.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r11.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r12.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r13.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r14.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r15.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r16.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r17.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r18.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r19.webp": [
+  360,
+  640
+ ],
+ "/assets/social/r20.webp": [
+  360,
+  640
+ ],
+ "/assets/tunnel/t00.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t01.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t02.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t03.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t04.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t05.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t06.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t07.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t08.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t09.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t10.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t11.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t12.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t13.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t14.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t15.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t16.webp": [
+  640,
+  640
+ ],
+ "/assets/tunnel/t17.webp": [
+  640,
+  640
+ ]
+}

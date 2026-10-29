@@ -33,3 +33,7 @@
   --max-w: 1200px;
   --gutter: 28px;
 }
+
+:root {
+  --hero-dim: #cbc5b8; /* el titular del hero se apaga a este tono al hacer scroll */
+}
