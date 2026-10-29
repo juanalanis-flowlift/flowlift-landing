@@ -1,0 +1,49 @@
+/* ── Movimiento (04-movimiento.md §5.1) ────────────────────────────────── */
+:root {
+  --t-press: 100ms;
+  --t-state: 150ms;
+  --t-enter: 250ms;
+  --t-sheet: 350ms;
+  --t-exit: 200ms;
+  --t-fill: 1400ms;
+  --t-draw: 400ms;
+  --ease-std: cubic-bezier(0.2, 0, 0, 1);
+  --ease-enter: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --ease-exit: cubic-bezier(0.3, 0, 0.8, 0.15);
+  --ease-ios: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-spring: cubic-bezier(0.34, 1.3, 0.64, 1);
+  --ease-fill: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-press: 1ms; --t-state: 1ms; --t-enter: 1ms; --t-sheet: 1ms;
+    --t-exit: 1ms; --t-fill: 1ms; --t-draw: 1ms;
+  }
+}
+
+/* Animaciones por scroll compartidas (copiadas de la referencia aprobada).
+   Todo vive dentro de @supports: sin soporte el contenido queda visible y quieto. */
+@supports (animation-timeline: view()) {
+  .rv { animation: rv linear both; animation-timeline: view(); animation-range: entry 5% cover 32%; }
+  @keyframes rv { from { opacity: 0; transform: translateY(48px); } to { opacity: 1; transform: none; } }
+
+  .par { animation: par linear both; animation-timeline: scroll(root); animation-range: 0 1000px; }
+  @keyframes par { from { translate: 0 0; } to { translate: var(--dx, 0px) var(--dy, -200px); } }
+
+  .rise { animation: rise linear both; animation-timeline: scroll(root); animation-range: 0 900px; }
+  @keyframes rise { from { translate: 0 0; } to { translate: 0 var(--dy, -120px); } }
+
+  .vpar { animation: vpar linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
+  @keyframes vpar { from { translate: 0 var(--from, 120px); } to { translate: 0 var(--to, -120px); } }
+
+  .unclip { animation: unclip linear both; animation-timeline: view(); animation-range: entry 0% cover 45%; }
+  @keyframes unclip { from { clip-path: inset(10% 10% 10% 10%); } to { clip-path: inset(0 0 0 0); } }
+}
+
+@keyframes phin { from { opacity: 0; transform: scale(0.88); } to { opacity: 1; transform: none; } }
+@keyframes pop { from { opacity: 0; transform: translateY(12px) scale(0.96); } to { opacity: 1; transform: none; } }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rv, .par, .rise, .vpar, .unclip { animation: none !important; }
+}

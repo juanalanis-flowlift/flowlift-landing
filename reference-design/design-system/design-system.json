@@ -1,0 +1,101 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Logos": {
+      "files": {
+        "logo-dark-bg.jpg": {
+          "blob": "dc95f8c90af50c266bb8a52e61a95075",
+          "name": "logo-dark-bg.jpg",
+          "sha256": "6cfeb805b97dc327341027a93288a751472f2c6cdf0168faba77c3757cc158bf",
+          "size": 14673,
+          "type": "image/jpeg"
+        },
+        "logo-green-bg.jpg": {
+          "blob": "dc95f8c90af50c266bb8a52e61a95075",
+          "name": "logo-green-bg.jpg",
+          "sha256": "6cfeb805b97dc327341027a93288a751472f2c6cdf0168faba77c3757cc158bf",
+          "size": 14673,
+          "type": "image/jpeg"
+        },
+        "logo-light-bg.jpg": {
+          "blob": "61940387789895530b8dfed33ad07536",
+          "name": "logo-light-bg.jpg",
+          "sha256": "8c0517b37eb99fdc28c9b331dd7f831b59e57fc06b348c5ee15e9438be7d58fe",
+          "size": 11998,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "Logos",
+      "order": []
+    },
+    "Other": {
+      "files": {},
+      "name": "Other",
+      "order": []
+    },
+    "Uploads": {
+      "files": {},
+      "name": "Uploads",
+      "order": []
+    },
+    "notes": {
+      "files": {},
+      "name": "notes",
+      "order": []
+    }
+  },
+  "blobs": {
+    "assets/logo-pale-bg.jpg": {
+      "blob": "61940387789895530b8dfed33ad07536",
+      "name": "assets/logo-pale-bg.jpg",
+      "sha256": "8c0517b37eb99fdc28c9b331dd7f831b59e57fc06b348c5ee15e9438be7d58fe",
+      "size": 11998,
+      "type": "image/jpeg"
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-09-17T02:41:51.059Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "groups": [
+    "Logos",
+    "Uploads",
+    "Other",
+    "notes"
+  ],
+  "layout": "files",
+  "libraries": [
+    {
+      "file": "components/lib/react.production.min.js",
+      "global": "React",
+      "name": "react",
+      "version": "18.3.1"
+    },
+    {
+      "file": "components/lib/react-dom.production.min.js",
+      "global": "ReactDOM",
+      "name": "react-dom",
+      "version": "18.3.1"
+    }
+  ],
+  "namespace": "FlowLiftDesignSystem_980fa8",
+  "sections": {},
+  "source": {
+    "app": "claude-design",
+    "exportedAt": "2026-09-17T02:41:51.059Z",
+    "projectId": "980fa8a7-4590-4734-b1b9-688789f8c066",
+    "url": "https://claude.ai/design/p/980fa8a7-4590-4734-b1b9-688789f8c066",
+    "v": 1
+  },
+  "title": "flowlift",
+  "lastChange": {
+    "by": "Juan",
+    "at": "2026-10-13T22:08:00Z",
+    "via": "Claude",
+    "note": "D11: borde de checkbox y radio a grey-mid (4.5:1); D13–D15 aprobadas"
+  }
+}

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>flowlift — Tu negocio, bajo control</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/flowliftdesignsystem_980fa8/tokens.css">
+<link rel="stylesheet" href="ds/flowliftdesignsystem_980fa8/components/bundle.css">
+<script src="ds/flowliftdesignsystem_980fa8/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400;1,9..40,500&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap">
+<style>
+body{margin:0;background:#faf8f3}
+a{color:#1a1a1a}a:hover{color:#1a6638}
+.ed{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a1a;background:#faf8f3;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:clip}
+.ed *{box-sizing:border-box}
+.serif{font-family:'DM Serif Display',Georgia,serif;font-weight:400}
+.it{font-style:italic}
+.num{font-family:'DM Serif Display',Georgia,serif;font-size:18px;letter-spacing:1px;color:#1a1a1a}
+.muted{color:#6b665c}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+.pill{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 6px 0 20px;border-radius:999px;background:#1a1a1a;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;white-space:nowrap;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background-color 150ms cubic-bezier(.2,0,0,1),transform 100ms cubic-bezier(.2,0,0,1)}
+.pill:hover{background:#1a6638;color:#ffffff}.pill:active{transform:scale(.97)}
+.pill-dot{width:34px;height:34px;border-radius:999px;background:#2db35d;color:#ffffff;display:inline-flex;align-items:center;justify-content:center}
+.pill-l{background:#ffffff;color:#1a1a1a;border:1px solid #e4dfd3}.pill-l:hover{background:#f1ede4;color:#1a1a1a}
+.pill:focus-visible,.faq-q:focus-visible,.em:focus-visible{outline:2px solid #2db35d;outline-offset:3px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;pointer-events:none}
+.nav > *{pointer-events:auto}
+.navlink{font-size:13.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;text-decoration:none;color:#1a1a1a}
+.hero{position:relative;min-height:1000px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:140px 0 120px;overflow:hidden}
+.giant{margin:0;text-align:center;font-family:'DM Serif Display',Georgia,serif;font-weight:400;text-transform:uppercase;font-size:clamp(58px,9.6vw,150px);line-height:.92;letter-spacing:-1.5px;color:#1a1a1a;position:relative;z-index:3}
+.giant span{display:block}
+.fl{position:absolute;z-index:2;animation:phin 1000ms cubic-bezier(.05,.7,.1,1) both}
+.fl-in{width:100%;height:100%;overflow:hidden;border-radius:2px;box-shadow:0 10px 30px rgba(26,26,26,0.12)}
+.fl-in img{width:100%;height:100%;object-fit:cover;display:block}
+.fl-b{border-radius:2px}
+@keyframes phin{from{opacity:0;transform:scale(.88)}to{opacity:1;transform:none}}
+.rot{display:inline-block;height:1.3em;overflow:hidden;vertical-align:bottom}
+.rot-in{display:flex;flex-direction:column;animation:rot 9s cubic-bezier(.32,.72,0,1) infinite}
+.rot-in span{height:1.3em;line-height:1.3em;font-style:italic;color:#1a6638}
+@keyframes rot{0%,28%{transform:translateY(0)}33%,61%{transform:translateY(-1.3em)}66%,94%{transform:translateY(-2.6em)}100%{transform:translateY(-3.9em)}}
+.cue{width:1px;height:150px;background:#1a1a1a;margin:64px auto 0;position:relative;transform-origin:top;z-index:3}
+.cue::before{content:'';position:absolute;top:-3px;left:-2px;width:5px;height:5px;border-radius:999px;background:#1a1a1a}
+.cue::after{content:'';position:absolute;bottom:-3px;left:-3px;width:7px;height:7px;border-radius:999px;background:#2db35d}
+.center{max-width:660px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px}
+.h2{margin:0;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(34px,4.2vw,54px);line-height:1.12;letter-spacing:-.5px}
+.body{margin:0;font-size:19px;line-height:1.7;color:#3d3d3d}
+.edge{position:absolute;overflow:hidden;border-radius:2px;box-shadow:0 8px 22px rgba(26,26,26,0.1)}
+.edge img{width:100%;height:100%;object-fit:cover;display:block}
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;position:relative;max-width:980px;margin:0 auto}
+.flow-line{position:absolute;left:12.5%;right:12.5%;top:9px;height:1px;background:#1a1a1a;transform-origin:left}
+.flow-st{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;position:relative}
+.flow-dot{width:19px;height:19px;border-radius:999px;background:#faf8f3;border:1px solid #1a1a1a;position:relative;z-index:1}
+.flow-dot.on{background:#2db35d;border-color:#2db35d}
+.prod{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:88px;align-items:center}
+.prod.rev .prod-media{order:2}
+.prod-media{position:relative}
+.prod-img{aspect-ratio:4/5;width:100%;overflow:hidden;border-radius:2px;background:#ebe6db}
+.prod-img img{width:100%;height:100%;object-fit:cover;display:block}
+.ph-box{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border:1px dashed #b9b1a0;background:repeating-linear-gradient(135deg,#f1ede4 0 14px,#ece7dc 14px 28px);color:#6b665c;font-size:14px;text-align:center;padding:24px}
+.prod-sm{position:absolute;width:38%;aspect-ratio:1/1;overflow:hidden;border-radius:2px;box-shadow:0 12px 30px rgba(26,26,26,0.16);border:6px solid #faf8f3}
+.prod-sm img{width:100%;height:100%;object-fit:cover;display:block}
+.pname{margin:0;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(64px,7vw,104px);line-height:.95;letter-spacing:-1.5px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.st-on{background:#e8f8ee;color:#1a6638}
+.st-soon{background:#efe6d3;color:#6b4e12}
+.dotlive{width:7px;height:7px;border-radius:999px;background:#2db35d}
+.li{display:flex;gap:10px;align-items:flex-start;font-size:16px;color:#3d3d3d}
+.wl{display:flex;gap:8px;flex-wrap:wrap;align-items:center;max-width:460px}
+.em{flex:1 1 220px;height:46px;border-radius:999px;border:1px solid #cfc8b8;background:#ffffff;padding:0 20px;font-family:'DM Sans',sans-serif;font-size:15px;color:#1a1a1a;outline:none;transition:border-color 150ms cubic-bezier(.2,0,0,1)}
+.em:focus{border-color:#2db35d}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.shared{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #1a1a1a}
+.sh{padding:32px 28px 36px 0;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid #d9d3c5}
+.sh:nth-child(3n+2),.sh:nth-child(3n+3){padding-left:28px;border-left:1px solid #d9d3c5}
+.orbit-sec{position:relative;height:980px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ring{position:absolute;left:50%;top:50%;width:1160px;height:760px;margin:-380px 0 0 -580px}
+.oi{position:absolute;overflow:hidden;border-radius:2px;box-shadow:0 8px 22px rgba(26,26,26,0.1)}
+.oi img{width:100%;height:100%;object-fit:cover;display:block}
+.faq-q{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0;cursor:pointer;font-family:'DM Serif Display',Georgia,serif;font-size:26px;line-height:1.25;color:#1a1a1a}
+.float{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:6px;background:rgba(250,248,243,0.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid #e4dfd3;border-radius:999px;padding:5px}
+@supports (animation-timeline: view()) {
+.par{animation:par linear both;animation-timeline:scroll(root);animation-range:0 1000px}
+@keyframes par{from{translate:0 0}to{translate:var(--dx,0px) var(--dy,-200px)}}
+.giant{animation:dim linear both;animation-timeline:scroll(root);animation-range:150px 900px}
+@keyframes dim{from{color:#1a1a1a}to{color:#cbc5b8}}
+.rv{animation:rv linear both;animation-timeline:view();animation-range:entry 5% cover 32%}
+@keyframes rv{from{opacity:0;transform:translateY(48px)}to{opacity:1;transform:none}}
+.vpar{animation:vpar linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+@keyframes vpar{from{translate:0 var(--from,120px)}to{translate:0 var(--to,-120px)}}
+.cue{animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 45%}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.flow-line{animation:line linear both;animation-timeline:view();animation-range:entry 30% cover 50%}
+@keyframes line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.unclip{animation:unclip linear both;animation-timeline:view();animation-range:entry 0% cover 45%}
+@keyframes unclip{from{clip-path:inset(10% 10% 10% 10%)}to{clip-path:inset(0 0 0 0)}}
+.ring-s{animation:spread linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+@keyframes spread{0%{transform:scale(.45) rotate(-14deg);opacity:0}35%{opacity:1}60%{transform:scale(1) rotate(0deg);opacity:1}100%{transform:scale(1.5) rotate(8deg);opacity:.25}}
+}
+@media (prefers-reduced-motion: reduce){
+.fl,.rot-in,.par,.giant,.rv,.vpar,.cue,.flow-line,.unclip,.ring-s{animation:none!important}
+}
+@media (max-width: 1000px){
+.prod{grid-template-columns:minmax(0,1fr);gap:48px}
+.prod.rev .prod-media{order:0}
+.shared{grid-template-columns:minmax(0,1fr)}
+.sh,.sh:nth-child(3n+2),.sh:nth-child(3n+3){padding-left:0;border-left:none}
+.ring{zoom:.6}
+.orbit-sec{height:760px}
+.nav-hide{display:none!important}
+}
+@media (max-width: 700px){
+.hero{min-height:860px}
+.hm{display:none!important}
+.fl{zoom:.62}
+.flow{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
+.flow-line{display:none}
+.edge{display:none}
+.float-txt{display:none}
+}
+</style>
+</helmet>
+<div class="ed">
+
+<!-- Navegación -->
+<header class="nav">
+<a href="#inicio" aria-label="flowlift, inicio"><img src="/assets/brand/logo.svg" alt="flowlift" style="height: 26px; width: auto; display: block"></a>
+<nav aria-label="Principal" style="display: flex; align-items: center; gap: 26px">
+<a class="navlink nav-hide" href="#citas">Citas</a>
+<a class="navlink nav-hide" href="#clases">Clases</a>
+<a class="navlink nav-hide" href="#tienda">Tienda</a>
+<a class="navlink" href="#">Entrar</a>
+</nav>
+</header>
+
+<!-- Hero: el texto al centro, las fotos en los márgenes -->
+<section id="inicio" class="hero">
+<div aria-hidden="true">
+<div class="fl par" style="left: 3%; top: 150px; width: 150px; height: 190px; --dx: -40px; --dy: -260px; animation-delay: 200ms"><div class="fl-in"><img src="/assets/photos/unas.webp" alt=""></div></div>
+<div class="fl par hm" style="left: 10%; top: 470px; width: 118px; height: 118px; --dx: -30px; --dy: -140px; animation-delay: 320ms"><div class="fl-in"><img src="/assets/photos/cliente-pagando.webp" alt=""></div></div>
+<div class="fl par" style="left: 2%; top: 700px; width: 170px; height: 210px; --dx: -60px; --dy: -380px; animation-delay: 440ms"><div class="fl-in"><img src="/assets/photos/barbero.webp" alt=""></div></div>
+<div class="fl par" style="right: 4%; top: 120px; width: 160px; height: 204px; --dx: 40px; --dy: -300px; animation-delay: 260ms"><div class="fl-in"><img src="/assets/photos/estilista-y-clienta.webp" alt=""></div></div>
+<div class="fl par hm" style="right: 11%; top: 470px; width: 110px; height: 140px; --dx: 30px; --dy: -160px; animation-delay: 380ms"><div class="fl-in"><img src="/assets/photos/entrenador.webp" alt=""></div></div>
+<div class="fl par" style="right: 3%; top: 700px; width: 180px; height: 180px; --dx: 50px; --dy: -420px; animation-delay: 500ms"><div class="fl-in"><img src="/assets/photos/recepcionista.webp" alt=""></div></div>
+<div class="fl par hm" style="left: 27%; top: 54px; width: 96px; height: 96px; --dy: -110px; animation-delay: 560ms"><div class="fl-in"><img src="/assets/photos/entrada-salon.webp" alt=""></div></div>
+<div class="fl par hm" style="right: 27%; top: 40px; width: 128px; height: 84px; --dy: -200px; animation-delay: 620ms"><div class="fl-in"><img src="/assets/photos/clase-taekwondo.webp" alt=""></div></div>
+<div class="fl par hm" style="left: 22%; bottom: 40px; width: 130px; height: 92px; --dy: -80px; animation-delay: 700ms"><div class="fl-in"><img src="/assets/photos/c17.webp" alt=""></div></div>
+<div class="fl par hm" style="right: 21%; bottom: 20px; width: 92px; height: 114px; --dy: -240px; animation-delay: 760ms"><div class="fl-in"><img src="/assets/photos/fotografa.webp" alt=""></div></div>
+<div class="fl fl-b par" style="left: 15%; top: 300px; width: 38px; height: 28px; background: #a8e6c0; --dy: -320px; animation-delay: 820ms"></div>
+<div class="fl fl-b par hm" style="right: 17%; top: 330px; width: 26px; height: 20px; background: #2db35d; --dy: -180px; animation-delay: 860ms"></div>
+<div class="fl fl-b par" style="right: 9%; top: 640px; width: 50px; height: 34px; background: #d9c6a0; --dy: -260px; animation-delay: 900ms"></div>
+<div class="fl fl-b par hm" style="left: 13%; top: 640px; width: 30px; height: 40px; background: #8fa89a; --dy: -140px; animation-delay: 940ms"></div>
+</div>
+<h1 class="giant"><span>Tu negocio,</span><span class="it" style="color: #2db35d">bajo</span><span>control.</span></h1>
+<div style="position: relative; z-index: 3; margin-top: 56px; display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; padding: 0 24px">
+<p class="serif" style="margin: 0; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.3; color: #1a1a1a">Ordena <span class="rot"><span class="rot-in"><span>tu agenda</span><span>tus alumnos</span><span>tus pedidos</span><span>tu agenda</span></span></span> desde un solo link.</p>
+<a class="pill" href="#productos">Conoce flowlift<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ChevronDown" size="{{ n16 }}"></x-import></span></a>
+</div>
+<div class="cue" aria-hidden="true"></div>
+</section>
+
+<!-- 01 · Manifiesto -->
+<section style="position: relative; padding: 120px 0 160px">
+<div aria-hidden="true">
+<div class="edge vpar hm" style="left: 5%; top: 40px; width: 130px; height: 164px; --from: 160px; --to: -200px"><img src="/assets/photos/duena-con-telefono.webp" alt=""></div>
+<div class="edge vpar hm" style="right: 7%; top: 260px; width: 150px; height: 112px; --from: 60px; --to: -260px"><img src="/assets/photos/clase-ballet.webp" alt=""></div>
+<div class="edge vpar" style="right: 18%; top: 40px; width: 34px; height: 26px; background: #a8e6c0; box-shadow: none; --from: 100px; --to: -140px"></div>
+</div>
+<div class="center rv" style="padding: 0 28px; position: relative">
+<span class="num">[ 01 ]</span>
+<h2 class="h2">Tecnología <span class="it">al servicio de las personas.</span></h2>
+<p class="body">Todo negocio pequeño tiene el mismo ritmo: alguien llega, aparta su lugar, paga y regresa. Puede ser una cita, una clase o un pedido. flowlift ordena ese ritmo para que tú te dediques a lo que sabes hacer.</p>
+</div>
+<div class="wrap" style="margin-top: 96px">
+<div class="flow rv">
+<div class="flow-line" aria-hidden="true"></div>
+<div class="flow-st"><span class="flow-dot on"></span><span class="num">Llega</span><span style="font-size: 15px; color: #6b665c">Te encuentra por tu link o tu QR.</span></div>
+<div class="flow-st"><span class="flow-dot"></span><span class="num">Aparta</span><span style="font-size: 15px; color: #6b665c">Elige su cita, su clase o su pedido.</span></div>
+<div class="flow-st"><span class="flow-dot"></span><span class="num">Paga</span><span style="font-size: 15px; color: #6b665c">Con tarjeta, en OXXO o en tu local.</span></div>
+<div class="flow-st"><span class="flow-dot on"></span><span class="num">Regresa</span><span style="font-size: 15px; color: #6b665c">Con recordatorios por WhatsApp.</span></div>
+</div>
+</div>
+</section>
+
+<!-- 02 · Productos -->
+<section id="productos" style="padding: 40px 0 120px">
+<div class="center rv" style="padding: 0 28px; margin-bottom: 120px">
+<span class="num">[ 02 ]</span>
+<h2 class="h2">Una herramienta para cada <span class="it">forma de trabajar.</span></h2>
+</div>
+
+<div class="wrap" style="display: flex; flex-direction: column; gap: 180px">
+
+<!-- Citas -->
+<article id="citas" class="prod">
+<div class="prod-media">
+<div class="prod-img unclip"><img src="/assets/photos/full-estilista-hero.webp" alt="Estilista atendiendo a su clienta" style="object-position: 40% center"></div>
+<div class="prod-sm vpar" style="right: -8%; bottom: -10%; --from: 80px; --to: -80px"><img src="/assets/photos/barbero.webp" alt="Barbero con su cliente"></div>
+</div>
+<div class="rv" style="display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap"><span class="num">[ 02.1 ]</span><span class="status st-on"><span class="dotlive"></span>Disponible</span></div>
+<h3 class="pname">Citas</h3>
+<p class="serif it" style="margin: 0; font-size: 26px; line-height: 1.3; color: #3d3d3d">Para quien trabaja con citas: estilistas, barberos, uñas, fotógrafos, consultorios.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n18 }}"></x-import>Tus clientes reservan desde tu link, sin descargar nada.</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n18 }}"></x-import>Cero citas encimadas: solo se ven tus horarios libres.</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n18 }}"></x-import>Confirmaciones, recordatorios y anticipos sin escribir nada.</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding-top: 6px">
+<a class="pill" href="#">14 días gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+<a href="#" style="font-size: 15px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px">Ver Citas a detalle</a>
+</div>
+<span class="muted" style="font-size: 14px">Desde $0. Pro+ en $349 al mes.</span>
+</div>
+</article>
+
+<!-- Clases -->
+<article id="clases" class="prod rev">
+<div class="prod-media">
+<div class="prod-img unclip"><img src="/assets/photos/clase-piano.webp" alt="Maestra de piano guiando a una alumna" style="object-position: 62% center"></div>
+<div class="prod-sm vpar" style="left: -8%; bottom: -10%; --from: 80px; --to: -80px"><img src="/assets/photos/clase-recepcion-papa-hijo.webp" alt="Recepción de un estudio atendiendo a un papá y su hijo" style="object-position: 70% center"></div>
+</div>
+<div class="rv" style="display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap"><span class="num">[ 02.2 ]</span><span class="status st-soon">Llega a inicios de 2027</span></div>
+<h3 class="pname">Clases</h3>
+<p class="serif it" style="margin: 0; font-size: 26px; line-height: 1.3; color: #3d3d3d">Para escuelas pequeñas e instructores: música, yoga, pilates, deportes, tutorías.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n18 }}"></x-import>Las familias inscriben desde un link en menos de 2 minutos.</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n18 }}"></x-import>Cupo, mensualidades, paquetes y lista de espera.</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n18 }}"></x-import>Avisos y confirmaciones por WhatsApp, sin mandarlos uno por uno.</span>
+</div>
+<sc-if value="{{ notJoinedC }}" hint-placeholder-val="{{ true }}">
+<form class="wl" onSubmit="{{ joinClases }}" style="padding-top: 6px">
+<label class="sr" for="em-clases">Tu correo electrónico</label>
+<input class="em" id="em-clases" type="email" required placeholder="tu@correo.com" autocomplete="email">
+<button class="pill" type="submit">Avísame<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Bell" size="{{ n16 }}"></x-import></span></button>
+</form>
+</sc-if>
+<sc-if value="{{ joinedC }}" hint-placeholder-val="{{ false }}"><p role="status" style="margin: 0; font-size: 16px; color: #1a6638; display: flex; align-items: center; gap: 8px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CircleCheck" size="{{ n18 }}"></x-import>Listo. Te avisamos en cuanto Clases esté disponible.</p></sc-if>
+<span class="muted" style="font-size: 14px">Déjanos tu correo y te avisamos al abrir.</span>
+</div>
+</article>
+
+<!-- Tienda -->
+<article id="tienda" class="prod">
+<div class="prod-media">
+<div class="prod-img unclip"><div class="ph-box"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Image" size="{{ n22 }}"></x-import><span>[Foto: emprendedora empacando pedidos en su tiendita]<br>Vertical 4:5</span></div></div>
+<div class="prod-sm vpar" style="right: -8%; bottom: -10%; --from: 80px; --to: -80px"><div class="ph-box" style="font-size: 12px; padding: 10px">[Foto: producto listo para entregar]</div></div>
+</div>
+<div class="rv" style="display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap"><span class="num">[ 02.3 ]</span><span class="status st-soon">Llega a inicios de 2027</span></div>
+<h3 class="pname">Tienda</h3>
+<p class="serif it" style="margin: 0; font-size: 26px; line-height: 1.3; color: #3d3d3d">Para quien vende sus productos: repostería, ropa, artesanías, belleza.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n18 }}"></x-import>Tu catálogo en un link que compartes por WhatsApp e Instagram.</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n18 }}"></x-import>Tus pedidos ordenados en un solo lugar, no en veinte chats.</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n18 }}"></x-import>[Tercer beneficio de Tienda por confirmar]</span>
+</div>
+<sc-if value="{{ notJoinedT }}" hint-placeholder-val="{{ true }}">
+<form class="wl" onSubmit="{{ joinTienda }}" style="padding-top: 6px">
+<label class="sr" for="em-tienda">Tu correo electrónico</label>
+<input class="em" id="em-tienda" type="email" required placeholder="tu@correo.com" autocomplete="email">
+<button class="pill" type="submit">Avísame<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Bell" size="{{ n16 }}"></x-import></span></button>
+</form>
+</sc-if>
+<sc-if value="{{ joinedT }}" hint-placeholder-val="{{ false }}"><p role="status" style="margin: 0; font-size: 16px; color: #1a6638; display: flex; align-items: center; gap: 8px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CircleCheck" size="{{ n18 }}"></x-import>Listo. Te avisamos en cuanto Tienda esté disponible.</p></sc-if>
+<span class="muted" style="font-size: 14px">Déjanos tu correo y te avisamos al abrir.</span>
+</div>
+</article>
+
+</div>
+</section>
+
+<!-- 03 · La base compartida -->
+<section style="padding: 140px 0 120px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
+<div class="rv" style="display: flex; flex-direction: column; gap: 14px; max-width: 680px"><span class="num">[ 03 ]</span><h2 class="h2">La misma base, <span class="it">en cada herramienta.</span></h2></div>
+<div class="shared rv">
+<div class="sh"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Link" size="{{ n22 }}"></x-import><span class="serif" style="font-size: 24px">Un link y un QR</span><span class="muted" style="font-size: 15.5px">Para tu bio, tu estado de WhatsApp o tu mostrador.</span></div>
+<div class="sh"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Smartphone" size="{{ n22 }}"></x-import><span class="serif" style="font-size: 24px">Nada que descargar</span><span class="muted" style="font-size: 15.5px">Tus clientes usan el navegador de su celular.</span></div>
+<div class="sh"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="MessageSquare" size="{{ n22 }}"></x-import><span class="serif" style="font-size: 24px">WhatsApp como canal</span><span class="muted" style="font-size: 15.5px">Confirmaciones y avisos donde sí los leen.</span></div>
+<div class="sh"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CreditCard" size="{{ n22 }}"></x-import><span class="serif" style="font-size: 24px">Pagos en pesos</span><span class="muted" style="font-size: 15.5px">Con tarjeta o en efectivo en OXXO.</span></div>
+<div class="sh"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ShieldCheck" size="{{ n22 }}"></x-import><span class="serif" style="font-size: 24px">Seguro desde el inicio</span><span class="muted" style="font-size: 15.5px">Entras con Google o Microsoft. Tus datos no se venden.</span></div>
+<div class="sh"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="MapPin" size="{{ n22 }}"></x-import><span class="serif" style="font-size: 24px">Hecho en México</span><span class="muted" style="font-size: 15.5px">Español primero, para como trabajas aquí.</span></div>
+</div>
+</div>
+</section>
+
+<!-- 04 · Órbita -->
+<section class="orbit-sec" aria-labelledby="q4">
+<div class="ring-s" style="position: absolute; inset: 0" aria-hidden="true">
+<div class="ring">
+<sc-for list="{{ orbit }}" as="o" hint-placeholder-count="16"><div class="oi" style="{{ o.style }}"><sc-if value="{{ o.img }}" hint-placeholder-val="{{ true }}"><img src="{{ o.src }}" alt=""></sc-if></div></sc-for>
+</div>
+</div>
+<div class="center" style="position: relative; z-index: 2; max-width: 560px; padding: 0 24px">
+<span class="num">[ 04 ]</span>
+<h2 id="q4" class="h2">¿Cómo <span class="it">trabajas tú?</span></h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding-top: 8px">
+<a class="pill pill-l" href="#citas">Con citas</a>
+<a class="pill pill-l" href="#clases">Con clases</a>
+<a class="pill pill-l" href="#tienda">Vendo productos</a>
+</div>
+</div>
+</section>
+
+<!-- Fundador + Preguntas -->
+<section style="padding: 120px 0 140px">
+<div class="wrap" style="max-width: 880px; display: flex; flex-direction: column; gap: 120px">
+<div class="rv" style="display: grid; grid-template-columns: 180px minmax(0,1fr); gap: 36px; align-items: center">
+<div style="aspect-ratio: 4 / 5; border-radius: 2px; overflow: hidden"><div class="ph-box" style="font-size: 12.5px">[Tu foto 4:5]</div></div>
+<div style="display: flex; flex-direction: column; gap: 14px"><span class="num">Quién está detrás</span><p class="serif" style="margin: 0; font-size: 28px; line-height: 1.3">[2 o 3 frases con tus palabras: por qué creaste flowlift y para quién.]</p><span class="muted" style="font-size: 15px">Juan Alanis · Fundador de flowlift</span></div>
+</div>
+<div>
+<div class="center rv" style="margin-bottom: 40px"><span class="num">[ 05 ]</span><h2 class="h2">Lo que <span class="it">nos preguntan.</span></h2></div>
+<div class="rv" style="border-top: 1px solid #1a1a1a">
+<sc-for list="{{ faqs }}" as="q" hint-placeholder-count="5">
+<div style="border-bottom: 1px solid #d9d3c5">
+<button class="faq-q" type="button" aria-expanded="{{ q.open }}" onClick="{{ q.toggle }}"><span>{{ q.q }}</span><span style="{{ q.ico }}"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Plus" size="{{ n22 }}"></x-import></span></button>
+<sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 0 0 28px; font-size: 17px; line-height: 1.7; color: #3d3d3d; max-width: 700px">{{ q.a }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Cierre -->
+<footer style="background: #1a1a1a; color: #faf8f3; position: relative; overflow: hidden">
+<div style="padding: 160px 28px 120px; display: flex; flex-direction: column; align-items: center; gap: 40px; text-align: center; position: relative">
+<div class="edge vpar hm" style="left: 6%; top: 90px; width: 150px; height: 190px; --from: 120px; --to: -120px" aria-hidden="true"><img src="/assets/photos/estilista.webp" alt=""></div>
+<div class="edge vpar hm" style="right: 7%; top: 220px; width: 130px; height: 130px; --from: 40px; --to: -200px" aria-hidden="true"><img src="/assets/photos/unas-estacion.webp" alt=""></div>
+<h2 class="rv" style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; text-transform: uppercase; font-size: clamp(54px, 8.5vw, 130px); line-height: .92; letter-spacing: -1.5px; color: #faf8f3">Tu negocio,<br><span class="it" style="color: #5ec987">listo hoy.</span></h2>
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
+<a class="pill" href="#" style="background: #faf8f3; color: #1a1a1a">Crea tu link de citas<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+<a class="pill" href="#clases" style="background: transparent; color: #faf8f3; border: 1px solid rgba(250,248,243,0.3)">Avísame de Clases y Tienda<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Bell" size="{{ n16 }}"></x-import></span></a>
+</div>
+</div>
+<div style="border-top: 1px solid rgba(250,248,243,0.14); padding: 36px 28px 96px; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 14px; color: rgba(250,248,243,0.7)">
+<img src="/assets/brand/logo-white.svg" alt="flowlift" style="height: 22px; width: auto">
+<div style="display: flex; flex-wrap: wrap; gap: 24px"><a href="#citas" style="color: rgba(250,248,243,0.8); text-decoration: none">Citas</a><a href="#clases" style="color: rgba(250,248,243,0.8); text-decoration: none">Clases</a><a href="#tienda" style="color: rgba(250,248,243,0.8); text-decoration: none">Tienda</a><a href="https://flowlift.co/ayuda" style="color: rgba(250,248,243,0.8); text-decoration: none">Ayuda</a><a href="#" style="color: rgba(250,248,243,0.8); text-decoration: none">Términos</a><a href="#" style="color: rgba(250,248,243,0.8); text-decoration: none">Privacidad</a></div>
+<span>© 2026 flowlift · Hecho en México</span>
+</div>
+</footer>
+
+<div class="float">
+<span class="float-txt" style="font-size: 13px; font-weight: 600; letter-spacing: .6px; padding: 0 12px 0 14px; color: #3d3d3d">CITAS · 14 DÍAS GRATIS</span>
+<a class="pill" href="#" style="height: 40px; font-size: 13px">Crea tu link<span class="pill-dot" style="width: 30px; height: 30px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n14 }}"></x-import></span></a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":7600}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { open: 0, jc: false, jt: false }; }
+  renderVals() {
+    const b = (p) => p;
+    const pics = ['/assets/photos/c01.webp','/assets/photos/clase-taekwondo.webp','/assets/photos/c04.webp','/assets/photos/clase-ballet.webp','/assets/photos/c07.webp','/assets/photos/clase-natacion.webp','/assets/photos/estilista-y-clienta.webp','/assets/photos/clase-salsa.webp','/assets/photos/consultoria.webp','/assets/photos/clase-arte.webp','/assets/photos/inflables.webp','/assets/photos/estilista.webp'];
+    const blocks = ['#a8e6c0', '#d9c6a0', '#2db35d', '#8fa89a'];
+    const N = 16, rx = 500, ry = 320, orbit = [];
+    for (let i = 0; i < N; i++) {
+      const a = (i / N) * Math.PI * 2 - Math.PI / 2;
+      const isImg = i % 4 !== 3;
+      const w = isImg ? [118, 92, 140, 104][i % 4] : 36 + (i % 3) * 8;
+      const h = isImg ? Math.round(w * (i % 3 === 0 ? 1.25 : 0.78)) : Math.round(w * 0.7);
+      const x = 580 + Math.cos(a) * rx * (0.86 + (i % 3) * 0.08) - w / 2;
+      const y = 380 + Math.sin(a) * ry * (0.86 + ((i + 1) % 3) * 0.08) - h / 2;
+      orbit.push({ img: isImg, src: isImg ? b(pics[(i * 7) % pics.length]) : '', style: 'left: ' + Math.round(x) + 'px; top: ' + Math.round(y) + 'px; width: ' + w + 'px; height: ' + h + 'px;' + (isImg ? '' : ' background: ' + blocks[i % 4] + '; box-shadow: none;') });
+    }
+    const raw = [
+      ['¿Qué es flowlift?', 'Herramientas sencillas para pequeños negocios de servicio en México. Hoy puedes usar Citas; Clases y Tienda llegan a inicios de 2027.'],
+      ['¿Mis clientes tienen que descargar algo?', 'No. Todo funciona desde un link en el navegador de su celular, sin descargar nada y sin crear cuenta.'],
+      ['¿Cuánto cuesta?', 'Citas tiene un plan gratis para siempre, y Pro+ cuesta $349 al mes con 14 días gratis, sin tarjeta. Los precios de Clases y Tienda se anunciarán al lanzarlos.'],
+      ['¿Cuándo llegan Clases y Tienda?', 'A inicios de 2027. Déjanos tu correo en cada una y te avisamos en cuanto abran.'],
+      ['¿Para qué tipo de negocio es?', 'Para negocios pequeños que trabajan con citas, con clases o vendiendo sus productos: salones, barberías, consultorios, academias, instructores y tiendas.']
+    ];
+    const faqs = raw.map((r, i) => ({ q: r[0], a: r[1], open: this.state.open === i,
+      ico: 'display: inline-flex; flex-shrink: 0; transition: transform 250ms cubic-bezier(.2,0,0,1);' + (this.state.open === i ? ' transform: rotate(45deg);' : ''),
+      toggle: () => this.setState({ open: this.state.open === i ? -1 : i }) }));
+    return {
+      n14: 14, n16: 16, n18: 18, n22: 22, orbit, faqs,
+      notJoinedC: !this.state.jc, joinedC: this.state.jc,
+      notJoinedT: !this.state.jt, joinedT: this.state.jt,
+      joinClases: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ jc: true }); },
+      joinTienda: (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ jt: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

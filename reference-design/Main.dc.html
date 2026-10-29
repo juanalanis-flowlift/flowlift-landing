@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>flowlift — Tu agenda, bajo control</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/flowliftdesignsystem_980fa8/tokens.css">
+<link rel="stylesheet" href="ds/flowliftdesignsystem_980fa8/components/bundle.css">
+<script src="ds/flowliftdesignsystem_980fa8/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap">
+<style>
+body{margin:0;background:#f5f5f5}
+a{color:#1a6638}a:hover{color:#1a1a1a}
+.pg{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a1a;-webkit-font-smoothing:antialiased;line-height:1.5}
+.pg *{box-sizing:border-box}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.serif{font-family:'DM Serif Display',Georgia,serif;font-weight:400;letter-spacing:-0.5px}
+.dots{background-color:#f5f5f5;background-image:radial-gradient(#d6d6d6 1px,transparent 1.2px);background-size:18px 18px}
+.dots-dk{background-color:#1a1a1a;background-image:radial-gradient(rgba(255,255,255,0.09) 1px,transparent 1.2px);background-size:18px 18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 22px;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap;transition:background-color 150ms cubic-bezier(.2,0,0,1),box-shadow 150ms cubic-bezier(.2,0,0,1),transform 100ms cubic-bezier(.2,0,0,1)}
+.btn:active{transform:scale(.97)}
+.btn-p{background:#2db35d;color:#ffffff}.btn-p:hover{background:#27a052;color:#ffffff;box-shadow:0 4px 16px rgba(45,179,93,.3)}
+.btn-l{background:#a8e6c0;color:#1a1a1a}.btn-l:hover{background:#d3f1de;color:#1a1a1a}
+.btn-sm{height:38px;padding:0 16px;font-size:14px}
+.nav-a{color:rgba(255,255,255,0.86);text-decoration:none;font-size:14.5px;font-weight:500}.nav-a:hover{color:#ffffff}
+.tab{all:unset;box-sizing:border-box;cursor:pointer;height:36px;padding:0 14px;border-radius:8px;font-size:14px;font-weight:500;white-space:nowrap;display:inline-flex;align-items:center;transition:background-color 150ms cubic-bezier(.2,0,0,1),color 150ms cubic-bezier(.2,0,0,1)}
+.tab:focus-visible,.faq-q:focus-visible,.sw:focus-visible{outline:2px solid #2db35d;outline-offset:2px}
+.faq-q{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;cursor:pointer;font-size:17px;font-weight:500;color:#1a1a1a}
+.sw{all:unset;cursor:pointer;width:44px;height:26px;border-radius:999px;position:relative;display:inline-block;transition:background-color 150ms cubic-bezier(.2,0,0,1)}
+.knob{position:absolute;top:4px;left:4px;width:18px;height:18px;border-radius:999px;background:#ffffff;transition:transform 250ms cubic-bezier(.34,1.3,.64,1)}
+.g-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.g-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.g-foot{display:grid;grid-template-columns:2fr repeat(3,minmax(0,1fr));gap:32px}
+.show{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:760px}
+.sol{display:grid;grid-template-columns:220px minmax(0,420px) 220px;gap:56px;align-items:center;justify-content:center}
+.tile{width:112px;height:152px;flex-shrink:0;border-radius:6px;overflow:hidden;background:#ffffff}
+.tile img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.node{position:absolute;display:flex;flex-direction:column;gap:6px}
+.node-hd{display:flex;justify-content:space-between;font-size:11.5px;color:rgba(255,255,255,0.72)}
+.node-bx{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:8px;display:flex;flex-direction:column;gap:8px}
+.chip{align-self:flex-start;font-size:11px;font-weight:600;color:#ffffff;background:#2db35d;border-radius:4px;padding:2px 8px}
+.node-img{width:100%;height:178px;object-fit:cover;object-position:top;border-radius:6px;display:block}
+.pol{background:#ffffff;border:1px solid #e0e0e0;border-radius:10px;padding:8px;position:relative}
+.pol img{width:100%;height:200px;object-fit:cover;object-position:top;border-radius:6px;display:block}
+.pol-tag{position:absolute;top:18px;right:-14px;background:#a8e6c0;color:#1a1a1a;font-size:13.5px;font-weight:500;padding:6px 14px;border-radius:4px}
+.rot{display:inline-block;height:1.12em;overflow:hidden;vertical-align:bottom}
+.rot-in{display:flex;flex-direction:column;animation:rot 12.5s cubic-bezier(.32,.72,0,1) infinite}
+.rot-in span{height:1.12em;line-height:1.12em;font-style:italic;color:#27a052}
+@keyframes rot{0%,16%{transform:translateY(0)}20%,36%{transform:translateY(-1.12em)}40%,56%{transform:translateY(-2.24em)}60%,76%{transform:translateY(-3.36em)}80%,96%{transform:translateY(-4.48em)}100%{transform:translateY(-5.6em)}}
+.reel{animation:reel 46s linear infinite}
+@keyframes reel{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marq{animation:reel 34s linear infinite}
+.tunnel{position:absolute;left:0;right:0;top:0;height:720px;overflow:hidden;pointer-events:none;z-index:1;isolation:isolate;contain:paint}
+.tglow{position:absolute;left:50%;top:47%;width:900px;height:520px;transform:translate(-50%,-50%);background:radial-gradient(ellipse at center,rgba(168,230,192,0.55) 0%,rgba(232,248,238,0.35) 35%,rgba(245,245,245,0) 70%)}
+.tstage{position:absolute;left:50%;top:47%;width:0;height:0}
+.tc{position:absolute;left:-170px;top:-170px;width:340px;height:340px;border-radius:6px;overflow:hidden;opacity:0;animation-duration:22s;animation-iteration-count:infinite;animation-timing-function:linear;box-shadow:0 12px 32px rgba(26,26,26,0.14);will-change:transform,opacity}
+.tc img{width:100%;height:100%;object-fit:cover;display:block}
+.tl{animation-name:tl}.tr{animation-name:tr}
+@keyframes tl{0%{transform:perspective(1000px) translate3d(-150px,0,-2100px) rotateY(0deg);opacity:0;z-index:1}14%{opacity:.35}40%{transform:perspective(1000px) translate3d(-380px,0,-1900px) rotateY(12deg);opacity:.7;z-index:20}65%{transform:perspective(1000px) translate3d(-570px,0,-1380px) rotateY(24deg);opacity:1;z-index:40}84%{transform:perspective(1000px) translate3d(-700px,0,-640px) rotateY(36deg);opacity:1;z-index:70}96%{opacity:1}100%{transform:perspective(1000px) translate3d(-760px,0,180px) rotateY(48deg);opacity:0;z-index:99}}
+@keyframes tr{0%{transform:perspective(1000px) translate3d(150px,0,-2100px) rotateY(0deg);opacity:0;z-index:1}14%{opacity:.35}40%{transform:perspective(1000px) translate3d(380px,0,-1900px) rotateY(-12deg);opacity:.7;z-index:20}65%{transform:perspective(1000px) translate3d(570px,0,-1380px) rotateY(-24deg);opacity:1;z-index:40}84%{transform:perspective(1000px) translate3d(700px,0,-640px) rotateY(-36deg);opacity:1;z-index:70}96%{opacity:1}100%{transform:perspective(1000px) translate3d(760px,0,180px) rotateY(-48deg);opacity:0;z-index:99}}
+.type{display:inline-block;white-space:nowrap;animation:type 2.2s steps(34,end) .3s both}
+@keyframes type{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.caret{display:inline-block;width:2px;height:1.05em;background:#2db35d;margin-left:2px;vertical-align:text-bottom;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.pop{animation:pop 450ms cubic-bezier(.05,.7,.1,1) both}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
+.d1{animation-delay:.5s}.d2{animation-delay:1.2s}.d3{animation-delay:1.9s}.d4{animation-delay:2.6s}.d5{animation-delay:3.1s}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 600ms cubic-bezier(.25,.8,.25,1) both}
+@keyframes draw{to{stroke-dashoffset:0}}
+.l1{animation-delay:.9s}.l2{animation-delay:1.6s}.l3{animation-delay:2.3s}.l4{animation-delay:2.8s}
+.fade{animation:fade 300ms cubic-bezier(.05,.7,.1,1) both}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){
+.rot-in,.reel,.marq,.type,.caret,.pop,.draw,.fade{animation:none!important}
+.tc{animation-play-state:paused!important}
+.draw{stroke-dashoffset:0}
+}
+@media (max-width: 1080px){
+.show{grid-template-columns:minmax(0,1fr)}
+.show-l{min-height:520px!important}
+.sol{grid-template-columns:minmax(0,420px);}
+.sol-side{display:none!important}
+.g-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width: 900px){
+.g-3{grid-template-columns:minmax(0,1fr)}
+.g-foot{grid-template-columns:repeat(2,minmax(0,1fr))}
+.nav-links{display:none!important}
+.h1{font-size:50px!important}
+.h2{font-size:40px!important}
+.sec{padding-top:80px!important;padding-bottom:80px!important}
+.canvas-zoom{zoom:.78}
+}
+@media (max-width: 620px){
+.h1{font-size:40px!important}
+.reel-box{zoom:.72}
+.tstage{transform:scale(.55)}
+.tunnel{height:600px}
+.canvas-zoom{zoom:.54}
+.g-4,.g-foot{grid-template-columns:minmax(0,1fr)}
+.nav-cta-s,.ann-btn{display:none!important}
+}
+</style>
+</helmet>
+<div class="pg">
+
+<!-- Barra superior -->
+<header style="position: sticky; top: 0; z-index: 30; background: #1a1a1a; isolation: isolate; transform: translateZ(0)">
+<div class="wrap" style="height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="#inicio" aria-label="flowlift, inicio" style="display: flex; align-items: center"><img src="/assets/brand/logo-white.svg" alt="flowlift" style="height: 24px; width: auto; display: block"></a>
+<nav class="nav-links" aria-label="Principal" style="display: flex; align-items: center; gap: 30px; flex: 1; padding-left: 24px">
+<a class="nav-a" href="#producto">Producto</a>
+<a class="nav-a" href="#para-quien">Para quién</a>
+<a class="nav-a" href="#precios">Precios</a>
+<a class="nav-a" href="#preguntas">Preguntas</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px">
+<a class="btn btn-l btn-sm nav-cta-s" href="#">Entrar</a>
+<a class="btn btn-p btn-sm" href="#">Empieza gratis</a>
+</div>
+</div>
+<div style="padding: 0 16px 0">
+<div style="max-width: 1360px; margin: 0 auto; background: #a8e6c0; border-radius: 0 0 10px 10px; min-height: 40px; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 6px 12px; font-size: 14px; color: #1a1a1a; text-align: center">
+<span><b style="font-weight: 600">Nuevo:</b> paga tu plan en efectivo en cualquier OXXO.</span>
+<a class="ann-btn" href="#precios" style="background: #1a1a1a; color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 500; padding: 5px 10px; border-radius: 6px">Ver precios</a>
+</div>
+</div>
+</header>
+
+<!-- Hero -->
+<section id="inicio" class="dots sec" style="position: relative; padding: 72px 0 56px; overflow: hidden">
+<div class="tunnel" aria-hidden="true">
+<div class="tglow"></div>
+<div class="tstage">
+<sc-for list="{{ tunL }}" as="c" hint-placeholder-count="9"><div class="tc tl" style="{{ c.style }}"><img src="{{ c.src }}" alt=""></div></sc-for>
+<sc-for list="{{ tunR }}" as="c" hint-placeholder-count="9"><div class="tc tr" style="{{ c.style }}"><img src="{{ c.src }}" alt=""></div></sc-for>
+</div>
+</div>
+<div class="wrap" style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 36px">
+<h1 class="serif h1" style="margin: 0; font-size: 68px; line-height: 1.12; color: #1a1a1a; max-width: 1100px">Tu agenda de <span class="rot"><span class="rot-in"><span>cortes</span><span>uñas</span><span>tatuajes</span><span>sesiones</span><span>clases</span><span>cortes</span></span></span> bajo control.</h1>
+
+<div class="reel-box" style="position: relative; width: 420px; max-width: none; height: 330px; display: flex; align-items: center; justify-content: center" aria-hidden="true">
+<div style="display: none">
+<div class="reel" style="display: flex; gap: 4px; width: max-content; zoom: 0.68">
+<div class="tile"><img src="/assets/screens/flow-1.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-resumen.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/flow-2.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-calendario.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/flow-3.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-nota.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/flow-4.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-bloqueo.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-perfil.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-gcal.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/flow-1.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-resumen.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/flow-2.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-calendario.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/flow-3.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-nota.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/flow-4.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-bloqueo.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-perfil.webp" alt=""></div>
+<div class="tile"><img src="/assets/screens/f-gcal.webp" alt=""></div>
+</div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 560px">
+<p style="margin: 0; font-size: 17px; font-weight: 500; color: #1a1a1a">Agenda en línea para negocios de servicio.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3d3d3d">Tus clientes reservan solos desde un link, sin descargar nada. Tú ves todas tus citas en un solo lugar y flowlift les recuerda su cita por correo.</p>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: -8px">
+<a class="btn btn-p" href="#" style="height: 52px; padding: 0 26px; font-size: 16px">Crea tu link gratis</a>
+<p style="margin: 0; font-size: 13.5px; color: #767676">Gratis para empezar · Sin tarjeta · Hecho en México</p>
+</div>
+</div>
+
+<div style="margin-top: 72px; display: flex; align-items: center; gap: 32px; overflow: hidden; padding-left: 24px">
+<span style="flex-shrink: 0; font-size: 13.5px; color: #767676">Hecho para quien<br>trabaja con citas</span>
+<div style="overflow: hidden; flex: 1; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)" aria-label="Barberías, estéticas, fotografía, entrenadores, tatuajes, consultorios">
+<div class="marq" style="display: flex; gap: 56px; width: max-content; font-size: 22px; font-weight: 600; color: #3d3d3d; letter-spacing: -0.3px">
+<sc-for list="{{ verts2 }}" as="v" hint-placeholder-count="12"><span style="display: inline-flex; align-items: center; gap: 10px; white-space: nowrap"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="{{ v.icon }}" size="{{ n22 }}"></x-import>{{ v.name }}</span></sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Producto: del link a tu agenda -->
+<section id="producto" class="show">
+<div class="show-l" style="{{ bgStyle }}; position: relative; overflow: hidden; min-height: 760px; transition: background 400ms cubic-bezier(.2,0,0,1)">
+<div style="position: absolute; left: 50%; bottom: -80px; transform: translateX(-62%) rotate(-6deg); width: 330px; height: 660px; background: #1a1a1a; border-radius: 48px; padding: 11px; box-shadow: 0 30px 60px rgba(0,0,0,0.25)">
+<div style="width: 100%; height: 100%; border-radius: 38px; overflow: hidden; background: #ffffff"><img src="/assets/screens/m-servicio.webp" alt="Página de reserva: Elige tu servicio" style="display: block; width: 100%; height: auto"></div>
+</div>
+<div style="position: absolute; left: 32px; right: 32px; top: 48px; max-width: 460px; margin: 0 auto; background: #1a1a1a; border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.3); overflow: hidden">
+<div role="tablist" aria-label="Tipo de negocio" style="display: flex; gap: 4px; padding: 10px; overflow-x: auto; border-bottom: 1px solid rgba(255,255,255,0.1)">
+<sc-for list="{{ tabs }}" as="t" hint-placeholder-count="5"><button class="tab" type="button" role="tab" aria-selected="{{ t.on }}" onClick="{{ t.pick }}" style="{{ t.style }}">{{ t.name }}</button></sc-for>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 16px 14px 16px 18px; color: #ffffff">
+<span style="color: rgba(255,255,255,0.55); display: inline-flex"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Calendar" size="{{ n18 }}"></x-import></span>
+<sc-if value="{{ parityA }}" hint-placeholder-val="{{ true }}"><span style="flex: 1; font-size: 15.5px; overflow: hidden"><span class="type">{{ v.ask }}</span><span class="caret"></span></span></sc-if>
+<sc-if value="{{ parityB }}" hint-placeholder-val="{{ false }}"><span style="flex: 1; font-size: 15.5px; overflow: hidden"><span class="type">{{ v.ask }}</span><span class="caret"></span></span></sc-if>
+<span style="width: 34px; height: 34px; border-radius: 999px; background: #2db35d; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span>
+</div>
+</div>
+</div>
+
+<div class="dots-dk" style="padding: 56px 32px; display: flex; flex-direction: column; gap: 32px; color: #ffffff; overflow: hidden">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 520px">
+<h2 class="serif h2" style="margin: 0; font-size: 44px; line-height: 1.1; color: #ffffff">Del link a tu agenda, <span style="font-style: italic; color: #5ec987">sin mensajes de por medio.</span></h2>
+<p style="margin: 0; font-size: 16px; color: rgba(255,255,255,0.72)">Tu cliente elige, flowlift confirma, le recuerda su cita y la acomoda en tu agenda.</p>
+</div>
+<div class="canvas-zoom" style="position: relative; width: 620px; height: 560px; align-self: center" role="img" aria-label="{{ v.aria }}">
+<sc-if value="{{ parityA }}" hint-placeholder-val="{{ true }}"><dc-import name="Nodes" svc="{{ v.svc }}" when="{{ v.when }}" who="{{ v.who }}" hint-size="620px,560px"></dc-import></sc-if>
+<sc-if value="{{ parityB }}" hint-placeholder-val="{{ false }}"><dc-import name="Nodes" svc="{{ v.svc }}" when="{{ v.when }}" who="{{ v.who }}" hint-size="620px,560px"></dc-import></sc-if>
+</div>
+</div>
+</section>
+
+<!-- Para quién (estilo polaroid) -->
+<section id="para-quien" class="dots sec" style="padding: 120px 0 112px; overflow: hidden">
+<div class="wrap" style="display: flex; flex-direction: column; align-items: center; gap: 56px">
+<h2 class="serif h2" style="margin: 0; font-size: 52px; line-height: 1.1; text-align: center; max-width: 760px">Una sola herramienta para <span style="font-style: italic; color: #27a052">ti, tus clientes y tu equipo.</span></h2>
+<div class="sol">
+<div class="sol-side fade" style="display: flex; flex-direction: column; gap: 40px">
+<div class="pol" style="transform: rotate(-2deg)"><img src="{{ s.l1img }}" alt="{{ s.l1 }}"><span class="pol-tag">{{ s.l1 }}</span></div>
+</div>
+<div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 10px; display: flex; flex-direction: column">
+<div style="height: 280px; border-radius: 8px; overflow: hidden; background: #e8f8ee"><img src="{{ s.img }}" alt="{{ s.title }}" style="width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block"></div>
+<div style="padding: 20px 14px 14px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; align-items: center; gap: 10px"><h3 class="serif" style="margin: 0; font-size: 38px; line-height: 1.1">{{ s.title }}</h3><sc-if value="{{ s.hasPlan }}" hint-placeholder-val="{{ false }}"><span style="font-size: 12px; font-weight: 600; color: #1a6638; background: #e8f8ee; border-radius: 999px; padding: 3px 10px">{{ s.plan }}</span></sc-if></div>
+<p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #3d3d3d">{{ s.text }}</p>
+</div>
+</div>
+<div class="sol-side" style="display: flex; flex-direction: column; gap: 40px">
+<div class="pol" style="transform: rotate(2deg)"><img src="{{ s.r1img }}" alt="{{ s.r1 }}"><span class="pol-tag">{{ s.r1 }}</span></div>
+</div>
+</div>
+<div role="tablist" aria-label="Para quién" style="display: inline-flex; gap: 4px; padding: 6px; background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; flex-wrap: wrap; justify-content: center">
+<sc-for list="{{ sols }}" as="t" hint-placeholder-count="3"><button class="tab" type="button" role="tab" aria-selected="{{ t.on }}" onClick="{{ t.pick }}" style="{{ t.style }}">{{ t.name }}</button></sc-for>
+</div>
+</div>
+</section>
+
+<!-- Cómo empiezas -->
+<section class="sec" style="padding: 104px 0; background: #ffffff; border-top: 1px solid #e0e0e0">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 48px">
+<h2 class="serif h2" style="margin: 0; font-size: 44px; line-height: 1.1">Listo en <span style="font-style: italic; color: #27a052">tres pasos.</span></h2>
+<div class="g-3">
+<div style="border-top: 1px solid #1a1a1a; padding-top: 20px; display: flex; flex-direction: column; gap: 10px"><span class="serif" style="font-size: 44px; line-height: 1; color: #2db35d">1</span><h3 style="margin: 0; font-size: 19px; font-weight: 600">Agrega tus servicios y horario</h3><p style="margin: 0; font-size: 15.5px; color: #3d3d3d">Nombre, duración y precio de cada servicio. Marca tus días, tus horas y tus descansos.</p></div>
+<div style="border-top: 1px solid #1a1a1a; padding-top: 20px; display: flex; flex-direction: column; gap: 10px"><span class="serif" style="font-size: 44px; line-height: 1; color: #2db35d">2</span><h3 style="margin: 0; font-size: 19px; font-weight: 600">Comparte tu link</h3><p style="margin: 0; font-size: 15.5px; color: #3d3d3d">En tu bio de Instagram, tu estado de WhatsApp o como código QR en tu mostrador.</p></div>
+<div style="border-top: 1px solid #1a1a1a; padding-top: 20px; display: flex; flex-direction: column; gap: 10px"><span class="serif" style="font-size: 44px; line-height: 1; color: #2db35d">3</span><h3 style="margin: 0; font-size: 19px; font-weight: 600">Atiende; flowlift hace el resto</h3><p style="margin: 0; font-size: 15.5px; color: #3d3d3d">Confirmaciones, recordatorios por correo y tu agenda siempre al día.</p></div>
+</div>
+</div>
+</section>
+
+<!-- Precios -->
+<section id="precios" class="dots-dk sec" style="padding: 120px 0; color: #ffffff">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 48px">
+<h2 class="serif h2" style="margin: 0; font-size: 60px; line-height: 1.05; text-align: center; color: #ffffff">Precios</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
+<p style="margin: 0; font-size: 15px; color: rgba(255,255,255,0.72)">En pesos mexicanos. Sin contratos.</p>
+<div style="display: inline-flex; align-items: center; gap: 12px; font-size: 15px">
+<span style="{{ mLbl }}">Mensual</span>
+<button class="sw" type="button" role="switch" aria-checked="{{ annual }}" aria-label="Pago anual" onClick="{{ toggleAnnual }}" style="{{ swStyle }}"><span class="knob" style="{{ knobStyle }}"></span></button>
+<span style="{{ aLbl }}">Anual</span>
+</div>
+</div>
+<div class="g-3" style="align-items: stretch">
+<div style="background: #fafafa; color: #1a1a1a; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-size: 22px; font-weight: 600">Starter</h3><p style="margin: 0; font-size: 14.5px; color: #3d3d3d">Para empezar con un servicio.</p></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-size: 64px; font-weight: 500; line-height: 1; letter-spacing: -2px">$0</span><div style="display: flex; gap: 6px"><span style="font-size: 12.5px; background: #e0e0e0; border-radius: 4px; padding: 3px 8px">para siempre</span></div></div>
+<div style="background: #f0f0f0; border-radius: 10px; padding: 16px; font-size: 14.5px; color: #3d3d3d">Reservas ilimitadas desde el primer día.</div>
+<div style="height: 1px; background: #e0e0e0"></div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; flex: 1">
+<sc-for list="{{ starterF }}" as="f" hint-placeholder-count="4"><li style="display: flex; gap: 8px; align-items: flex-start"><span style="display: inline-flex; padding-top: 2px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import></span><span>{{ f }}</span></li></sc-for>
+</ul>
+<a class="btn btn-p" href="#" style="width: 100%">Empieza gratis</a>
+</div>
+
+<div style="background: #fafafa; color: #1a1a1a; border-radius: 16px; padding: 21px; border: 1px solid #2db35d; box-shadow: 0 0 0 1px #2db35d, 0 0 40px rgba(45,179,93,0.45); display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px"><div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-size: 22px; font-weight: 600">Pro+</h3><p style="margin: 0; font-size: 14.5px; color: #3d3d3d">Para quien vive de su agenda.</p></div><span style="font-size: 12px; font-weight: 600; background: #1a1a1a; color: #ffffff; border-radius: 4px; padding: 3px 8px">Recomendado</span></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-size: 64px; font-weight: 500; line-height: 1; letter-spacing: -2px">{{ proPrice }}</span><div style="display: flex; gap: 6px; flex-wrap: wrap"><span style="font-size: 12.5px; background: #e0e0e0; border-radius: 4px; padding: 3px 8px">{{ per }}</span><sc-if value="{{ annual }}" hint-placeholder-val="{{ false }}"><span style="font-size: 12.5px; background: #a8e6c0; border-radius: 4px; padding: 3px 8px">2 meses gratis</span></sc-if></div></div>
+<div style="background: #f0f0f0; border-radius: 10px; padding: 16px; font-size: 14.5px; color: #3d3d3d; display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 600; color: #1a1a1a">Prueba 14 días sin tarjeta</span><span>O paga $945 en efectivo por 92 días.</span></div>
+<div style="height: 1px; background: #e0e0e0"></div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; flex: 1">
+<sc-for list="{{ proF }}" as="f" hint-placeholder-count="4"><li style="display: flex; gap: 8px; align-items: flex-start"><span style="display: inline-flex; padding-top: 2px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import></span><span>{{ f }}</span></li></sc-for>
+</ul>
+<a class="btn btn-p" href="#" style="width: 100%">Prueba Pro+ gratis</a>
+</div>
+
+<div style="background: #fafafa; color: #1a1a1a; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-size: 22px; font-weight: 600">Teams</h3><p style="margin: 0; font-size: 14.5px; color: #3d3d3d">Para salones y estudios con equipo.</p></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-size: 64px; font-weight: 500; line-height: 1; letter-spacing: -2px">{{ teamsPrice }}</span><div style="display: flex; gap: 6px; flex-wrap: wrap"><span style="font-size: 12.5px; background: #e0e0e0; border-radius: 4px; padding: 3px 8px">{{ per }}</span><sc-if value="{{ annual }}" hint-placeholder-val="{{ false }}"><span style="font-size: 12.5px; background: #a8e6c0; border-radius: 4px; padding: 3px 8px">2 meses gratis</span></sc-if></div></div>
+<div style="background: #f0f0f0; border-radius: 10px; padding: 16px; font-size: 14.5px; color: #3d3d3d; display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 600; color: #1a1a1a">Prueba 14 días sin tarjeta</span><span>O paga $1,750 en efectivo por 92 días.</span></div>
+<div style="height: 1px; background: #e0e0e0"></div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; flex: 1">
+<sc-for list="{{ teamsF }}" as="f" hint-placeholder-count="5"><li style="display: flex; gap: 8px; align-items: flex-start"><span style="display: inline-flex; padding-top: 2px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import></span><span>{{ f }}</span></li></sc-for>
+</ul>
+<a class="btn btn-p" href="#" style="width: 100%">Prueba Teams gratis</a>
+</div>
+</div>
+<p style="margin: 0; text-align: center; font-size: 14px; color: rgba(255,255,255,0.65)">La prueba no pide tarjeta. Si al terminar no agregas un método de pago, tu cuenta regresa a Starter sin cobro. El pago en OXXO cubre 92 días y no se renueva solo.</p>
+
+<div class="g-4" style="border-top: 1px solid rgba(255,255,255,0.12); padding-top: 48px">
+<div style="display: flex; gap: 12px; align-items: flex-start"><span style="color: #5ec987; display: inline-flex; padding-top: 2px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Lock" size="{{ n18 }}"></x-import></span><span style="font-size: 14.5px; color: rgba(255,255,255,0.8)"><b style="color: #ffffff; font-weight: 600; display: block">Conexión cifrada</b>Todo viaja por un canal seguro.</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><span style="color: #5ec987; display: inline-flex; padding-top: 2px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="UserCheck" size="{{ n18 }}"></x-import></span><span style="font-size: 14.5px; color: rgba(255,255,255,0.8)"><b style="color: #ffffff; font-weight: 600; display: block">Entras con Google o Microsoft</b>No guardamos tu contraseña.</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><span style="color: #5ec987; display: inline-flex; padding-top: 2px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CreditCard" size="{{ n18 }}"></x-import></span><span style="font-size: 14.5px; color: rgba(255,255,255,0.8)"><b style="color: #ffffff; font-weight: 600; display: block">Pagos con Stripe y OXXO</b>Nunca vemos los datos de tu tarjeta.</span></div>
+<div style="display: flex; gap: 12px; align-items: flex-start"><span style="color: #5ec987; display: inline-flex; padding-top: 2px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ShieldCheck" size="{{ n18 }}"></x-import></span><span style="font-size: 14.5px; color: rgba(255,255,255,0.8)"><b style="color: #ffffff; font-weight: 600; display: block">Tus datos no se venden</b>Son tuyos, siempre.</span></div>
+</div>
+</div>
+</section>
+
+<!-- Fundador + Preguntas -->
+<section id="preguntas" class="dots sec" style="padding: 120px 0">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 96px; max-width: 900px">
+<div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 10px; display: flex; gap: 28px; align-items: center; flex-wrap: wrap">
+<div style="width: 200px; aspect-ratio: 4 / 5; border-radius: 8px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #767676; font-size: 13px; text-align: center; padding: 16px; flex-shrink: 0">[Tu foto 4:5]</div>
+<div style="flex: 1; min-width: 260px; display: flex; flex-direction: column; gap: 14px; padding: 12px 16px 12px 0">
+<h2 class="serif" style="margin: 0; font-size: 38px; line-height: 1.1">Hola, soy <span style="font-style: italic; color: #27a052">Juan.</span></h2>
+<p style="margin: 0; font-size: 16.5px; line-height: 1.65; color: #3d3d3d">[2 o 3 frases con tus palabras: por qué creaste flowlift y para quién.] Si quieres, te ayudo a configurar tu agenda.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px"><a class="btn btn-sm" href="#" style="background: #1a1a1a; color: #ffffff"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="MessageSquare" size="{{ n16 }}"></x-import>Escríbeme por WhatsApp</a><span style="font-size: 13.5px; color: #767676">Juan Alanis · Fundador</span></div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 24px">
+<h2 class="serif h2" style="margin: 0; font-size: 52px; line-height: 1.1; text-align: center">Preguntas frecuentes</h2>
+<div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 4px 24px">
+<sc-for list="{{ faqs }}" as="q" hint-placeholder-count="6">
+<div style="{{ q.border }}">
+<button class="faq-q" type="button" aria-expanded="{{ q.open }}" onClick="{{ q.toggle }}"><span>{{ q.q }}</span><span style="{{ q.icoStyle }}"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Plus" size="{{ n18 }}"></x-import></span></button>
+<sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}"><p class="fade" style="margin: 0; padding: 0 0 22px; font-size: 16px; line-height: 1.65; color: #3d3d3d; max-width: 720px">{{ q.a }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA final + pie -->
+<footer class="dots-dk" style="color: #ffffff">
+<div class="wrap sec" style="padding-top: 120px; padding-bottom: 104px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px">
+<h2 class="serif h2" style="margin: 0; font-size: 64px; line-height: 1.05; color: #ffffff">Tu agenda, <span style="font-style: italic; color: #5ec987">lista hoy.</span></h2>
+<a href="#" aria-label="Crea tu link gratis" style="display: flex; align-items: center; gap: 14px; width: 100%; max-width: 440px; background: #fafafa; color: #1a1a1a; text-decoration: none; border-radius: 14px; padding: 12px 12px 12px 18px">
+<span style="color: #767676; display: inline-flex"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Link" size="{{ n18 }}"></x-import></span>
+<span style="flex: 1; text-align: left; font-size: 15px">Crea tu link gratis, sin tarjeta</span>
+<span style="width: 36px; height: 36px; border-radius: 999px; background: #2db35d; color: #ffffff; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span>
+</a>
+</div>
+<div class="wrap" style="border-top: 1px solid rgba(255,255,255,0.12); padding-top: 48px; padding-bottom: 40px">
+<div class="g-foot">
+<div style="display: flex; flex-direction: column; gap: 14px"><img src="/assets/brand/logo-white.svg" alt="flowlift" style="height: 24px; width: auto; align-self: flex-start"><p style="margin: 0; font-size: 14px; color: rgba(255,255,255,0.7); max-width: 280px">Tecnología al servicio de las personas. Hecho en México.</p></div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><span style="font-weight: 600">Producto</span><a href="#producto" style="color: rgba(255,255,255,0.7); text-decoration: none">Cómo funciona</a><a href="#precios" style="color: rgba(255,255,255,0.7); text-decoration: none">Precios</a><a href="#preguntas" style="color: rgba(255,255,255,0.7); text-decoration: none">Preguntas</a><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none">Entrar</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><span style="font-weight: 600">Ayuda</span><a href="https://flowlift.co/ayuda" style="color: rgba(255,255,255,0.7); text-decoration: none">Centro de ayuda</a><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none">WhatsApp</a><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none">[Correo de contacto]</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><span style="font-weight: 600">Legal</span><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none">Términos y condiciones</a><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none">Aviso de privacidad</a></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 48px; font-size: 12.5px; color: rgba(255,255,255,0.55)"><span>© 2026 flowlift</span><span>OXXO es marca registrada de FEMSA Comercio. Stripe, Google y Microsoft son marcas de sus respectivos dueños.</span></div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6200}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { annual: false, open: 0, tab: 0, flip: 0, sol: 0 };
+  }
+  componentDidMount() {
+    this.timer = setInterval(() => this.next(), 8000);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+  next() { this.setState({ tab: (this.state.tab + 1) % 5, flip: this.state.flip + 1 }); }
+  pick(i) {
+    clearInterval(this.timer);
+    this.timer = setInterval(() => this.next(), 8000);
+    this.setState({ tab: i, flip: this.state.flip + 1 });
+  }
+  renderVals() {
+    const st = this.state;
+    const annual = st.annual;
+    const V = [
+      { name: 'Barbería', ask: 'Corte caballero, jueves 11:00 AM', svc: 'Corte caballero', when: 'jue 11:00 AM', who: 'Con Carlos', bg: 'background: linear-gradient(150deg, #1a6638 0%, #2db35d 55%, #a8e6c0 100%)' },
+      { name: 'Estética', ask: 'Tinte completo, sábado 10:00 AM', svc: 'Tinte completo', when: 'sáb 10:00 AM', who: 'Con Gina', bg: 'background: linear-gradient(150deg, #2db35d 0%, #5ec987 50%, #e8f8ee 100%)' },
+      { name: 'Uñas', ask: 'Manicura en gel, viernes 5:00 PM', svc: 'Manicura en gel', when: 'vie 5:00 PM', who: 'Con Ana', bg: 'background: linear-gradient(150deg, #5ec987 0%, #a8e6c0 50%, #f5f5f5 100%)' },
+      { name: 'Tatuajes', ask: 'Sesión de tatuaje, lunes 4:00 PM', svc: 'Sesión de tatuaje', when: 'lun 4:00 PM', who: 'Con Juan', bg: 'background: linear-gradient(150deg, #1a1a1a 0%, #1a6638 60%, #2db35d 100%)' },
+      { name: 'Fotografía', ask: 'Sesión de fotos, domingo 9:00 AM', svc: 'Sesión de fotos', when: 'dom 9:00 AM', who: 'Estudio', bg: 'background: linear-gradient(150deg, #3d3d3d 0%, #1a6638 55%, #5ec987 100%)' }
+    ];
+    const v = V[st.tab];
+    v.aria = 'Flujo de una reserva: el cliente elige ' + v.svc + ', elige día y hora, recibe su confirmación, un recordatorio por correo y la cita aparece en tu agenda';
+    const onT = 'background-color: #2db35d; color: #ffffff;';
+    const offT = 'background-color: transparent; color: rgba(255,255,255,0.78);';
+    const tabs = V.map((t, i) => ({ name: t.name, on: st.tab === i, style: st.tab === i ? onT : offT, pick: () => this.pick(i) }));
+    const S = [
+      { name: 'Para ti', title: 'Para ti', hasPlan: false, plan: '', img: '/assets/screens/d-resumen.webp', text: 'Citas de la semana, ingresos estimados, pendientes y no-shows de un vistazo. Crea citas a mano, reagenda en dos toques y bloquea vacaciones o descansos.', l1: 'Bloqueos', l1img: '/assets/screens/f-bloqueo.webp', r1: 'Tu resumen', r1img: '/assets/screens/f-resumen.webp' },
+      { name: 'Para tus clientes', title: 'Tus clientes', hasPlan: false, plan: '', img: '/assets/screens/m-servicio.webp', text: 'Reservan desde tu link sin descargar nada ni crear cuenta, reciben su confirmación por correo y agregan la cita a Google, Outlook o Apple Calendar.', l1: 'Confirmación', l1img: '/assets/screens/flow-4.webp', r1: 'Notas de clientes', r1img: '/assets/screens/f-nota.webp' },
+      { name: 'Para tu equipo', title: 'Tu equipo', hasPlan: true, plan: 'Teams', img: '/assets/screens/d-calendario.webp', text: 'Cada quien con su horario y sus servicios. Tus clientes eligen con quién y flowlift asigna la cita según la disponibilidad de cada persona.', l1: '¿Con quién?', l1img: '/assets/screens/flow-2.webp', r1: 'Agenda del día', r1img: '/assets/screens/f-calendario.webp' }
+    ];
+    const onS = 'background-color: #2db35d; color: #ffffff;';
+    const offS = 'background-color: transparent; color: #1a1a1a;';
+    const sols = S.map((t, i) => ({ name: t.name, on: st.sol === i, style: st.sol === i ? onS : offS, pick: () => this.setState({ sol: i }) }));
+    const verts = [
+      { icon: 'Scissors', name: 'Barberías' }, { icon: 'Store', name: 'Estéticas' }, { icon: 'Camera', name: 'Fotografía' },
+      { icon: 'PersonStanding', name: 'Entrenadores' }, { icon: 'Pencil', name: 'Tatuajes' }, { icon: 'Users', name: 'Consultorios' }
+    ];
+    const raw = [
+      ['¿Necesito tarjeta para empezar?', 'No. Starter es gratis para siempre y la prueba de 14 días de Pro+ y Teams tampoco pide tarjeta. Si al terminar no agregas un método de pago, tu cuenta regresa a Starter sin ningún cobro.'],
+      ['¿Mis clientes tienen que descargar algo?', 'No. Reservan desde tu link en el navegador de su celular, sin app y sin crear cuenta. Solo dejan su nombre, WhatsApp y correo.'],
+      ['¿Cómo funciona el pago en OXXO?', 'Generas tu ficha desde la app y la pagas en cualquier OXXO dentro de los 3 días siguientes. Tu plan se activa cuando se confirma el pago, lo cual puede tardar hasta un día hábil, y cubre 92 días. No se renueva solo.'],
+      ['¿Mandan recordatorios por WhatsApp?', 'Hoy los recordatorios, confirmaciones y avisos de cancelación se envían por correo electrónico.'],
+      ['¿Puedo cancelar cuando quiera?', 'Sí. No hay contratos. Conservas tu plan hasta que termina el periodo que ya pagaste y después tu cuenta pasa a Starter.'],
+      ['¿Puedo usar flowlift desde mi celular?', 'Sí. Abres tu panel desde el navegador de tu celular o tu computadora. No hay nada que instalar.']
+    ];
+    const faqs = raw.map((r, i) => ({
+      q: r[0], a: r[1], open: st.open === i,
+      border: i === raw.length - 1 ? '' : 'border-bottom: 1px solid #e0e0e0;',
+      icoStyle: 'display: inline-flex; color: #767676; transition: transform 250ms cubic-bezier(.2,0,0,1);' + (st.open === i ? ' transform: rotate(45deg);' : ''),
+      toggle: () => this.setState({ open: st.open === i ? -1 : i })
+    }));
+    const photos = ['/assets/tunnel/t00.webp','/assets/tunnel/t01.webp','/assets/tunnel/t02.webp','/assets/tunnel/t03.webp','/assets/tunnel/t04.webp','/assets/tunnel/t05.webp','/assets/tunnel/t06.webp','/assets/tunnel/t07.webp','/assets/tunnel/t08.webp','/assets/tunnel/t09.webp','/assets/tunnel/t10.webp','/assets/tunnel/t11.webp','/assets/tunnel/t12.webp','/assets/tunnel/t13.webp','/assets/tunnel/t14.webp','/assets/tunnel/t15.webp','/assets/tunnel/t16.webp','/assets/tunnel/t17.webp'];
+    const step = 22 / 9;
+    const tunL = photos.slice(0, 9).map((id, i) => ({ src: id, style: 'animation-delay: -' + (i * step).toFixed(2) + 's;' }));
+    const tunR = photos.slice(9).map((id, i) => ({ src: id, style: 'animation-delay: -' + (i * step + step / 2).toFixed(2) + 's;' }));
+    return {
+      tunL, tunR,
+      n16: 16, n18: 18, n22: 22,
+      v, tabs, bgStyle: v.bg,
+      parityA: st.flip % 2 === 0, parityB: st.flip % 2 === 1,
+      s: S[st.sol], sols,
+      verts2: verts.concat(verts),
+      annual,
+      toggleAnnual: () => this.setState({ annual: !annual }),
+      swStyle: annual ? 'background-color: #2db35d;' : 'background-color: #767676;',
+      knobStyle: annual ? 'transform: translateX(18px);' : 'transform: translateX(0);',
+      mLbl: annual ? 'color: rgba(255,255,255,0.6);' : 'color: #ffffff; font-weight: 600;',
+      aLbl: annual ? 'color: #ffffff; font-weight: 600;' : 'color: rgba(255,255,255,0.6);',
+      per: annual ? 'MXN al año' : 'MXN al mes',
+      proPrice: annual ? '$3,490' : '$349',
+      teamsPrice: annual ? '$6,490' : '$649',
+      starterF: ['Tu página de reservas, link y código QR', '1 servicio activo', 'Recordatorios por correo', 'Resumen de tu negocio'],
+      proF: ['Todo lo de Starter', 'Servicios ilimitados', 'Directorio de clientes con notas e historial', 'Bloqueos de varios días'],
+      teamsF: ['Todo lo de Pro+', 'Perfiles para tu equipo', 'Horarios y servicios por persona', 'Asignación automática de citas', 'Agenda de todo el equipo'],
+      faqs
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* flowlift — generated from tokens.json */
+:root, [data-theme="default"] {
+  --green-primary: #2db35d;
+  --green-primary-hover: #27a052;
+  --green-mid: #5ec987;
+  --green-light: #a8e6c0;
+  --green-pale: #e8f8ee;
+  --ink: #1a1a1a;
+  --grey-dark: #3d3d3d;
+  --grey-mid: #767676;
+  --grey-light: #c4c4c4;
+  --grey-pale: #f5f5f5;
+  --white: #ffffff;
+  --surface: #fafafa;
+  --red: #e05050;
+  --red-pale: #fff0f0;
+  --red-dark: #7a1515;
+  --yellow: #f0ad00;
+  --yellow-pale: #fff8e6;
+  --yellow-dark: #7a5500;
+  --blue: #3b82f6;
+  --color-success: var(--green-primary);
+  --color-warning: var(--yellow);
+  --color-error: var(--red);
+  --color-info: var(--blue);
+  --text-primary: var(--ink);
+  --text-secondary: var(--grey-dark);
+  --text-tertiary: var(--grey-mid);
+  --text-placeholder: var(--grey-light);
+  --text-on-dark: rgba(255,255,255,0.92);
+  --text-on-dark-muted: rgba(255,255,255,0.55);
+  --text-on-brand: var(--white);
+  --text-link: var(--green-primary);
+  --surface-page: var(--surface);
+  --surface-card: var(--white);
+  --surface-subtle: var(--grey-pale);
+  --surface-brand: var(--green-primary);
+  --surface-brand-subtle: var(--green-pale);
+  --surface-dark: var(--ink);
+  --border-default: #ebebeb;
+  --border-input: #e0e0e0;
+  --border-focus: var(--green-primary);
+  --border-subtle: #f0f0f0;
+  --badge-success-bg: var(--green-pale);
+  --badge-success-fg: #1a6638;
+  --badge-warning-bg: var(--yellow-pale);
+  --badge-warning-fg: var(--yellow-dark);
+  --badge-error-bg: var(--red-pale);
+  --badge-error-fg: var(--red-dark);
+  --badge-neutral-bg: var(--grey-pale);
+  --badge-neutral-fg: var(--grey-mid);
+  --shadow-sm: 0 1px 3px rgba(26,26,26,0.06);
+  --shadow-elevated: 0 8px 28px rgba(26,26,26,0.12);
+  --shadow-brand-hover: 0 4px 16px rgba(45,179,93,0.3);
+  --ring-focus: 0 0 0 3px rgba(45,179,93,0.12);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-20: 80px;
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+  --ease-out: cubic-bezier(0.16,1,0.3,1);
+  --ease-in: cubic-bezier(0.7,0,0.84,0);
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --lh-display: 1.1;
+  --lh-tight: 1;
+  --ls-tight: -1px;
+  --ls-label: 2px;
+  --font-display: 'DM Serif Display',serif;
+  --font-sans: 'DM Sans',sans-serif;
+  --font-mono: 'Courier New',monospace;
+  --text-text-display-xl: 400 52px/1.4 var(--font-sans);
+  --text-text-display-l: 400 38px/1.4 var(--font-sans);
+  --text-text-heading: 400 24px/1.25 var(--font-sans);
+  --text-text-subheading: 400 18px/1.4 var(--font-sans);
+  --text-text-body: 400 16px/1.6 var(--font-sans);
+  --text-text-body-sm: 400 14px/1.4 var(--font-sans);
+  --text-text-small: 400 13px/1.4 var(--font-sans);
+  --text-text-caption: 400 11px/1.4 var(--font-sans);
+}
+.text-display-xl {
+  font-family: var(--font-sans);
+  font-size: 52px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-display-l {
+  font-family: var(--font-sans);
+  font-size: 38px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-heading {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-subheading {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-body-sm {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-small {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-caption {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}

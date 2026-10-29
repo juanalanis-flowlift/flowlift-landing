@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>flowlift — Tu agenda, bajo control (propuesta editorial)</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/flowliftdesignsystem_980fa8/tokens.css">
+<link rel="stylesheet" href="ds/flowliftdesignsystem_980fa8/components/bundle.css">
+<script src="ds/flowliftdesignsystem_980fa8/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400;1,9..40,500&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap">
+<style>
+body{margin:0;background:#faf8f3}
+a{color:#1a1a1a}a:hover{color:#1a6638}
+.ed{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a1a;background:#faf8f3;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:clip}
+.ed *{box-sizing:border-box}
+.serif{font-family:'DM Serif Display',Georgia,serif;font-weight:400}
+.it{font-style:italic}
+.num{font-family:'DM Serif Display',Georgia,serif;font-size:18px;letter-spacing:1px;color:#1a1a1a}
+.muted{color:#6b665c}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+.pill{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 6px 0 20px;border-radius:999px;background:#1a1a1a;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;white-space:nowrap;transition:background-color 150ms cubic-bezier(.2,0,0,1),transform 100ms cubic-bezier(.2,0,0,1)}
+.pill:hover{background:#1a6638;color:#ffffff}.pill:active{transform:scale(.97)}
+.pill-dot{width:34px;height:34px;border-radius:999px;background:#2db35d;color:#ffffff;display:inline-flex;align-items:center;justify-content:center}
+.pill-l{background:#ffffff;color:#1a1a1a;border:1px solid #e4dfd3}.pill-l:hover{background:#f1ede4;color:#1a1a1a}
+.chip{display:inline-flex;align-items:center;gap:0;vertical-align:middle;margin:0 4px;transform:translateY(-4px)}
+.chip-a{background:#1a1a1a;color:#ffffff;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;height:40px;padding:0 16px;border-radius:999px;display:inline-flex;align-items:center}
+.chip-b{width:40px;height:40px;border-radius:999px;background:#2db35d;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;margin-left:-4px;border:3px solid #faf8f3}
+.hero{position:relative;min-height:940px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:120px 0 80px}
+.giant{margin:0;text-align:center;font-family:'DM Serif Display',Georgia,serif;font-weight:400;text-transform:uppercase;font-size:clamp(58px,9.6vw,150px);line-height:.92;letter-spacing:-1.5px;color:#1a1a1a;position:relative;z-index:3}
+.giant span{display:block}
+.col{position:absolute;inset:0;z-index:2;pointer-events:none}
+.ph{position:absolute;overflow:hidden;border-radius:2px;box-shadow:0 10px 30px rgba(26,26,26,0.12);animation:phin 900ms cubic-bezier(.05,.7,.1,1) both}
+.ph img{width:100%;height:100%;object-fit:cover;display:block;animation:flt 9s ease-in-out infinite alternate}
+@keyframes phin{from{opacity:0;transform:scale(.86) translateY(24px)}to{opacity:1;transform:none}}
+@keyframes flt{from{transform:scale(1.04) translateY(-6px)}to{transform:scale(1.04) translateY(6px)}}
+.blk{position:absolute;border-radius:2px;animation:phin 900ms cubic-bezier(.05,.7,.1,1) both}
+.cue{width:1px;height:150px;background:#1a1a1a;margin:56px auto 0;position:relative;transform-origin:top}
+.cue::before{content:'';position:absolute;top:-3px;left:-2px;width:5px;height:5px;border-radius:999px;background:#1a1a1a}
+.cue::after{content:'';position:absolute;bottom:-3px;left:-3px;width:7px;height:7px;border-radius:999px;background:#2db35d}
+.center{max-width:640px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px}
+.h2{margin:0;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(34px,4.2vw,54px);line-height:1.12;letter-spacing:-.5px}
+.body{margin:0;font-size:19px;line-height:1.7;color:#3d3d3d}
+.orbit-sec{position:relative;height:1000px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ring{position:absolute;left:50%;top:50%;width:1160px;height:760px;margin:-380px 0 0 -580px}
+.oi{position:absolute;overflow:hidden;border-radius:2px;box-shadow:0 8px 22px rgba(26,26,26,0.1)}
+.oi img{width:100%;height:100%;object-fit:cover;display:block}
+.big-p{margin:0;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(32px,3.6vw,50px);line-height:1.28;letter-spacing:-.3px;max-width:900px}
+.exp{position:relative;height:190vh}
+.exp-in{position:sticky;top:0;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.exp-img{position:absolute;inset:0;clip-path:inset(12% 14% 12% 14% round 4px)}
+.exp-img img{width:100%;height:100%;object-fit:cover;display:block}
+.chap{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:flex-end}
+.chap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.chap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 35%,rgba(10,20,14,0.72) 100%)}
+.chap-t{position:relative;z-index:1;padding:0 40px 64px;max-width:900px;color:#ffffff}
+.stat{margin:0;font-family:'DM Sans',sans-serif;font-weight:600;font-size:clamp(38px,5.4vw,76px);line-height:1.04;letter-spacing:-1.5px;color:#c9f2d8}
+.stat i{font-weight:500}
+.chap-s{margin:14px 0 0;font-family:'DM Serif Display',Georgia,serif;font-size:22px;color:rgba(255,255,255,0.92)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;position:relative}
+.step{display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative;z-index:1}
+.step-ic{width:56px;height:56px;border-radius:999px;background:#faf8f3;border:1px solid #1a1a1a;display:inline-flex;align-items:center;justify-content:center}
+.rail-line{position:absolute;left:28px;right:28px;top:28px;height:1px;background:#1a1a1a;transform-origin:left;z-index:0}
+.rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 28px 28px;scrollbar-width:thin}
+.card{flex:0 0 300px;scroll-snap-align:start;display:flex;flex-direction:column;gap:14px}
+.card-img{height:380px;overflow:hidden;border-radius:2px;background:#ebe6db}
+.card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 600ms cubic-bezier(.2,0,0,1)}
+.card:hover .card-img img{transform:scale(1.05)}
+.mq{display:flex;gap:16px;width:max-content;animation:mq 70s linear infinite}
+.mq-r{animation-direction:reverse;animation-duration:80s}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mq img{width:170px;height:302px;object-fit:cover;border-radius:10px;display:block;box-shadow:0 6px 18px rgba(26,26,26,0.1)}
+.pr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #1a1a1a}
+.pr-c{padding:36px 32px 40px;display:flex;flex-direction:column;gap:18px}
+.pr-c + .pr-c{border-left:1px solid #d9d3c5}
+.price{font-family:'DM Serif Display',Georgia,serif;font-size:72px;line-height:1;letter-spacing:-1.5px}
+.li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;color:#3d3d3d}
+.faq-q{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0;cursor:pointer;font-family:'DM Serif Display',Georgia,serif;font-size:26px;line-height:1.25;color:#1a1a1a}
+.faq-q:focus-visible,.pill:focus-visible{outline:2px solid #2db35d;outline-offset:3px}
+.float{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:6px;background:rgba(250,248,243,0.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid #e4dfd3;border-radius:999px;padding:5px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;pointer-events:none}
+.nav > *{pointer-events:auto}
+.navlink{font-size:13.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;text-decoration:none;color:#1a1a1a}
+@supports (animation-timeline: view()) {
+.rv{animation:rv linear both;animation-timeline:view();animation-range:entry 5% cover 32%}
+@keyframes rv{from{opacity:0;transform:translateY(48px)}to{opacity:1;transform:none}}
+.giant{animation:dim linear both;animation-timeline:scroll(root);animation-range:0 700px}
+@keyframes dim{from{color:#1a1a1a}to{color:#c9c3b6}}
+.par{animation:par linear both;animation-timeline:scroll(root);animation-range:0 1000px}
+@keyframes par{from{translate:0 0}to{translate:var(--dx,0px) var(--dy,-200px)}}
+.cue{animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 45%}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.ring-s{animation:spread linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+@keyframes spread{0%{transform:scale(.45) rotate(-14deg);opacity:0}35%{opacity:1}60%{transform:scale(1) rotate(0deg);opacity:1}100%{transform:scale(1.5) rotate(8deg);opacity:.25}}
+.exp-img{animation:unclip linear both;animation-timeline:view();animation-range:entry 30% contain 40%}
+@keyframes unclip{from{clip-path:inset(12% 14% 12% 14% round 4px)}to{clip-path:inset(0 0 0 0 round 0)}}
+.chap img{animation:zoomout linear both;animation-timeline:view();animation-range:entry 0% exit 0%}
+@keyframes zoomout{from{transform:scale(1.18)}to{transform:scale(1)}}
+.chap-t{animation:rv linear both;animation-timeline:view();animation-range:entry 40% entry 100%}
+.rail-line{animation:line linear both;animation-timeline:view();animation-range:entry 20% cover 45%}
+@keyframes line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+}
+@media (prefers-reduced-motion: reduce){
+.ph,.ph img,.blk,.mq,.rv,.giant,.par,.cue,.ring-s,.exp-img,.chap img,.chap-t,.rail-line{animation:none!important}
+.exp-img{clip-path:none}
+}
+@media (max-width: 900px){
+.hero{min-height:760px}
+.col{zoom:.62}
+.ring{zoom:.6}
+.orbit-sec{height:760px}
+.steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
+.rail-line{display:none}
+.pr{grid-template-columns:minmax(0,1fr)}
+.pr-c + .pr-c{border-left:none;border-top:1px solid #d9d3c5}
+.nav-hide{display:none!important}
+.chap-t{padding:0 24px 96px}
+}
+@media (max-width: 700px){
+.hm{display:none!important}
+}
+@media (max-width: 560px){
+.col{zoom:.62}
+.steps{grid-template-columns:minmax(0,1fr)}
+.float-txt{display:none}
+}
+</style>
+</helmet>
+<div class="ed">
+
+<!-- Navegación -->
+<header class="nav">
+<a href="#inicio" aria-label="flowlift, inicio"><img src="/assets/brand/logo.svg" alt="flowlift" style="height: 26px; width: auto; display: block"></a>
+<nav aria-label="Principal" style="display: flex; align-items: center; gap: 26px">
+<a class="navlink nav-hide" href="#como">Cómo funciona</a>
+<a class="navlink nav-hide" href="#precios">Precios</a>
+<a class="navlink" href="#">Entrar</a>
+</nav>
+</header>
+
+<!-- Hero -->
+<section id="inicio" class="hero">
+<h1 class="giant"><span>Tu agenda</span><span class="it" style="color: #2db35d">bajo</span><span>control.</span></h1>
+<div class="col" aria-hidden="true">
+<div class="ph par" style="left: 3%; top: 150px; width: 150px; height: 190px; --dx: -40px; --dy: -260px; animation-delay: 200ms"><img src="/assets/photos/unas.webp" alt=""></div>
+<div class="ph par hm" style="left: 10%; top: 470px; width: 118px; height: 118px; --dx: -30px; --dy: -140px; animation-delay: 320ms"><img src="/assets/photos/cliente-pagando.webp" alt=""></div>
+<div class="ph par" style="left: 2%; top: 700px; width: 170px; height: 210px; --dx: -60px; --dy: -380px; animation-delay: 440ms"><img src="/assets/photos/barbero.webp" alt=""></div>
+<div class="ph par" style="right: 4%; top: 120px; width: 160px; height: 204px; --dx: 40px; --dy: -300px; animation-delay: 260ms"><img src="/assets/photos/estilista-y-clienta.webp" alt=""></div>
+<div class="ph par hm" style="right: 11%; top: 470px; width: 110px; height: 140px; --dx: 30px; --dy: -160px; animation-delay: 380ms"><img src="/assets/photos/entrenador.webp" alt=""></div>
+<div class="ph par" style="right: 3%; top: 700px; width: 180px; height: 180px; --dx: 50px; --dy: -420px; animation-delay: 500ms"><img src="/assets/photos/duena-con-telefono.webp" alt=""></div>
+<div class="ph par hm" style="left: 27%; top: 54px; width: 96px; height: 96px; --dy: -110px; animation-delay: 560ms"><img src="/assets/photos/entrada-salon.webp" alt=""></div>
+<div class="ph par hm" style="right: 27%; top: 40px; width: 128px; height: 84px; --dy: -200px; animation-delay: 620ms"><img src="/assets/photos/full-estilista-hero.webp" alt=""></div>
+<div class="ph par hm" style="left: 22%; bottom: 30px; width: 92px; height: 114px; --dy: -80px; animation-delay: 700ms"><img src="/assets/photos/fotografa.webp" alt=""></div>
+<div class="ph par hm" style="right: 21%; bottom: 20px; width: 92px; height: 92px; --dy: -240px; animation-delay: 760ms"><img src="/assets/photos/tatuador.webp" alt=""></div>
+<div class="blk par" style="left: 15%; top: 300px; width: 38px; height: 28px; background: #a8e6c0; --dy: -320px; animation-delay: 820ms"></div>
+<div class="blk par" style="right: 9%; top: 640px; width: 50px; height: 34px; background: #d9c6a0; --dy: -260px; animation-delay: 900ms"></div>
+<div class="blk par hm" style="right: 17%; top: 330px; width: 26px; height: 20px; background: #2db35d; --dy: -180px; animation-delay: 940ms"></div>
+</div>
+<div style="position: relative; z-index: 3; margin-top: 72px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; padding: 0 24px">
+<p style="margin: 0; font-size: 18px; color: #3d3d3d; max-width: 520px">Agenda en línea para negocios de servicio. Tus clientes reservan solos desde un link, sin descargar nada.</p>
+<a class="pill" href="#">Crea tu link gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+</div>
+<div class="cue" aria-hidden="true"></div>
+</section>
+
+<!-- 01 -->
+<section style="padding: 120px 0 140px">
+<div class="center rv" style="padding: 0 28px">
+<span class="num">[ 01 ]</span>
+<h2 class="h2">Tu negocio crece <span class="it">una cita a la vez.</span></h2>
+<p class="body">Detrás de cada silla, cada estación y cada sesión hay alguien que vive de su agenda. flowlift existe para que esa agenda trabaje por ti: tus clientes reservan, el sistema confirma y recuerda, y tú te dedicas a lo que sabes hacer.</p>
+</div>
+</section>
+
+<!-- 02 · Órbita -->
+<section class="orbit-sec" aria-labelledby="q2">
+<div class="ring-s" style="position: absolute; inset: 0" aria-hidden="true">
+<div class="ring">
+<sc-for list="{{ orbit }}" as="o" hint-placeholder-count="16"><div class="oi" style="{{ o.style }}"><sc-if value="{{ o.img }}" hint-placeholder-val="{{ true }}"><img src="{{ o.src }}" alt=""></sc-if></div></sc-for>
+</div>
+</div>
+<div class="center" style="position: relative; z-index: 2; max-width: 520px; padding: 0 24px">
+<span class="num">[ 02 ]</span>
+<h2 id="q2" class="h2">¿Y si tu agenda <span class="it">se llenara sola?</span></h2>
+</div>
+</section>
+
+<!-- Párrafo con pastillas -->
+<section style="padding: 80px 0 140px">
+<div class="wrap rv">
+<p class="big-p">Tus clientes reservan desde <span class="chip"><span class="chip-a">tu link</span><span class="chip-b"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Link" size="{{ n16 }}"></x-import></span></span> en segundos, les llega su confirmación por <span class="chip"><span class="chip-a">WhatsApp</span><span class="chip-b"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="MessageSquare" size="{{ n16 }}"></x-import></span></span> y apartan su lugar con un <span class="chip"><span class="chip-a">anticipo</span><span class="chip-b"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CreditCard" size="{{ n16 }}"></x-import></span></span>.<br><span class="it" style="color: #8a836f">Tú solo atiendes.</span></p>
+</div>
+</section>
+
+<!-- Imagen que se expande -->
+<section class="exp" aria-label="Estilista atendiendo a su clienta">
+<div class="exp-in">
+<div class="exp-img"><img src="/assets/photos/full-estilista-hero.webp" alt="Estilista atendiendo a su clienta en un salón luminoso"></div>
+</div>
+</section>
+
+<!-- Capítulos -->
+<div>
+<section class="chap"><img src="/assets/photos/full-barbero.webp" alt="Barbero cortando el cabello a un cliente"><div class="chap-t"><p class="stat">Mientras cortas, <i>tus clientes agendan solos.</i></p><p class="chap-s">Tu link muestra solo tus horarios libres, a cualquier hora del día.</p></div></section>
+<section class="chap"><img src="/assets/photos/full-telefono.webp" alt="Dos compañeras revisando la agenda en el celular"><div class="chap-t"><p class="stat">Una cita perdida <i>son $400 menos.</i></p><p class="chap-s">Recordatorios automáticos por WhatsApp, donde tus clientes sí los leen.</p></div></section>
+<section class="chap"><img src="/assets/photos/full-fitness.webp" alt="Coach dirigiendo una clase grupal"><div class="chap-t"><p class="stat">Tu semana, <i>de un vistazo.</i></p><p class="chap-s">Sesiones, horarios y clientes en un solo lugar, sin reagendar por chat.</p></div></section>
+<section class="chap"><img src="/assets/photos/full-equipo.webp" alt="Estilistas trabajando juntas en el salón"><div class="chap-t"><p class="stat">¿Quién atiende <i>a la de las 4?</i></p><p class="chap-s">Todo tu equipo ve la misma agenda. Cada quien con sus horarios.</p></div></section>
+</div>
+
+<!-- 03 · Cómo funciona -->
+<section id="como" style="padding: 140px 0 120px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 72px">
+<div class="center rv">
+<p class="muted" style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-size: 20px">Vamos más a fondo…</p>
+<span class="num" style="margin-top: 48px">[ 03 ]</span>
+<h2 class="h2">Así se ve una cita <span class="it">sin pendientes.</span></h2>
+<p class="body">Agenda, anticipo, confirmación y recordatorio en un solo flujo. Tu cliente llega y tú solo atiendes.</p>
+</div>
+<div class="steps rv">
+<div class="rail-line" aria-hidden="true"></div>
+<div class="step"><span class="step-ic"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Calendar" size="{{ n22 }}"></x-import></span><span class="num">Agenda</span><p style="margin: 0; font-size: 16px; color: #3d3d3d">Desde tu link elige servicio, día y hora. Solo ve tus horarios libres.</p></div>
+<div class="step"><span class="step-ic"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CreditCard" size="{{ n22 }}"></x-import></span><span class="num">Paga</span><p style="margin: 0; font-size: 16px; color: #3d3d3d">Deja su anticipo con tarjeta, en OXXO o paga en tu local.</p></div>
+<div class="step"><span class="step-ic"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CircleCheck" size="{{ n22 }}"></x-import></span><span class="num">Confirma</span><p style="margin: 0; font-size: 16px; color: #3d3d3d">Le llega su confirmación por WhatsApp. Tú no escribes nada.</p></div>
+<div class="step"><span class="step-ic"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="UserCheck" size="{{ n22 }}"></x-import></span><span class="num">Llega</span><p style="margin: 0; font-size: 16px; color: #3d3d3d">Un recordatorio antes de la cita para que no se le olvide.</p></div>
+</div>
+</div>
+</section>
+
+<!-- 04 · Para cada oficio -->
+<section style="padding: 60px 0 140px">
+<div class="wrap rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 620px"><span class="num">[ 04 ]</span><h2 class="h2">Hecho para quien <span class="it">trabaja con citas.</span></h2></div>
+<p class="muted" style="margin: 0; font-size: 15px">Desliza para ver más</p>
+</div>
+<div class="rail" role="list">
+<sc-for list="{{ oficios }}" as="c" hint-placeholder-count="9"><article class="card" role="listitem"><div class="card-img"><img src="{{ c.src }}" alt="{{ c.alt }}"></div><span class="num" style="font-size: 15px; color: #6b665c">{{ c.tag }}</span><h3 class="serif" style="margin: 0; font-size: 26px; line-height: 1.15">{{ c.t }}</h3><p style="margin: 0; font-size: 15.5px; color: #3d3d3d">{{ c.d }}</p></article></sc-for>
+</div>
+</section>
+
+<!-- Historias de Instagram -->
+<section style="padding: 100px 0; background: #f1ede4; overflow: hidden">
+<div class="center rv" style="margin-bottom: 56px; padding: 0 28px">
+<span class="num">[ 05 ]</span>
+<h2 class="h2">Lo que platicamos <span class="it">cada semana.</span></h2>
+<p class="body" style="font-size: 17px">Ideas cortas para ordenar tu agenda, en nuestras historias de Instagram.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px" aria-hidden="true">
+<div class="mq"><sc-for list="{{ reelsA }}" as="r" hint-placeholder-count="20"><img src="{{ r }}" alt=""></sc-for></div>
+<div class="mq mq-r"><sc-for list="{{ reelsB }}" as="r" hint-placeholder-count="20"><img src="{{ r }}" alt=""></sc-for></div>
+</div>
+<div style="display: flex; justify-content: center; margin-top: 48px"><a class="pill pill-l" href="#">Síguenos en Instagram<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a></div>
+</section>
+
+<!-- 06 · Precios -->
+<section id="precios" style="padding: 140px 0 120px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px"><span class="num">[ 06 ]</span><h2 class="h2">Menos de $12 al día. <span class="it">Con una cita que salves, ya se pagó.</span></h2></div>
+<p class="muted" style="margin: 0; font-size: 15px; max-width: 320px">Precios en pesos, sin contratos. Los planes de pago incluyen 14 días gratis, sin tarjeta.</p>
+</div>
+<div class="pr rv">
+<div class="pr-c">
+<span class="num">Starter</span>
+<span class="price">$0</span>
+<span class="muted" style="font-size: 14.5px">Para siempre. Para empezar con un servicio.</span>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Tu link de reservas y código QR</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>1 servicio activo, reservas ilimitadas</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Agenda sin citas encimadas</span>
+</div>
+<a class="pill pill-l" href="#" style="margin-top: auto; align-self: flex-start">Empieza gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+</div>
+<div class="pr-c" style="background: #ffffff">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 8px"><span class="num">Pro+</span><span style="font-size: 12px; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; background: #a8e6c0; padding: 4px 10px; border-radius: 999px">Precio de lanzamiento</span></div>
+<span class="price">$349<span style="font-family: 'DM Sans', sans-serif; font-size: 16px; letter-spacing: 0; color: #6b665c"> / mes</span></span>
+<span class="muted" style="font-size: 14.5px">Para quien vive de su agenda. $11.63 al día.</span>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Todo lo de Starter</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Servicios ilimitados</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Historial de clientes con notas</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Bloqueos de varios días</span>
+</div>
+<a class="pill" href="#" style="margin-top: auto; align-self: flex-start">14 días gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+</div>
+<div class="pr-c">
+<span class="num">Equipos</span>
+<span class="price">$649<span style="font-family: 'DM Sans', sans-serif; font-size: 16px; letter-spacing: 0; color: #6b665c"> / mes</span></span>
+<span class="muted" style="font-size: 14.5px">Para salones y estudios con equipo.</span>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Todo lo de Pro+</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Todo tu equipo en una agenda</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Horarios y servicios por persona</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Asignación automática de citas</span>
+</div>
+<a class="pill pill-l" href="#" style="margin-top: auto; align-self: flex-start">14 días gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+</div>
+</div>
+<p class="muted rv" style="margin: 0; font-size: 14.5px">Paga mes a mes con tarjeta, o anual y llévate 2 meses gratis. También puedes pagar en efectivo en OXXO por periodos de 92 días.</p>
+</div>
+</section>
+
+<!-- Preguntas -->
+<section style="padding: 40px 0 140px">
+<div class="wrap" style="max-width: 880px">
+<div class="center rv" style="margin-bottom: 40px"><span class="num">[ 07 ]</span><h2 class="h2">Lo que <span class="it">nos preguntan.</span></h2></div>
+<div class="rv" style="border-top: 1px solid #1a1a1a">
+<sc-for list="{{ faqs }}" as="q" hint-placeholder-count="5">
+<div style="border-bottom: 1px solid #d9d3c5">
+<button class="faq-q" type="button" aria-expanded="{{ q.open }}" onClick="{{ q.toggle }}"><span>{{ q.q }}</span><span style="{{ q.ico }}"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Plus" size="{{ n22 }}"></x-import></span></button>
+<sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 0 0 28px; font-size: 17px; line-height: 1.7; color: #3d3d3d; max-width: 700px">{{ q.a }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- Cierre -->
+<footer style="background: #1a1a1a; color: #faf8f3; position: relative; overflow: hidden">
+<div style="padding: 160px 28px 120px; display: flex; flex-direction: column; align-items: center; gap: 40px; text-align: center; position: relative">
+<div class="rv" style="position: absolute; left: 6%; top: 90px; width: 150px; height: 190px; overflow: hidden; border-radius: 2px; opacity: .9" aria-hidden="true"><img src="/assets/photos/estilista.webp" alt="" style="width: 100%; height: 100%; object-fit: cover"></div>
+<div class="rv" style="position: absolute; right: 7%; top: 220px; width: 130px; height: 130px; overflow: hidden; border-radius: 2px; opacity: .9" aria-hidden="true"><img src="/assets/photos/unas-estacion.webp" alt="" style="width: 100%; height: 100%; object-fit: cover"></div>
+<h2 class="rv" style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; text-transform: uppercase; font-size: clamp(56px, 9vw, 140px); line-height: .92; letter-spacing: -1.5px; color: #faf8f3">Tu agenda,<br><span class="it" style="color: #5ec987">lista hoy.</span></h2>
+<p class="rv" style="margin: 0; font-size: 18px; color: rgba(250,248,243,0.75)">Crea tu link en minutos. Sin tarjeta.</p>
+<a class="pill rv" href="#" style="background: #faf8f3; color: #1a1a1a">Crea tu link gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+</div>
+<div style="border-top: 1px solid rgba(250,248,243,0.14); padding: 36px 28px 96px; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 14px; color: rgba(250,248,243,0.7)">
+<img src="/assets/brand/logo-white.svg" alt="flowlift" style="height: 22px; width: auto">
+<div style="display: flex; flex-wrap: wrap; gap: 24px"><a href="https://flowlift.co/ayuda" style="color: rgba(250,248,243,0.8); text-decoration: none">Ayuda</a><a href="#" style="color: rgba(250,248,243,0.8); text-decoration: none">WhatsApp</a><a href="#" style="color: rgba(250,248,243,0.8); text-decoration: none">Términos</a><a href="#" style="color: rgba(250,248,243,0.8); text-decoration: none">Privacidad</a></div>
+<span>© 2026 flowlift · Hecho en México</span>
+</div>
+</footer>
+
+<!-- Pastilla flotante -->
+<div class="float">
+<span class="float-txt" style="font-size: 13px; font-weight: 600; letter-spacing: .6px; padding: 0 12px 0 14px; color: #3d3d3d">14 DÍAS GRATIS</span>
+<a class="pill" href="#" style="height: 40px; font-size: 13px">Crea tu link<span class="pill-dot" style="width: 30px; height: 30px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n14 }}"></x-import></span></a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":9800}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { open: 0 }; }
+  renderVals() {
+    const b = (p) => p;
+    const pics = ['/assets/photos/c01.webp','/assets/photos/c02.webp','/assets/photos/c04.webp','/assets/photos/c05.webp','/assets/photos/c07.webp','/assets/photos/recepcionista.webp','/assets/photos/estilista-y-clienta.webp','/assets/photos/c17.webp','/assets/photos/consultoria.webp','/assets/photos/eventos.webp','/assets/photos/inflables.webp','/assets/photos/estilista.webp'];
+    const blocks = ['#a8e6c0', '#d9c6a0', '#2db35d', '#8fa89a'];
+    const N = 16, rx = 500, ry = 320;
+    const orbit = [];
+    for (let i = 0; i < N; i++) {
+      const a = (i / N) * Math.PI * 2 - Math.PI / 2;
+      const isImg = i % 4 !== 3;
+      const w = isImg ? [118, 92, 140, 104][i % 4] : 36 + (i % 3) * 8;
+      const h = isImg ? Math.round(w * (i % 3 === 0 ? 1.25 : 0.78)) : Math.round(w * 0.7);
+      const x = 580 + Math.cos(a) * rx * (0.86 + (i % 3) * 0.08) - w / 2;
+      const y = 380 + Math.sin(a) * ry * (0.86 + ((i + 1) % 3) * 0.08) - h / 2;
+      const bg = isImg ? '' : ' background: ' + blocks[i % blocks.length] + ';';
+      orbit.push({ img: isImg, src: isImg ? b(pics[(i * 7) % pics.length]) : '', style: 'left: ' + Math.round(x) + 'px; top: ' + Math.round(y) + 'px; width: ' + w + 'px; height: ' + h + 'px;' + bg + (isImg ? '' : ' box-shadow: none;') });
+    }
+    const oficios = [
+      { src: '/assets/photos/barbero.webp', alt: 'Barbero con su cliente', tag: 'Barberos', t: 'Cada “¿tienes espacio hoy?” interrumpe un corte.', d: 'Con tu link, tus clientes ven tus horarios libres y tú sigues cortando.' },
+      { src: '/assets/photos/estilista.webp', alt: 'Estilista peinando a su clienta', tag: 'Estilistas', t: '¿Dos clientas a las 11?', d: 'Un horario ocupado ya no aparece disponible. El sábado se llena una sola vez.' },
+      { src: '/assets/photos/unas.webp', alt: 'Manicurista con su clienta', tag: 'Uñas', t: 'Una cita perdida son $400 menos.', d: 'Los recordatorios por WhatsApp ayudan a que sí lleguen.' },
+      { src: '/assets/photos/fotografa.webp', alt: 'Fotógrafa en su estudio', tag: 'Fotografía', t: '¿Fecha apartada de palabra?', d: 'Mejor con anticipo y confirmación clara.' },
+      { src: '/assets/photos/entrenador.webp', alt: 'Entrenadora personal con su cliente', tag: 'Coaches y fitness', t: 'Tu semana, de un vistazo.', d: 'Tus clientes eligen su horario desde tu link y tú ves la semana completa.' },
+      { src: '/assets/photos/tatuador.webp', alt: 'Tatuador preparando su estación', tag: 'Tatuadores', t: 'Una sesión de 4 horas merece algo que la aparte.', d: 'Pide anticipo al agendar y protege tu tarde.' },
+      { src: '/assets/photos/consultoria.webp', alt: 'Consultora con su equipo', tag: 'Consultorios', t: 'La agenda no puede vivir en una libreta.', d: 'Agenda digital para todo el equipo, con las referencias de cada cliente a la mano.' },
+      { src: '/assets/photos/eventos.webp', alt: 'Encargado de un salón de eventos', tag: 'Salones de eventos', t: 'Una tarde entera en juego.', d: 'Aparta fechas con anticipo y sin confusiones.' },
+      { src: '/assets/photos/inflables.webp', alt: 'Renta de inflables', tag: 'Renta de mobiliario', t: 'Fechas que no se cruzan.', d: 'Tus clientes ven qué días tienes libres y apartan con anticipo.' }
+    ];
+    const R = ['/assets/social/r01.webp','/assets/social/r02.webp','/assets/social/r03.webp','/assets/social/r04.webp','/assets/social/r05.webp','/assets/social/r06.webp','/assets/social/r07.webp','/assets/social/r08.webp','/assets/social/r09.webp','/assets/social/r10.webp','/assets/social/r11.webp','/assets/social/r12.webp','/assets/social/r13.webp','/assets/social/r14.webp','/assets/social/r15.webp','/assets/social/r16.webp','/assets/social/r17.webp','/assets/social/r18.webp','/assets/social/r19.webp','/assets/social/r20.webp'].map(b);
+    const A = R.slice(0, 10), Bb = R.slice(10);
+    const raw = [
+      ['¿Mis clientes tienen que descargar algo?', 'No. Reservan desde tu link en el navegador de su celular, sin descargar nada y sin crear cuenta.'],
+      ['¿Necesito tarjeta para empezar?', 'No. Starter es gratis para siempre y los 14 días gratis de Pro+ y Equipos tampoco piden tarjeta. Si al terminar no agregas un método de pago, tu cuenta regresa a Starter sin ningún cobro.'],
+      ['¿Cómo les llegan las confirmaciones y los recordatorios?', 'Por WhatsApp y por correo electrónico, de forma automática. Tú no tienes que escribir nada.'],
+      ['¿Puedo cobrar un anticipo?', 'Sí. Tus clientes pueden apartar su cita con un anticipo con tarjeta, en OXXO o pagando en tu local, y todo queda registrado en un solo lugar.'],
+      ['¿Puedo cancelar cuando quiera?', 'Sí. No hay contratos. Conservas tu plan hasta que termina el periodo que ya pagaste.']
+    ];
+    const faqs = raw.map((r, i) => ({ q: r[0], a: r[1], open: this.state.open === i,
+      ico: 'display: inline-flex; flex-shrink: 0; transition: transform 250ms cubic-bezier(.2,0,0,1);' + (this.state.open === i ? ' transform: rotate(45deg);' : ''),
+      toggle: () => this.setState({ open: this.state.open === i ? -1 : i }) }));
+    return { n14: 14, n16: 16, n22: 22, orbit, oficios, reelsA: A.concat(A), reelsB: Bb.concat(Bb), faqs };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>flowlift Citas — Tu agenda, bajo control</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/flowliftdesignsystem_980fa8/tokens.css">
+<link rel="stylesheet" href="ds/flowliftdesignsystem_980fa8/components/bundle.css">
+<script src="ds/flowliftdesignsystem_980fa8/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400;1,9..40,500&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap">
+<style>
+body{margin:0;background:#faf8f3}
+a{color:#1a1a1a}a:hover{color:#1a6638}
+.ed{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a1a;background:#faf8f3;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:clip}
+.ed *{box-sizing:border-box}
+.serif{font-family:'DM Serif Display',Georgia,serif;font-weight:400}
+.it{font-style:italic}
+.num{font-family:'DM Serif Display',Georgia,serif;font-size:18px;letter-spacing:1px;color:#1a1a1a}
+.muted{color:#6b665c}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+.h2{margin:0;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(34px,4.2vw,54px);line-height:1.12;letter-spacing:-.5px}
+.body{margin:0;font-size:19px;line-height:1.7;color:#3d3d3d}
+.center{max-width:680px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px}
+.pill{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 6px 0 20px;border-radius:999px;background:#1a1a1a;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;white-space:nowrap;transition:background-color 150ms cubic-bezier(.2,0,0,1),transform 100ms cubic-bezier(.2,0,0,1)}
+.pill:hover{background:#1a6638;color:#ffffff}.pill:active{transform:scale(.97)}
+.pill-dot{width:34px;height:34px;border-radius:999px;background:#2db35d;color:#ffffff;display:inline-flex;align-items:center;justify-content:center}
+.pill-l{background:#ffffff;color:#1a1a1a;border:1px solid #e4dfd3}.pill-l:hover{background:#f1ede4;color:#1a1a1a}
+.pill:focus-visible,.tab:focus-visible,.faq-q:focus-visible,.sw:focus-visible{outline:2px solid #2db35d;outline-offset:3px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;pointer-events:none}
+.nav > *{pointer-events:auto}
+.navlink{font-size:13.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;text-decoration:none;color:#1a1a1a}
+.giant{margin:0;font-family:'DM Serif Display',Georgia,serif;font-weight:400;text-transform:uppercase;font-size:clamp(52px,8vw,124px);line-height:.92;letter-spacing:-1.5px;text-align:center}
+.stage{position:relative;width:1060px;height:600px;margin:0 auto}
+.desk{position:absolute;left:0;top:40px;width:860px;background:#ffffff;border:1px solid #e4dfd3;border-radius:12px;overflow:hidden;box-shadow:0 30px 70px rgba(26,26,26,0.12)}
+.desk-bar{height:34px;display:flex;align-items:center;gap:6px;padding:0 14px;border-bottom:1px solid #efeae0;background:#faf8f3}
+.desk-bar i{width:9px;height:9px;border-radius:999px;background:#e0dace;display:block}
+.desk img{display:block;width:100%;height:auto}
+.phone{position:absolute;background:#1a1a1a;border-radius:42px;padding:9px;box-shadow:0 30px 60px rgba(26,26,26,0.22)}
+.phone-in{width:100%;height:100%;border-radius:34px;overflow:hidden;background:#ffffff;position:relative}
+.phone-in img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.chipn{position:absolute;display:flex;gap:10px;align-items:center;background:#ffffff;border:1px solid #e4dfd3;border-radius:14px;padding:10px 14px 10px 10px;box-shadow:0 12px 30px rgba(26,26,26,0.12);font-size:13px;line-height:1.35;animation:pop 600ms cubic-bezier(.05,.7,.1,1) both}
+.chipn b{font-weight:600;display:block;font-size:13.5px}
+.chip-ic{width:34px;height:34px;border-radius:10px;background:#e8f8ee;color:#1a6638;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 700ms cubic-bezier(.25,.8,.25,1) both}
+@keyframes draw{to{stroke-dashoffset:0}}
+.pop{animation:pop 450ms cubic-bezier(.05,.7,.1,1) both}
+.d1{animation-delay:.5s}.d2{animation-delay:1.2s}.d3{animation-delay:1.9s}.d4{animation-delay:2.6s}.d5{animation-delay:3.1s}
+.l1{animation-delay:.9s}.l2{animation-delay:1.6s}.l3{animation-delay:2.3s}.l4{animation-delay:2.8s}
+.type{display:inline-block;white-space:nowrap;animation:type 2.2s steps(34,end) .3s both}
+@keyframes type{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.caret{display:inline-block;width:2px;height:1.05em;background:#2db35d;margin-left:2px;vertical-align:text-bottom;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.show{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-radius:20px;overflow:hidden;min-height:720px}
+.show-l{position:relative;overflow:hidden;min-height:720px;background:#1a1a1a}
+.show-l img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity 700ms cubic-bezier(.2,0,0,1)}
+.show-l::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.35))}
+.tab{all:unset;box-sizing:border-box;cursor:pointer;height:36px;padding:0 14px;border-radius:8px;font-size:14px;font-weight:500;white-space:nowrap;display:inline-flex;align-items:center;transition:background-color 150ms cubic-bezier(.2,0,0,1),color 150ms cubic-bezier(.2,0,0,1)}
+.dots-dk{background-color:#1a1a1a;background-image:radial-gradient(rgba(255,255,255,0.09) 1px,transparent 1.2px);background-size:18px 18px}
+.tour{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px}
+.tour-ph{position:sticky;top:12vh;height:76vh;display:flex;align-items:center;justify-content:center}
+.tour-ph .phone{position:relative;width:310px;height:640px}
+.tour-ph .phone-in img{position:absolute;inset:0;opacity:0}
+.tour-ph .phone-in img.first{opacity:1}
+.feat{min-height:76vh;display:flex;flex-direction:column;justify-content:center;gap:16px;padding:40px 0}
+.feat-ph{display:none}
+.mock{position:absolute;inset:0;background:#faf8f3;display:flex;flex-direction:column;gap:12px;padding:56px 18px 18px;opacity:0}
+.mock-card{background:#ffffff;border:1px solid #ebebeb;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.badge{align-self:flex-start;font-size:11.5px;font-weight:600;color:#1a6638;background:#e8f8ee;border-radius:999px;padding:3px 10px}
+.pr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #1a1a1a}
+.pr-c{padding:36px 32px 40px;display:flex;flex-direction:column;gap:18px}
+.pr-c + .pr-c{border-left:1px solid #d9d3c5}
+.price{font-family:'DM Serif Display',Georgia,serif;font-size:72px;line-height:1;letter-spacing:-1.5px}
+.li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;color:#3d3d3d}
+.sw{all:unset;cursor:pointer;width:44px;height:26px;border-radius:999px;position:relative;display:inline-block;transition:background-color 150ms cubic-bezier(.2,0,0,1)}
+.knob{position:absolute;top:4px;left:4px;width:18px;height:18px;border-radius:999px;background:#ffffff;transition:transform 250ms cubic-bezier(.34,1.3,.64,1)}
+.faq-q{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0;cursor:pointer;font-family:'DM Serif Display',Georgia,serif;font-size:26px;line-height:1.25;color:#1a1a1a}
+.float{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:6px;background:rgba(250,248,243,0.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid #e4dfd3;border-radius:999px;padding:5px}
+@supports (animation-timeline: view()) {
+.rv{animation:rv linear both;animation-timeline:view();animation-range:entry 5% cover 32%}
+@keyframes rv{from{opacity:0;transform:translateY(48px)}to{opacity:1;transform:none}}
+.rise{animation:rise linear both;animation-timeline:scroll(root);animation-range:0 900px}
+@keyframes rise{from{translate:0 0}to{translate:0 var(--dy,-120px)}}
+}
+@supports (timeline-scope: --a) {
+.tour-ph .phone-in img,.tour-ph .mock{animation:swap linear both;animation-range:cover 30% cover 70%}
+.tour-ph .phone-in img.first{opacity:0}
+@keyframes swap{0%{opacity:0;transform:scale(1.02)}18%{opacity:1;transform:none}82%{opacity:1}100%{opacity:0}}
+}
+@supports not (timeline-scope: --a) {
+.tour-ph{display:none}
+.tour{grid-template-columns:minmax(0,1fr)}
+.feat-ph{display:block}
+}
+@media (prefers-reduced-motion: reduce){
+.chipn,.draw,.pop,.type,.caret,.rv,.rise{animation:none!important}
+.draw{stroke-dashoffset:0}
+}
+@media (max-width: 1100px){
+.stage{zoom:.8}
+}
+@media (max-width: 900px){
+.stage{zoom:.52}
+.show{grid-template-columns:minmax(0,1fr)}
+.show-l{min-height:420px}
+.canvas-zoom{zoom:.7}
+.tour{grid-template-columns:minmax(0,1fr)}
+.tour-ph{display:none}
+.feat-ph{display:block}
+.feat{min-height:auto}
+.pr{grid-template-columns:minmax(0,1fr)}
+.pr-c + .pr-c{border-left:none;border-top:1px solid #d9d3c5}
+.nav-hide{display:none!important}
+}
+@media (max-width: 560px){
+.stage{zoom:.34}
+.canvas-zoom{zoom:.5}
+.float-txt{display:none}
+}
+</style>
+</helmet>
+<div class="ed">
+
+<header class="nav">
+<a href="#" aria-label="flowlift, inicio" style="display: flex; align-items: center; gap: 10px; text-decoration: none"><img src="/assets/brand/logo.svg" alt="flowlift" style="height: 26px; width: auto; display: block"><span class="serif it" style="font-size: 20px; color: #1a6638">Citas</span></a>
+<nav aria-label="Principal" style="display: flex; align-items: center; gap: 26px">
+<a class="navlink nav-hide" href="#flujo">Cómo funciona</a>
+<a class="navlink nav-hide" href="#funciones">Funciones</a>
+<a class="navlink nav-hide" href="#precios">Precios</a>
+<a class="navlink" href="#">Entrar</a>
+</nav>
+</header>
+
+<!-- Hero: titular + pantallas del producto con conectores -->
+<section style="padding: 150px 0 100px; overflow: hidden">
+<div class="wrap" style="display: flex; flex-direction: column; align-items: center; gap: 26px">
+<span class="num">[ flowlift Citas ]</span>
+<h1 class="giant">Tu agenda, <span class="it" style="color: #2db35d">bajo</span> control.</h1>
+<p class="body" style="text-align: center; max-width: 620px">Tus clientes reservan desde un link, les llega su confirmación por WhatsApp y apartan con anticipo. Tú solo atiendes.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
+<a class="pill" href="#">14 días gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+<a class="pill pill-l" href="#flujo">Ver cómo funciona<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ChevronDown" size="{{ n16 }}"></x-import></span></a>
+</div>
+<span class="muted" style="font-size: 14px">Sin tarjeta. Plan gratis para siempre.</span>
+</div>
+
+<div class="stage" style="margin-top: 72px" role="img" aria-label="Panel de flowlift en computadora y página de reserva en celular, conectados con avisos de nueva reserva, recordatorio por WhatsApp y anticipo recibido">
+<div class="desk rise" style="--dy: -60px">
+<div class="desk-bar"><i></i><i></i><i></i></div>
+<img src="/assets/screens/d-resumen.webp" alt="">
+</div>
+<div class="phone rise" style="left: 780px; top: 120px; width: 270px; height: 560px; --dy: -150px"><div class="phone-in"><img src="/assets/screens/m-servicio.webp" alt=""></div></div>
+<svg width="1060" height="600" viewBox="0 0 1060 600" fill="none" aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; overflow: visible">
+<path class="draw l1" pathLength="1" d="M790 200 C720 200 700 70 640 50" stroke="#2db35d" stroke-width="1.5"></path>
+<path class="draw l2" pathLength="1" d="M790 360 C700 360 690 520 600 540" stroke="#2db35d" stroke-width="1.5"></path>
+<path class="draw l3" pathLength="1" d="M1050 300 C1110 300 1110 430 1060 470" stroke="#2db35d" stroke-width="1.5"></path>
+<circle cx="790" cy="200" r="3.5" fill="#2db35d"></circle>
+<circle cx="790" cy="360" r="3.5" fill="#2db35d"></circle>
+<circle cx="1050" cy="300" r="3.5" fill="#2db35d"></circle>
+</svg>
+<div class="chipn" style="left: 400px; top: 14px; animation-delay: 1.1s"><span class="chip-ic"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CalendarCheck" size="{{ n18 }}"></x-import></span><span><b>Nueva reserva</b>Julián E. · Corte caballero · sáb 11:00 AM</span></div>
+<div class="chipn" style="left: 330px; top: 516px; animation-delay: 1.8s"><span class="chip-ic"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="MessageSquare" size="{{ n18 }}"></x-import></span><span><b>Recordatorio enviado</b>Por WhatsApp, un día antes</span></div>
+<div class="chipn" style="left: 880px; top: 470px; animation-delay: 2.5s"><span class="chip-ic"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CreditCard" size="{{ n18 }}"></x-import></span><span><b>Anticipo recibido</b>$200 · Horario apartado</span></div>
+</div>
+</section>
+
+<!-- 01 · Del link a tu agenda (conectores) -->
+<section id="flujo" style="padding: 80px 0 140px">
+<div class="center rv" style="padding: 0 28px; margin-bottom: 56px">
+<span class="num">[ 01 ]</span>
+<h2 class="h2">Del link a tu agenda, <span class="it">sin mensajes de por medio.</span></h2>
+<p class="body">Tu cliente elige, flowlift confirma, le recuerda su cita y la acomoda en tu agenda.</p>
+</div>
+<div class="wrap" style="max-width: 1320px">
+<div class="show rv">
+<div class="show-l">
+<sc-for list="{{ bgs }}" as="g" hint-placeholder-count="5"><img class="bg" src="{{ g.src }}" alt="" style="{{ g.style }}"></sc-for>
+<div style="position: absolute; left: 28px; right: 28px; top: 28px; z-index: 2; max-width: 460px; background: #1a1a1a; border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.3); overflow: hidden">
+<div role="tablist" aria-label="Tipo de negocio" style="display: flex; gap: 4px; padding: 10px; overflow-x: auto; border-bottom: 1px solid rgba(255,255,255,0.1)">
+<sc-for list="{{ tabs }}" as="t" hint-placeholder-count="5"><button class="tab" type="button" role="tab" aria-selected="{{ t.on }}" onClick="{{ t.pick }}" style="{{ t.style }}">{{ t.name }}</button></sc-for>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 16px 14px 16px 18px; color: #ffffff">
+<span style="color: rgba(255,255,255,0.55); display: inline-flex"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Calendar" size="{{ n18 }}"></x-import></span>
+<sc-if value="{{ parityA }}" hint-placeholder-val="{{ true }}"><span style="flex: 1; font-size: 15.5px; overflow: hidden"><span class="type">{{ v.ask }}</span><span class="caret"></span></span></sc-if>
+<sc-if value="{{ parityB }}" hint-placeholder-val="{{ false }}"><span style="flex: 1; font-size: 15.5px; overflow: hidden"><span class="type">{{ v.ask }}</span><span class="caret"></span></span></sc-if>
+<span style="width: 34px; height: 34px; border-radius: 999px; background: #2db35d; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span>
+</div>
+</div>
+</div>
+<div class="dots-dk" style="padding: 48px 28px; display: flex; align-items: center; justify-content: center; overflow: hidden">
+<div class="canvas-zoom" style="position: relative; width: 620px; height: 560px" role="img" aria-label="{{ v.aria }}">
+<sc-if value="{{ parityA }}" hint-placeholder-val="{{ true }}"><dc-import name="Nodes" svc="{{ v.svc }}" when="{{ v.when }}" who="{{ v.who }}" hint-size="620px,560px"></dc-import></sc-if>
+<sc-if value="{{ parityB }}" hint-placeholder-val="{{ false }}"><dc-import name="Nodes" svc="{{ v.svc }}" when="{{ v.when }}" who="{{ v.who }}" hint-size="620px,560px"></dc-import></sc-if>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 02 · Funciones: celular fijo que cambia de pantalla -->
+<section id="funciones" style="padding: 60px 0 120px; {{ scopeStyle }}">
+<div class="center rv" style="padding: 0 28px; margin-bottom: 40px">
+<span class="num">[ 02 ]</span>
+<h2 class="h2">Todo lo que usas a diario. <span class="it">Nada de relleno.</span></h2>
+</div>
+<div class="wrap tour">
+<div class="tour-ph" aria-hidden="true">
+<div class="phone"><div class="phone-in">
+<sc-for list="{{ feats }}" as="f" hint-placeholder-count="8">
+<sc-if value="{{ f.hasImg }}" hint-placeholder-val="{{ true }}"><img class="{{ f.cls }}" src="{{ f.src }}" alt="" style="{{ f.tl }}"></sc-if>
+<sc-if value="{{ f.isMock }}" hint-placeholder-val="{{ false }}"><div class="mock" style="{{ f.tl }}">
+<span class="serif" style="font-size: 24px">Anticipos</span>
+<div class="mock-card"><span class="badge">Anticipo recibido</span><span style="font-size: 26px; font-weight: 600">$200</span><span class="muted" style="font-size: 13px">Sábado · 4:00 PM · Tinte completo</span></div>
+<div class="mock-card"><span style="font-size: 13px; font-weight: 600">Formas de pago</span><span class="li" style="font-size: 13.5px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CreditCard" size="{{ n16 }}"></x-import>Tarjeta</span><span class="li" style="font-size: 13.5px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Store" size="{{ n16 }}"></x-import>OXXO</span><span class="li" style="font-size: 13.5px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="MapPin" size="{{ n16 }}"></x-import>En tu local</span></div>
+</div></sc-if>
+</sc-for>
+</div></div>
+</div>
+<div>
+<sc-for list="{{ feats }}" as="f" hint-placeholder-count="8">
+<article class="feat" style="{{ f.vt }}">
+<span class="num" style="font-size: 15px; color: #6b665c">{{ f.n }}</span>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap"><h3 class="serif" style="margin: 0; font-size: 40px; line-height: 1.1">{{ f.t }}</h3><sc-if value="{{ f.hasPlan }}" hint-placeholder-val="{{ false }}"><span style="font-size: 12px; font-weight: 600; letter-spacing: .6px; text-transform: uppercase; background: #a8e6c0; border-radius: 999px; padding: 4px 10px">{{ f.plan }}</span></sc-if></div>
+<p class="body" style="max-width: 440px">{{ f.d }}</p>
+<sc-if value="{{ f.hasImg }}" hint-placeholder-val="{{ true }}"><div class="feat-ph" style="width: 260px; height: 520px; margin-top: 12px; background: #1a1a1a; border-radius: 38px; padding: 8px"><div style="width: 100%; height: 100%; border-radius: 30px; overflow: hidden"><img src="{{ f.src }}" alt="{{ f.t }}" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block"></div></div></sc-if>
+</article>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- 03 · Precios -->
+<section id="precios" style="padding: 120px 0">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 48px">
+<div class="rv" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px"><span class="num">[ 03 ]</span><h2 class="h2">Menos de $12 al día. <span class="it">Con una cita que salves, ya se pagó.</span></h2></div>
+<div style="display: inline-flex; align-items: center; gap: 12px; font-size: 15px">
+<span style="{{ mLbl }}">Mensual</span>
+<button class="sw" type="button" role="switch" aria-checked="{{ annual }}" aria-label="Pago anual" onClick="{{ toggleAnnual }}" style="{{ swStyle }}"><span class="knob" style="{{ knobStyle }}"></span></button>
+<span style="{{ aLbl }}">Anual · 2 meses gratis</span>
+</div>
+</div>
+<div class="pr rv">
+<div class="pr-c">
+<span class="num">Starter</span>
+<span class="price">$0</span>
+<span class="muted" style="font-size: 14.5px">Para siempre. Para empezar con un servicio.</span>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Tu link de reservas y código QR</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>1 servicio activo, reservas ilimitadas</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Agenda sin citas encimadas</span>
+</div>
+<a class="pill pill-l" href="#" style="margin-top: auto; align-self: flex-start">Empieza gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+</div>
+<div class="pr-c" style="background: #ffffff">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 8px"><span class="num">Pro+</span><span style="font-size: 12px; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; background: #a8e6c0; padding: 4px 10px; border-radius: 999px">Precio de lanzamiento</span></div>
+<span class="price">{{ proPrice }}<span style="font-family: 'DM Sans', sans-serif; font-size: 16px; letter-spacing: 0; color: #6b665c"> {{ per }}</span></span>
+<span class="muted" style="font-size: 14.5px">{{ proNote }}</span>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Todo lo de Starter</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Servicios ilimitados</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Historial de clientes con notas</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Bloqueos de varios días</span>
+</div>
+<a class="pill" href="#" style="margin-top: auto; align-self: flex-start">14 días gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+</div>
+<div class="pr-c">
+<span class="num">Equipos</span>
+<span class="price">{{ teamsPrice }}<span style="font-family: 'DM Sans', sans-serif; font-size: 16px; letter-spacing: 0; color: #6b665c"> {{ per }}</span></span>
+<span class="muted" style="font-size: 14.5px">{{ teamsNote }}</span>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Todo lo de Pro+</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Todo tu equipo en una agenda</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Horarios y servicios por persona</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Check" size="{{ n16 }}"></x-import>Asignación automática de citas</span>
+</div>
+<a class="pill pill-l" href="#" style="margin-top: auto; align-self: flex-start">14 días gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+</div>
+</div>
+<p class="muted rv" style="margin: 0; font-size: 14.5px">Precios en pesos, sin contratos. La prueba no pide tarjeta. También puedes pagar en efectivo en OXXO por periodos de 92 días.</p>
+<div class="rv" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; border-top: 1px solid #d9d3c5; padding-top: 36px">
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Lock" size="{{ n18 }}"></x-import>Conexión cifrada</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="UserCheck" size="{{ n18 }}"></x-import>Entras con Google o Microsoft</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="CreditCard" size="{{ n18 }}"></x-import>Pagos con Stripe y OXXO</span>
+<span class="li"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ShieldCheck" size="{{ n18 }}"></x-import>Tus datos no se venden</span>
+</div>
+</div>
+</section>
+
+<!-- Preguntas -->
+<section style="padding: 40px 0 140px">
+<div class="wrap" style="max-width: 880px">
+<div class="center rv" style="margin-bottom: 40px"><span class="num">[ 04 ]</span><h2 class="h2">Lo que <span class="it">nos preguntan.</span></h2></div>
+<div class="rv" style="border-top: 1px solid #1a1a1a">
+<sc-for list="{{ faqs }}" as="q" hint-placeholder-count="5">
+<div style="border-bottom: 1px solid #d9d3c5">
+<button class="faq-q" type="button" aria-expanded="{{ q.open }}" onClick="{{ q.toggle }}"><span>{{ q.q }}</span><span style="{{ q.ico }}"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="Plus" size="{{ n22 }}"></x-import></span></button>
+<sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 0 0 28px; font-size: 17px; line-height: 1.7; color: #3d3d3d; max-width: 700px">{{ q.a }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<footer style="background: #1a1a1a; color: #faf8f3">
+<div style="padding: 150px 28px 110px; display: flex; flex-direction: column; align-items: center; gap: 36px; text-align: center">
+<h2 class="rv" style="margin: 0; font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; text-transform: uppercase; font-size: clamp(54px, 8.5vw, 130px); line-height: .92; letter-spacing: -1.5px; color: #faf8f3">Tu agenda,<br><span class="it" style="color: #5ec987">lista hoy.</span></h2>
+<p class="rv" style="margin: 0; font-size: 18px; color: rgba(250,248,243,0.75)">Crea tu link en minutos. Sin tarjeta.</p>
+<a class="pill rv" href="#" style="background: #faf8f3; color: #1a1a1a">Crea tu link gratis<span class="pill-dot"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n16 }}"></x-import></span></a>
+</div>
+<div style="border-top: 1px solid rgba(250,248,243,0.14); padding: 36px 28px 96px; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 14px; color: rgba(250,248,243,0.7)">
+<img src="/assets/brand/logo-white.svg" alt="flowlift" style="height: 22px; width: auto">
+<div style="display: flex; flex-wrap: wrap; gap: 24px"><a href="#" style="color: rgba(250,248,243,0.8); text-decoration: none">flowlift</a><a href="https://flowlift.co/ayuda" style="color: rgba(250,248,243,0.8); text-decoration: none">Ayuda</a><a href="#" style="color: rgba(250,248,243,0.8); text-decoration: none">Términos</a><a href="#" style="color: rgba(250,248,243,0.8); text-decoration: none">Privacidad</a></div>
+<span>© 2026 flowlift · Hecho en México</span>
+</div>
+</footer>
+
+<div class="float">
+<span class="float-txt" style="font-size: 13px; font-weight: 600; letter-spacing: .6px; padding: 0 12px 0 14px; color: #3d3d3d">14 DÍAS GRATIS</span>
+<a class="pill" href="#" style="height: 40px; font-size: 13px">Crea tu link<span class="pill-dot" style="width: 30px; height: 30px"><x-import component-from-global-scope="FlowLiftDesignSystem_980fa8.Icon" name="ArrowRight" size="{{ n14 }}"></x-import></span></a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":9200}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { annual: false, open: 0, tab: 0, flip: 0 }; }
+  componentDidMount() { this.timer = setInterval(() => this.next(), 8000); }
+  componentWillUnmount() { clearInterval(this.timer); }
+  next() { this.setState({ tab: (this.state.tab + 1) % 5, flip: this.state.flip + 1 }); }
+  pick(i) { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 8000); this.setState({ tab: i, flip: this.state.flip + 1 }); }
+  renderVals() {
+    const st = this.state, annual = st.annual, b = (p) => p;
+    const V = [
+      { name: 'Barbería', ask: 'Corte caballero, jueves 11:00 AM', svc: 'Corte caballero', when: 'jue 11:00 AM', who: 'Con Carlos', img: '/assets/photos/barbero.webp' },
+      { name: 'Estética', ask: 'Tinte completo, sábado 10:00 AM', svc: 'Tinte completo', when: 'sáb 10:00 AM', who: 'Con Gina', img: '/assets/photos/estilista.webp' },
+      { name: 'Uñas', ask: 'Manicura en gel, viernes 5:00 PM', svc: 'Manicura en gel', when: 'vie 5:00 PM', who: 'Con Ana', img: '/assets/photos/unas.webp' },
+      { name: 'Tatuajes', ask: 'Sesión de tatuaje, lunes 4:00 PM', svc: 'Sesión de tatuaje', when: 'lun 4:00 PM', who: 'Con Juan', img: '/assets/photos/tatuador.webp' },
+      { name: 'Fotografía', ask: 'Sesión de fotos, domingo 9:00 AM', svc: 'Sesión de fotos', when: 'dom 9:00 AM', who: 'Estudio', img: '/assets/photos/fotografa.webp' }
+    ];
+    const v = Object.assign({}, V[st.tab]);
+    v.aria = 'Flujo de una reserva: el cliente elige ' + v.svc + ', elige día y hora, recibe su confirmación y un recordatorio, y la cita aparece en tu agenda';
+    const onT = 'background-color: #2db35d; color: #ffffff;', offT = 'background-color: transparent; color: rgba(255,255,255,0.78);';
+    const tabs = V.map((t, i) => ({ name: t.name, on: st.tab === i, style: st.tab === i ? onT : offT, pick: () => this.pick(i) }));
+    const bgs = V.map((t, i) => ({ src: b(t.img), style: 'opacity: ' + (st.tab === i ? 1 : 0) + ';' }));
+    const F = [
+      ['Tu página y tu link', 'Tu negocio con su propio link y código QR. Tus clientes ven tus servicios, precios y horarios libres.', '/assets/screens/f-perfil.webp', ''],
+      ['Agenda sin encimarse', 'Ve tus citas en lista o calendario. Crea citas a mano, reagenda o cancela en dos toques.', '/assets/screens/f-calendario.webp', ''],
+      ['Confirmaciones y recordatorios', 'Por WhatsApp y por correo, automáticos. Tu cliente puede agregar la cita a su calendario.', '/assets/screens/flow-4.webp', ''],
+      ['Anticipos y pagos', 'Pide un anticipo para apartar la cita. Tus clientes pagan con tarjeta, en OXXO o en tu local.', '', ''],
+      ['Historial de clientes', 'Notas privadas y visitas anteriores de cada cliente, a la mano antes de que llegue.', '/assets/screens/f-nota.webp', 'Pro+'],
+      ['Bloquea tu tiempo', 'Descansos, pendientes o vacaciones de varios días. Ese tiempo deja de aparecer para reservar.', '/assets/screens/f-bloqueo.webp', ''],
+      ['El resumen de tu negocio', 'Citas de la semana, ingresos estimados, pendientes y no-shows de un vistazo.', '/assets/screens/f-resumen.webp', ''],
+      ['Tu equipo, una agenda', 'Cada quien con su horario y sus servicios. Tus clientes eligen con quién.', '/assets/screens/flow-2.webp', 'Equipos']
+    ];
+    const feats = F.map((f, i) => ({
+      n: String(i + 1).padStart(2, '0') + ' / ' + String(F.length).padStart(2, '0'),
+      t: f[0], d: f[1], src: f[2] ? b(f[2]) : '', hasImg: !!f[2], isMock: !f[2],
+      plan: f[3], hasPlan: !!f[3], cls: i === 0 ? 'first' : '',
+      vt: 'view-timeline-name: --f' + i + ';',
+      tl: 'animation-timeline: --f' + i + ';'
+    }));
+    const scopeStyle = 'timeline-scope: ' + F.map((f, i) => '--f' + i).join(', ') + ';';
+    const raw = [
+      ['¿Mis clientes tienen que descargar algo?', 'No. Reservan desde tu link en el navegador de su celular, sin descargar nada y sin crear cuenta.'],
+      ['¿Necesito tarjeta para empezar?', 'No. Starter es gratis para siempre y los 14 días gratis de Pro+ y Equipos tampoco piden tarjeta. Si al terminar no agregas un método de pago, tu cuenta regresa a Starter sin ningún cobro.'],
+      ['¿Cómo les llegan las confirmaciones y los recordatorios?', 'Por WhatsApp y por correo electrónico, de forma automática. Tú no tienes que escribir nada.'],
+      ['¿Puedo cobrar un anticipo?', 'Sí. Tus clientes pueden apartar su cita con un anticipo con tarjeta, en OXXO o pagando en tu local.'],
+      ['¿Puedo cancelar cuando quiera?', 'Sí. No hay contratos. Conservas tu plan hasta que termina el periodo que ya pagaste.']
+    ];
+    const faqs = raw.map((r, i) => ({ q: r[0], a: r[1], open: st.open === i,
+      ico: 'display: inline-flex; flex-shrink: 0; transition: transform 250ms cubic-bezier(.2,0,0,1);' + (st.open === i ? ' transform: rotate(45deg);' : ''),
+      toggle: () => this.setState({ open: st.open === i ? -1 : i }) }));
+    return {
+      n14: 14, n16: 16, n18: 18, n22: 22,
+      v, tabs, bgs, parityA: st.flip % 2 === 0, parityB: st.flip % 2 === 1,
+      feats, scopeStyle, faqs, annual,
+      toggleAnnual: () => this.setState({ annual: !annual }),
+      swStyle: annual ? 'background-color: #2db35d;' : 'background-color: #767676;',
+      knobStyle: annual ? 'transform: translateX(18px);' : 'transform: translateX(0);',
+      mLbl: annual ? 'color: #6b665c;' : 'color: #1a1a1a; font-weight: 600;',
+      aLbl: annual ? 'color: #1a1a1a; font-weight: 600;' : 'color: #6b665c;',
+      per: annual ? '/ año' : '/ mes',
+      proPrice: annual ? '$3,490' : '$349',
+      teamsPrice: annual ? '$6,490' : '$649',
+      proNote: annual ? 'Equivale a $291 al mes.' : 'Para quien vive de su agenda. $11.63 al día.',
+      teamsNote: annual ? 'Equivale a $541 al mes.' : 'Para salones y estudios con equipo.'
+    };
+  }
+}
+</script>
+</body>
+</html>

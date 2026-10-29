@@ -1,0 +1,35 @@
+/* ── Tokens editoriales (aparte de los del sistema; no los modifican) ───────────── */
+:root {
+  --paper: #faf8f3;
+  --paper-sunk: #f1ede4;
+  --paper-sunk-2: #ece7dc;
+  --sand: #ebe6db;
+  --paper-ink-muted: #6b665c;
+  --paper-line: #d9d3c5;
+  --paper-border: #e4dfd3;
+  --paper-line-strong: var(--ink);
+  --paper-line-faint: #efeae0;
+  --paper-line-input: #cfc8b8;
+  --line-dashed: #b9b1a0;
+  --dot-chrome: #e0dace;
+  --badge-soon-bg: #efe6d3;
+  --badge-soon-fg: #6b4e12;
+  --block-sand: #d9c6a0;
+  --block-sage: #8fa89a;
+  --on-dark: #faf8f3;
+  --on-dark-70: rgba(250, 248, 243, 0.7);
+  --on-dark-75: rgba(250, 248, 243, 0.75);
+  --on-dark-80: rgba(250, 248, 243, 0.8);
+  --on-dark-line: rgba(250, 248, 243, 0.14);
+  --on-dark-line-strong: rgba(250, 248, 243, 0.3);
+  --paper-glass: rgba(250, 248, 243, 0.86);
+  --shadow-photo: 0 10px 30px rgba(26, 26, 26, 0.12);
+  --shadow-photo-sm: 0 8px 22px rgba(26, 26, 26, 0.1);
+  --shadow-photo-lg: 0 12px 30px rgba(26, 26, 26, 0.16);
+  --shadow-desk: 0 30px 70px rgba(26, 26, 26, 0.12);
+  --shadow-phone: 0 30px 60px rgba(26, 26, 26, 0.22);
+  --shadow-chip: 0 12px 30px rgba(26, 26, 26, 0.12);
+  --shadow-panel-dark: 0 12px 32px rgba(0, 0, 0, 0.3);
+  --max-w: 1200px;
+  --gutter: 28px;
+}
