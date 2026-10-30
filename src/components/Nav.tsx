@@ -7,7 +7,7 @@ export type NavItem = { label: string; href: string }
 export default function Nav({ items, product, homeHref = '#inicio' }: { items: NavItem[]; product?: string; homeHref?: string }) {
   return (
     <header className="nav">
-      <SmartLink className="nav-brand" href={homeHref} aria-label="flowlift, inicio">
+      <SmartLink className="nav-brand" href={homeHref} aria-label={product ? `flowlift ${product}, inicio` : 'flowlift, inicio'}>
         <img src="/assets/brand/logo.svg" alt="flowlift" width={122} height={26} />
         {product && <span className="serif it nav-product">{product}</span>}
       </SmartLink>

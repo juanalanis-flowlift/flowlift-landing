@@ -52,3 +52,14 @@
   --scrim-top: rgba(0, 0, 0, 0.05);
   --scrim-bottom: rgba(0, 0, 0, 0.35);
 }
+
+/* Fuentes de respaldo con las métricas de DM Serif Display / DM Sans (size-adjust medido en Chromium),
+   para que el cambio a la fuente real no mueva el layout (CLS). Sin la fuente local, se usa el genérico. */
+@font-face { font-family: 'DM Serif Display Fallback Times'; src: local('Times New Roman'), local('Liberation Serif'), local('Times'); size-adjust: 91.4%; }
+@font-face { font-family: 'DM Serif Display Fallback DejaVu'; src: local('DejaVu Serif'); size-adjust: 81%; }
+@font-face { font-family: 'DM Sans Fallback Arial'; src: local('Arial'), local('Liberation Sans'), local('Helvetica'); size-adjust: 92.8%; }
+@font-face { font-family: 'DM Sans Fallback DejaVu'; src: local('DejaVu Sans'); size-adjust: 82%; }
+:root {
+  --font-display-ed: 'DM Serif Display', 'DM Serif Display Fallback Times', 'DM Serif Display Fallback DejaVu', serif;
+  --font-sans-ed: 'DM Sans', 'DM Sans Fallback Arial', 'DM Sans Fallback DejaVu', sans-serif;
+}

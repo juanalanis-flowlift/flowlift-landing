@@ -21,9 +21,11 @@ export default function Seo({ meta }: { meta: RouteMeta }) {
     setMeta('property', 'og:description', meta.description)
     setMeta('property', 'og:url', url)
     setMeta('property', 'og:image', absolute(meta.ogImage))
+    setMeta('property', 'og:image:alt', meta.ogAlt)
     setMeta('name', 'twitter:title', meta.title)
     setMeta('name', 'twitter:description', meta.description)
     setMeta('name', 'twitter:image', absolute(meta.ogImage))
+    setMeta('name', 'twitter:image:alt', meta.ogAlt)
     setMeta('name', 'robots', meta.path === '/404' ? 'noindex' : 'index,follow')
   }, [meta])
   return null

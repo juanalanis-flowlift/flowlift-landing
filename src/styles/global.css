@@ -8,23 +8,23 @@ a:hover { color: var(--badge-success-fg); }
 img { max-width: 100%; }
 
 .ed {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans-ed);
   color: var(--ink);
   background: var(--paper);
   -webkit-font-smoothing: antialiased;
   line-height: 1.55;
   overflow-x: clip;
 }
-.serif { font-family: var(--font-display); font-weight: 400; }
+.serif { font-family: var(--font-display-ed); font-weight: 400; }
 .it { font-style: italic; }
-.num { font-family: var(--font-display); font-size: 18px; letter-spacing: 1px; color: var(--ink); }
+.num { font-family: var(--font-display-ed); font-size: 18px; letter-spacing: 1px; color: var(--ink); }
 .muted { color: var(--paper-ink-muted); }
 .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--gutter); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .green { color: var(--green-primary); }
 
 .h2 {
-  margin: 0; font-family: var(--font-display); font-weight: 400;
+  margin: 0; font-family: var(--font-display-ed); font-weight: 400;
   font-size: clamp(34px, 4.2vw, 54px); line-height: 1.12; letter-spacing: -0.5px;
 }
 .body { margin: 0; font-size: 19px; line-height: 1.7; color: var(--grey-dark, var(--text-secondary)); }
@@ -38,7 +38,7 @@ img { max-width: 100%; }
 .pill {
   display: inline-flex; align-items: center; gap: 10px; height: 46px; padding: 0 6px 0 20px;
   border-radius: var(--radius-full); background: var(--ink); color: var(--white);
-  text-decoration: none; font-family: var(--font-sans); font-size: 14px; font-weight: 600;
+  text-decoration: none; font-family: var(--font-sans-ed); font-size: 14px; font-weight: 600;
   letter-spacing: 0.6px; text-transform: uppercase; white-space: nowrap; border: none; cursor: pointer;
   transition: background-color var(--t-state) var(--ease-std), transform var(--t-press) var(--ease-std);
 }
@@ -80,7 +80,7 @@ img { max-width: 100%; }
 
 /* Titular gigante */
 .giant {
-  margin: 0; text-align: center; font-family: var(--font-display); font-weight: 400;
+  margin: 0; text-align: center; font-family: var(--font-display-ed); font-weight: 400;
   text-transform: uppercase; line-height: 0.92; letter-spacing: -1.5px; color: var(--ink);
 }
 
@@ -90,7 +90,7 @@ img { max-width: 100%; }
 .faq-q {
   all: unset; box-sizing: border-box; width: 100%; display: flex; justify-content: space-between;
   align-items: center; gap: 20px; padding: 26px 0; cursor: pointer;
-  font-family: var(--font-display); font-size: 26px; line-height: 1.25; color: var(--ink);
+  font-family: var(--font-display-ed); font-size: 26px; line-height: 1.25; color: var(--ink);
 }
 .faq-ico { display: inline-flex; flex-shrink: 0; transition: transform var(--t-enter) var(--ease-std); }
 .faq-ico.open { transform: rotate(45deg); }
@@ -100,7 +100,7 @@ img { max-width: 100%; }
 .wl { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; max-width: 460px; }
 .em {
   flex: 1 1 220px; height: 46px; border-radius: var(--radius-full); border: 1px solid var(--paper-line-input);
-  background: var(--white); padding: 0 20px; font-family: var(--font-sans); font-size: 15px; color: var(--ink);
+  background: var(--white); padding: 0 20px; font-family: var(--font-sans-ed); font-size: 15px; color: var(--ink);
   outline: none; transition: border-color var(--t-state) var(--ease-std);
 }
 .em:focus { border-color: var(--green-primary); }
@@ -120,7 +120,7 @@ img { max-width: 100%; }
 .foot { background: var(--surface-dark); color: var(--on-dark); position: relative; overflow: hidden; }
 .foot-cta { padding: 160px var(--gutter) 120px; display: flex; flex-direction: column; align-items: center; gap: 40px; text-align: center; position: relative; }
 .foot-title {
-  margin: 0; font-family: var(--font-display); font-weight: 400; text-transform: uppercase;
+  margin: 0; font-family: var(--font-display-ed); font-weight: 400; text-transform: uppercase;
   font-size: clamp(54px, 8.5vw, 130px); line-height: 0.92; letter-spacing: -1.5px; color: var(--on-dark);
 }
 .foot-title .it { color: var(--green-mid); }
@@ -155,3 +155,9 @@ img { max-width: 100%; }
 /* Lista con ícono (beneficios, precios) */
 .li { display: flex; gap: 10px; align-items: flex-start; font-size: 16px; color: var(--text-secondary); }
 .li svg { flex-shrink: 0; }
+
+/* Área táctil de 44 px sin cambiar el aspecto: zona invisible alrededor del control */
+.navlink, .tab, .sw { position: relative; }
+.navlink::after { content: ''; position: absolute; inset: -12px -6px; }
+.tab::after { content: ''; position: absolute; inset: -4px 0; }
+.sw::after { content: ''; position: absolute; inset: -9px -4px; }

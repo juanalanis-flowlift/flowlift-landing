@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --host"
+    "build": "tsc --noEmit && vite build && tsx scripts/prerender.ts",
+    "build:fast": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "og": "tsx scripts/og.ts",
+    "verify": "tsx scripts/verify.ts",
+    "start": "node server/static.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.460.0",
@@ -19,6 +23,8 @@
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^6.1.2",
+    "playwright": "^1.63.0",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.5"
   }
