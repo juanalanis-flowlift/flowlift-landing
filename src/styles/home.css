@@ -90,7 +90,8 @@
 .oi img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .founder { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 36px; align-items: center; }
-.founder-photo { aspect-ratio: 4 / 5; border-radius: 2px; overflow: hidden; }
+.founder-photo { aspect-ratio: 4 / 5; border-radius: 2px; overflow: hidden; background: var(--sand); }
+.founder-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
 .founder-copy { display: flex; flex-direction: column; gap: 14px; }
 .founder-copy .serif { margin: 0; font-size: 28px; line-height: 1.3; }
 .founder-copy .by { font-size: 15px; }

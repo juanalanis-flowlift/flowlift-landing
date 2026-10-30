@@ -209,8 +209,8 @@ export default function Home() {
         <section style={{ padding: '120px 0 140px' }}>
           <div className="wrap" style={{ maxWidth: 880, display: 'flex', flexDirection: 'column', gap: 120 }}>
             <div className="founder rv">
-              {/* TODO: foto (4:5) y texto del fundador */}
-              <div className="founder-photo"><Placeholder small>[Tu foto 4:5]</Placeholder></div>
+              {/* TODO: texto del fundador (la foto ya está) */}
+              <div className="founder-photo"><Img src="/assets/photos/fundador.webp" alt="Juan Alanis, fundador de flowlift" /></div>
               <div className="founder-copy">
                 <span className="num">Quién está detrás</span>
                 <p className="serif">[2 o 3 frases con tus palabras: por qué creaste flowlift y para quién.]</p>

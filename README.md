@@ -46,7 +46,7 @@ Qué hace `npm run build`: compila con Vite y después abre cada ruta en Chromiu
 
 ## Pendientes marcados con TODO
 
-- Foto y texto del fundador (Home).
+- Texto del fundador (Home). La foto ya está en `public/assets/photos/fundador.webp`.
 - Fotos de Tienda y su tercer beneficio (Home).
 - Links de "Entrar" y de registro, Instagram y correo de contacto (`src/config.ts`).
 - Lista de espera: hoy guarda en el navegador de quien la usa. Falta conectarla a HubSpot en `saveToWaitlist()`.
