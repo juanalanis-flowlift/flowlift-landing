@@ -37,3 +37,18 @@
 :root {
   --hero-dim: #cbc5b8; /* el titular del hero se apaga a este tono al hacer scroll */
 }
+
+/* Paneles oscuros del producto (Citas): blancos con transparencia y scrims */
+:root {
+  --white-05: rgba(255, 255, 255, 0.05);
+  --white-09: rgba(255, 255, 255, 0.09);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-12: rgba(255, 255, 255, 0.12);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-55: rgba(255, 255, 255, 0.55);
+  --white-72: rgba(255, 255, 255, 0.72);
+  --white-78: rgba(255, 255, 255, 0.78);
+  --white-86: rgba(255, 255, 255, 0.86);
+  --scrim-top: rgba(0, 0, 0, 0.05);
+  --scrim-bottom: rgba(0, 0, 0, 0.35);
+}

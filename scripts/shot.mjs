@@ -15,7 +15,7 @@ p.on('console', (m) => m.type() === 'error' && errors.push(m.text()))
 p.on('pageerror', (e) => errors.push(String(e)))
 await p.goto('http://127.0.0.1:5173' + route, { waitUntil: 'networkidle' })
 await p.evaluate(() => document.fonts.ready)
-if (flags.includes('--static')) await p.addStyleTag({ content: '*,*::before,*::after{animation:none!important;transition:none!important}' })
+if (flags.includes('--static')) await p.addStyleTag({ content: '*,*::before,*::after{animation:none!important;transition:none!important}.draw{stroke-dashoffset:0!important}' })
 // Recorre la página para que carguen las imágenes lazy antes de capturar.
 if (!scrollArg) {
   const total = await p.evaluate(() => document.documentElement.scrollHeight)

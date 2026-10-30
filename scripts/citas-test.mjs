@@ -1,0 +1,17 @@
+// Prueba manual automatizada de /citas: switch anual, pestañas con teclado y acordeón.
+import { createRequire } from 'node:module'
+const { chromium } = createRequire(import.meta.url)('playwright')
+const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1280, height: 900 } })
+await p.goto('http://127.0.0.1:5173/citas', { waitUntil: 'networkidle' })
+const sw = p.getByRole('switch', { name: 'Pago anual' })
+const prices = () => p.locator('.price').allInnerTexts().then((a) => a.map((t) => t.replace(/\s+/g, ' ').trim()))
+console.log('mensual:', await prices(), 'aria-checked =', await sw.getAttribute('aria-checked'))
+await sw.focus(); await p.keyboard.press('Space')
+console.log('anual  :', await prices(), 'aria-checked =', await sw.getAttribute('aria-checked'))
+console.log('notas  :', await p.locator('.pr-note[aria-live]').allInnerTexts())
+const tabs = p.getByRole('tab')
+await tabs.nth(0).focus(); await p.keyboard.press('ArrowRight'); await p.keyboard.press('ArrowRight')
+console.log('tab activa tras 2 flechas:', await p.locator('[role=tab][aria-selected=true]').innerText(), '| texto:', await p.locator('.type').innerText())
+await p.waitForTimeout(8500)
+console.log('tras 8.5 s sin tocar (auto-avance):', await p.locator('[role=tab][aria-selected=true]').innerText())
+await b.close()
