@@ -1,30 +1,19 @@
 import { SITE_URL } from '../config'
+import { PAGES, path, type Lang, type PageKey } from '../i18n/routes'
+import { CITAS } from './citas'
+import { HOME } from './home'
+import { PAGE_META } from './pages-meta'
 
-export type RouteMeta = { path: string; title: string; description: string; ogImage: string; ogAlt: string }
+export type Meta = { title: string; description: string; ogImage: string; ogAlt: string }
 
-export const ROUTES_META: RouteMeta[] = [
-  {
-    path: '/',
-    title: 'flowlift — Tu negocio, bajo control',
-    description: 'Herramientas sencillas para pequeños negocios en México: citas hoy, clases y tienda a inicios de 2027. Todo desde un solo link.',
-    ogImage: '/og/home.png',
-    ogAlt: 'flowlift: tu negocio, bajo control',
-  },
-  {
-    path: '/citas',
-    title: 'flowlift Citas — Tu agenda, bajo control',
-    description: 'Tus clientes reservan desde un link, les llega su confirmación por WhatsApp y apartan con anticipo. Plan gratis para siempre y 14 días de prueba sin tarjeta.',
-    ogImage: '/og/citas.png',
-    ogAlt: 'flowlift Citas: tu agenda, bajo control',
-  },
-]
+const OG: Partial<Record<PageKey, string>> = { home: 'home', citas: 'citas' }
 
-export const NOT_FOUND_META: RouteMeta = {
-  path: '/404',
-  title: 'Página no encontrada — flowlift',
-  description: 'La página que buscas no existe.',
-  ogImage: '/og/home.png',
-  ogAlt: 'flowlift',
+export function metaFor(key: PageKey, lang: Lang): Meta {
+  const src = key === 'home' ? HOME[lang].meta : key === 'citas' ? CITAS[lang].meta : PAGE_META[key][lang]
+  const base = OG[key] ?? 'home'
+  return { title: src.title, description: src.description, ogAlt: src.ogAlt, ogImage: `/og/${base}${lang === 'en' ? '-en' : ''}.png` }
 }
 
 export const absolute = (p: string) => SITE_URL + p
+export const urlOf = (key: PageKey, lang: Lang) => absolute(path(key, lang))
+export const ALL_PAGES = Object.keys(PAGES) as PageKey[]

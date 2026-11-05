@@ -1,16 +1,14 @@
-// Enlaces del sitio. Todo lo que dice TODO está pendiente de confirmar.
+// Enlaces del sitio.
 export const SITE_URL = 'https://flowlift.co'
 
+// La app de reservas vive en este subdominio.
+const APP = 'https://bookings.flowlift.co'
+
 export const LINKS = {
-  // TODO: URL real de inicio de sesión de la app
-  login: '#',
-  // TODO: URL real de registro (crear cuenta de Citas)
-  signup: '#',
-  help: 'https://flowlift.co/ayuda',
-  // TODO: páginas legales
-  terms: '#',
-  privacy: '#',
-  // TODO: Instagram y correo de contacto de flowlift
-  instagram: '#',
-  contactEmail: '',
+  login: `${APP}/signin`,
+  signup: `${APP}/signup`,
+  help: '/ayuda',
+  instagram: 'https://www.instagram.com/flowlift.co/',
+  facebook: 'https://www.facebook.com/profile.php?id=61592702960712',
+  contactEmail: 'hola@flowlift.co',
 } as const

@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
-import { absolute, type RouteMeta } from '../content/seo'
+import { useLang } from '../i18n/LangContext'
+import { PAGES, type PageKey } from '../i18n/routes'
+import { absolute, metaFor, type Meta } from '../content/seo'
 
 function setMeta(attr: 'name' | 'property', key: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`)
@@ -7,26 +9,40 @@ function setMeta(attr: 'name' | 'property', key: string, content: string) {
   el.setAttribute('content', content)
 }
 
-// Actualiza title y meta tags al navegar dentro del SPA. El HTML inicial de cada ruta
-// ya sale con estos mismos valores desde el prerender (scripts/prerender.ts).
-export default function Seo({ meta }: { meta: RouteMeta }) {
+function setLink(rel: string, href: string, hreflang?: string) {
+  const sel = `link[rel="${rel}"]${hreflang ? `[hreflang="${hreflang}"]` : ':not([hreflang])'}`
+  let el = document.head.querySelector<HTMLLinkElement>(sel)
+  if (!el) { el = document.createElement('link'); el.rel = rel; if (hreflang) el.hreflang = hreflang; document.head.appendChild(el) }
+  el.href = href
+}
+
+// Actualiza title, meta tags y alternos de idioma al navegar dentro del SPA. El HTML inicial de cada ruta
+// sale con estos mismos valores desde el prerender (scripts/prerender.ts).
+export default function Seo({ page, custom }: { page?: PageKey; custom?: Meta & { noindex?: boolean } }) {
+  const lang = useLang()
   useEffect(() => {
-    document.title = meta.title
-    const url = absolute(meta.path === '/404' ? '/' : meta.path)
-    let link = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')
-    if (!link) { link = document.createElement('link'); link.rel = 'canonical'; document.head.appendChild(link) }
-    link.href = url
-    setMeta('name', 'description', meta.description)
-    setMeta('property', 'og:title', meta.title)
-    setMeta('property', 'og:description', meta.description)
+    const m: Meta & { noindex?: boolean } = custom ?? metaFor(page!, lang)
+    const url = absolute(page ? PAGES[page][lang] : lang === 'en' ? '/en' : '/')
+    document.title = m.title
+    setLink('canonical', url)
+    // alternos de idioma (solo si la página existe en ambos)
+    if (page) {
+      setLink('alternate', absolute(PAGES[page].es), 'es-MX')
+      setLink('alternate', absolute(PAGES[page].en), 'en')
+      setLink('alternate', absolute(PAGES[page].es), 'x-default')
+    }
+    setMeta('name', 'description', m.description)
+    setMeta('property', 'og:title', m.title)
+    setMeta('property', 'og:description', m.description)
     setMeta('property', 'og:url', url)
-    setMeta('property', 'og:image', absolute(meta.ogImage))
-    setMeta('property', 'og:image:alt', meta.ogAlt)
-    setMeta('name', 'twitter:title', meta.title)
-    setMeta('name', 'twitter:description', meta.description)
-    setMeta('name', 'twitter:image', absolute(meta.ogImage))
-    setMeta('name', 'twitter:image:alt', meta.ogAlt)
-    setMeta('name', 'robots', meta.path === '/404' ? 'noindex' : 'index,follow')
-  }, [meta])
+    setMeta('property', 'og:locale', lang === 'en' ? 'en_US' : 'es_MX')
+    setMeta('property', 'og:image', absolute(m.ogImage))
+    setMeta('property', 'og:image:alt', m.ogAlt)
+    setMeta('name', 'twitter:title', m.title)
+    setMeta('name', 'twitter:description', m.description)
+    setMeta('name', 'twitter:image', absolute(m.ogImage))
+    setMeta('name', 'twitter:image:alt', m.ogAlt)
+    setMeta('name', 'robots', m.noindex ? 'noindex' : 'index,follow')
+  }, [page, custom, lang])
   return null
 }

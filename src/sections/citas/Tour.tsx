@@ -1,19 +1,21 @@
 import { useEffect, useRef, useState } from 'react'
 import { CreditCard, MapPin, Store } from 'lucide-react'
 import Img from '../../components/Img'
-import { FEATURES } from '../../content/citas'
+import { CITAS } from '../../content/citas'
+import { useLang } from '../../i18n/LangContext'
 
 // Pantalla "Anticipos" armada en HTML (no es una imagen).
 function PaymentMock({ className = '' }: { className?: string }) {
+  const m = CITAS[useLang()].tour.mock
   return (
     <div className={'mock ' + className}>
-      <span className="serif mock-h">Anticipos</span>
-      <div className="mock-card"><span className="badge">Anticipo recibido</span><span className="mock-amt">$200</span><span className="muted mock-s">Sábado · 4:00 PM · Tinte completo</span></div>
+      <span className="serif mock-h">{m.title}</span>
+      <div className="mock-card"><span className="badge">{m.badge}</span><span className="mock-amt">$200</span><span className="muted mock-s">{m.when}</span></div>
       <div className="mock-card">
-        <span className="mock-b">Formas de pago</span>
-        <span className="li mock-li"><CreditCard size={16} aria-hidden="true" />Tarjeta</span>
-        <span className="li mock-li"><Store size={16} aria-hidden="true" />OXXO</span>
-        <span className="li mock-li"><MapPin size={16} aria-hidden="true" />En tu local</span>
+        <span className="mock-b">{m.methods}</span>
+        <span className="li mock-li"><CreditCard size={16} aria-hidden="true" />{m.card}</span>
+        <span className="li mock-li"><Store size={16} aria-hidden="true" />{m.oxxo}</span>
+        <span className="li mock-li"><MapPin size={16} aria-hidden="true" />{m.local}</span>
       </div>
     </div>
   )
@@ -26,6 +28,7 @@ const supportsTimeline = () =>
 // cambia de pantalla en CSS puro. Sin soporte (Safari, Firefox), un IntersectionObserver marca la
 // función a la vista y la pantalla activa cambia con un fundido de opacidad.
 export default function Tour() {
+  const FEATURES = CITAS[useLang()].tour.features
   const [mode] = useState<'timeline' | 'io'>(() => (supportsTimeline() ? 'timeline' : 'io'))
   const [active, setActive] = useState(0)
   const refs = useRef<(HTMLElement | null)[]>([])

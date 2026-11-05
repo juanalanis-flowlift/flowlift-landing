@@ -7,6 +7,8 @@ import { extname, join, normalize, resolve, sep } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { gzipSync } from 'node:zlib'
 
+const REDIRECTS = JSON.parse(readFileSync(new URL('./redirects.json', import.meta.url), 'utf8'))
+
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
   '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.webp': 'image/webp', '.jpg': 'image/jpeg',
@@ -33,9 +35,20 @@ export function serve({ port = Number(process.env.PORT) || 4173, host = '0.0.0.0
 
   const server = createServer((req, res) => {
     let file = null
-    try { file = find(new URL(req.url, 'http://x').pathname) } catch { /* URL mal formada → 404 */ }
+    let url
+    try { url = new URL(req.url, 'http://x') } catch { /* URL mal formada → 404 */ }
+    // URLs antiguas del sitio → su dirección nueva (301, conserva el #ancla del lado del navegador)
+    const clean = url && url.pathname.length > 1 ? url.pathname.replace(/\/+$/, '') : url?.pathname
+    if (url && REDIRECTS[clean]) {
+      res.writeHead(301, { location: REDIRECTS[clean] + url.search, 'cache-control': 'public, max-age=3600' })
+      return res.end()
+    }
+    try { if (url) file = find(url.pathname) } catch { /* ruta inválida → 404 */ }
     let status = 200
-    if (!file) { file = join(base, '404.html'); status = 404 }
+    if (!file) {
+      file = join(base, '404.html'); status = 404
+      if (!existsSync(file)) { res.writeHead(404, { 'content-type': 'text/plain; charset=utf-8' }); return res.end('404') }
+    }
     const ext = extname(file)
     const headers = { 'content-type': TYPES[ext] || 'application/octet-stream', 'x-content-type-options': 'nosniff' }
     headers['cache-control'] = ext === '.html' || status === 404 ? 'no-cache' : file.includes(`${sep}assets${sep}`) && /-[\w-]{8}\./.test(file) ? 'public, max-age=31536000, immutable' : 'public, max-age=86400'

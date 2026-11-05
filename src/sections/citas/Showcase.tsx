@@ -2,7 +2,8 @@ import { useId, useRef, useState, type KeyboardEvent } from 'react'
 import { ArrowRight, Calendar } from 'lucide-react'
 import Img from '../../components/Img'
 import BookingFlowNodes from '../../components/BookingFlowNodes'
-import { VERTICALS, flowAria } from '../../content/citas'
+import { CITAS } from '../../content/citas'
+import { useLang } from '../../i18n/LangContext'
 import { useFitScale } from '../../hooks/useFitScale'
 import { useInterval } from '../../hooks/useInterval'
 import { usePageVisible } from '../../hooks/usePageVisible'
@@ -14,6 +15,8 @@ const AUTO_MS = 8000
 // Las pestañas avanzan solas cada 8 s; un clic reinicia el temporizador. `flip` re-monta
 // el texto y los nodos para que sus animaciones vuelvan a empezar.
 export default function Showcase() {
+  const t = CITAS[useLang()].flujo
+  const VERTICALS = t.verticals
   const [tab, setTab] = useState(0)
   const [flip, setFlip] = useState(0)
   const [resetKey, setResetKey] = useState(0)
@@ -43,17 +46,17 @@ export default function Showcase() {
   return (
     <div className="show rv">
       <div className="show-l">
-        {VERTICALS.map((t, i) => (
-          <Img key={t.name} src={t.img} className="bg" style={{ opacity: tab === i ? 1 : 0 }} />
+        {VERTICALS.map((vt, i) => (
+          <Img key={vt.name} src={vt.img} className="bg" style={{ opacity: tab === i ? 1 : 0 }} />
         ))}
         <div className="show-card">
-          <div role="tablist" aria-label="Tipo de negocio" className="show-tabs" onKeyDown={onKey}>
-            {VERTICALS.map((t, i) => (
+          <div role="tablist" aria-label={t.tabsLabel} className="show-tabs" onKeyDown={onKey}>
+            {VERTICALS.map((vt, i) => (
               <button
-                key={t.name} ref={(el) => { tabRefs.current[i] = el }} className={'tab' + (tab === i ? ' on' : '')}
+                key={vt.name} ref={(el) => { tabRefs.current[i] = el }} className={'tab' + (tab === i ? ' on' : '')}
                 type="button" role="tab" id={`${uid}-t${i}`} aria-selected={tab === i} aria-controls={`${uid}-p`}
                 tabIndex={tab === i ? 0 : -1} onClick={() => go(i, true)}
-              >{t.name}</button>
+              >{vt.name}</button>
             ))}
           </div>
           <div className="show-ask" role="tabpanel" id={`${uid}-p`} aria-labelledby={`${uid}-t${tab}`}>
@@ -64,9 +67,9 @@ export default function Showcase() {
         </div>
       </div>
       <div className="dots-dk">
-        <div ref={fitRef} className="canvas-fit" style={{ height: 560 * scale }} role="img" aria-label={flowAria(v)}>
+        <div ref={fitRef} className="canvas-fit" style={{ height: 560 * scale }} role="img" aria-label={t.aria(v.svc)}>
           <div className="canvas-in" style={{ transform: `scale(${scale})` }}>
-            <BookingFlowNodes key={flip} svc={v.svc} when={v.when} who={v.who} />
+            <BookingFlowNodes key={flip} svc={v.svc} when={v.when} who={v.who} labels={t.nodes} />
           </div>
         </div>
       </div>

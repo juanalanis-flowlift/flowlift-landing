@@ -1,6 +1,7 @@
 import { CalendarCheck, CreditCard, MessageSquare, type LucideIcon } from 'lucide-react'
 import Img from '../../components/Img'
-import { STAGE_CHIPS } from '../../content/citas'
+import { CITAS, STAGE_POS } from '../../content/citas'
+import { useLang } from '../../i18n/LangContext'
 import { useFitScale } from '../../hooks/useFitScale'
 
 const ICONS: Record<string, LucideIcon> = { CalendarCheck, MessageSquare, CreditCard }
@@ -8,11 +9,12 @@ const W = 1060, H = 600
 
 // Pantallas del producto con avisos conectados por líneas. Se escala completo (no se reacomoda).
 export default function Stage() {
+  const t = CITAS[useLang()].hero
   const [ref, scale] = useFitScale(W)
   return (
     <div
       ref={ref} className="stage-fit" style={{ height: H * scale }} role="img"
-      aria-label="Panel de flowlift en computadora y página de reserva en celular, conectados con avisos de nueva reserva, recordatorio por WhatsApp y anticipo recibido"
+      aria-label={t.stageLabel}
     >
       <div className="stage" style={{ transform: `scale(${scale})` }}>
         <div className="desk rise" style={{ '--dy': '-60px' } as React.CSSProperties}>
@@ -28,12 +30,13 @@ export default function Stage() {
           <path className="draw l3" pathLength="1" d="M1050 300 C1110 300 1110 430 1060 470" />
           <circle cx="790" cy="200" r="3.5" /><circle cx="790" cy="360" r="3.5" /><circle cx="1050" cy="300" r="3.5" />
         </svg>
-        {STAGE_CHIPS.map((c) => {
+        {STAGE_POS.map((c, i) => {
           const Icon = ICONS[c.icon]
+          const chip = t.chips[i]
           return (
-            <div className="chipn" key={c.title} style={{ left: c.left, top: c.top, animationDelay: `${c.delay}ms` }}>
+            <div className="chipn" key={c.icon} style={{ left: c.left, top: c.top, animationDelay: `${c.delay}ms` }}>
               <span className="chip-ic"><Icon size={18} aria-hidden="true" /></span>
-              <span><b>{c.title}</b>{c.text}</span>
+              <span><b>{chip.title}</b>{chip.text}</span>
             </div>
           )
         })}

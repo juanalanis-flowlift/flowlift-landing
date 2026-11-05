@@ -1,14 +1,17 @@
 // Después de `vite build`: abre cada ruta en Chromium y guarda su HTML ya renderizado
 // (con <title>, descripción, canonical y Open Graph) para que WhatsApp, que no ejecuta JavaScript, los vea.
 // Salida: dist/index.html, dist/citas/index.html y dist/404.html
-import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { preview } from 'vite'
 import { launch } from './lib-browser'
 
+import { PAGES, LANGS } from '../src/i18n/routes'
+import { SITE_URL } from '../src/config'
+
+// Cada página en cada idioma → su carpeta con index.html; más la 404.
 const ROUTES = [
-  { url: '/', out: 'index.html' },
-  { url: '/citas', out: 'citas/index.html' },
+  ...(Object.values(PAGES) as { es: string; en: string }[]).flatMap((p) => LANGS.map((l) => ({ url: p[l], out: (p[l] === '/' ? '' : p[l].slice(1) + '/') + 'index.html' }))),
   { url: '/no-existe', out: '404.html' },
 ]
 
@@ -33,8 +36,6 @@ if (fontsHref) {
   fontPreloads = urls.map((f) => `<link rel="preload" as="font" type="font/woff2" crossorigin href="${f.url}">`).join('')
   console.log('fuentes precargadas:', urls.map((f) => `${f.family} ${f.style}`).join(', '))
 }
-// chunk de la página /citas (carga diferida): se precarga desde su HTML
-const citasChunk = readdirSync('dist/assets').find((f) => /^Citas-.*\.js$/.test(f))
 const outputs: { file: string; html: string }[] = []
 for (const r of ROUTES) {
   const page = await browser.newPage({ viewport: { width: 1280, height: 900 } })
@@ -48,7 +49,7 @@ for (const r of ROUTES) {
     if (f) f.media = 'print'
     return document.documentElement.outerHTML
   }))).replaceAll(origin, '')
-  const extra = (r.url === '/' || r.url === '/citas' ? fontPreloads + fontFaces : '') + (r.url === '/citas' && citasChunk && !html.includes(`/assets/${citasChunk}`) ? `<link rel="modulepreload" href="/assets/${citasChunk}">` : '')
+  const extra = (r.out === '404.html' ? '' : fontPreloads + fontFaces)
   const out = extra ? html.replace('</head>', extra + '</head>') : html
   const file = resolve('dist', r.out)
   outputs.push({ file, html: out })
@@ -57,5 +58,12 @@ for (const r of ROUTES) {
 }
 // Se escribe al final: si no, la ruta siguiente cargaría el HTML ya prerenderizado de la anterior.
 for (const o of outputs) { mkdirSync(resolve(o.file, '..'), { recursive: true }); writeFileSync(o.file, o.html) }
+// sitemap.xml con alternos de idioma (hreflang)
+const urlTag = (key: keyof typeof PAGES) => {
+  const alt = (l: string, href: string) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE_URL}${href}"/>`
+  return LANGS.map((l) => `  <url><loc>${SITE_URL}${PAGES[key][l]}</loc>${alt('es-MX', PAGES[key].es)}${alt('en', PAGES[key].en)}${alt('x-default', PAGES[key].es)}</url>`).join('\n')
+}
+writeFileSync('dist/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${(Object.keys(PAGES) as (keyof typeof PAGES)[]).map(urlTag).join('\n')}\n</urlset>\n`)
+console.log('sitemap.xml:', Object.keys(PAGES).length * LANGS.length, 'URLs')
 await browser.close()
 await server.close()

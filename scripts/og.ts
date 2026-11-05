@@ -10,6 +10,8 @@ type Variant = { file: string; line1: string; line2: string; sub: string; produc
 // TODO: confirmar el texto de home.png. Share.dc.html dice "Tu agenda. Bajo control." (texto de Citas);
 // para la Home de marca podría ir "Tu negocio. Bajo control."
 const VARIANTS: Variant[] = [
+  { file: 'home-en', line1: 'Your schedule.', line2: 'Under control.', sub: 'Your clients book on their own from a link. No app, no calls.' },
+  { file: 'citas-en', line1: 'Your schedule.', line2: 'Under control.', sub: 'Your clients book on their own from a link. No app, no calls.', product: 'Appointments' },
   { file: 'home', line1: 'Tu agenda.', line2: 'Bajo control.', sub: 'Tus clientes reservan solos desde un link. Sin app, sin llamadas.' },
   { file: 'citas', line1: 'Tu agenda.', line2: 'Bajo control.', sub: 'Tus clientes reservan solos desde un link. Sin app, sin llamadas.', product: 'Citas' },
 ]

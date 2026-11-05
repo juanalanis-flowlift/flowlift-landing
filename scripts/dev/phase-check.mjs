@@ -1,0 +1,42 @@
+// Comprobaciones de navegación y de idioma. Uso: node scripts/dev/phase-check.mjs [puerto]
+import { createRequire } from 'node:module'
+const { chromium } = createRequire(import.meta.url)('playwright')
+const base = `http://127.0.0.1:${process.argv[2] || 4173}`
+const b = await chromium.launch()
+const out = (ok, m) => console.log((ok ? '✓ ' : '✗ ') + m)
+{ // escritorio
+  const p = await b.newPage({ viewport: { width: 1280, height: 900 } })
+  await p.goto(base + '/citas', { waitUntil: 'networkidle' })
+  out(await p.evaluate(() => document.documentElement.lang) === 'es-MX', '/citas: <html lang="es-MX">')
+  const nav = await p.locator('header nav a.navlink').allInnerTexts()
+  out(nav.join('|').toLowerCase().includes('cómo funciona') && nav.map((x) => x.toLowerCase()).includes('ayuda'), 'nav /citas: ' + nav.join(' · '))
+  await p.locator('header .lang a', { hasText: 'EN' }).click(); await p.waitForURL('**/en/appointments')
+  out(await p.evaluate(() => document.documentElement.lang) === 'en', 'selector ES→EN lleva a ' + p.url().replace(base, '') + ' con <html lang="en">')
+  out((await p.title()).startsWith('flowlift Appointments'), 'título EN: ' + await p.title())
+  out(await p.evaluate(() => localStorage.getItem('flowlift-language')) === 'en', 'se recuerda el idioma (flowlift-language=en)')
+  const alts = await p.evaluate(() => [...document.querySelectorAll('link[rel=alternate]')].map((l) => l.hreflang + ' → ' + l.href.replace(location.origin, '')))
+  out(alts.length === 3, 'hreflang: ' + alts.join(' | '))
+  await p.locator('footer .lang a', { hasText: 'ES' }).click(); await p.waitForURL('**/citas')
+  out(p.url().endsWith('/citas'), 'selector del pie EN→ES vuelve a /citas')
+  await p.goto(base + '/nada', { waitUntil: 'networkidle' })
+  out((await p.locator('h1').innerText()).toLowerCase().includes('no existe'), '404 en español')
+  await p.goto(base + '/en/nada', { waitUntil: 'networkidle' })
+  out((await p.locator('h1').innerText()).toLowerCase().includes("doesn't exist"), '404 en inglés en /en/*')
+}
+{ // celular: menú
+  const p = await b.newPage({ viewport: { width: 390, height: 844 } })
+  await p.goto(base + '/', { waitUntil: 'networkidle' })
+  const t = p.locator('button.nav-toggle')
+  out(await t.isVisible() && (await t.getAttribute('aria-expanded')) === 'false', 'celular: botón de menú visible y cerrado')
+  const bb = await t.boundingBox(); out(bb.width >= 44 && bb.height >= 44, `botón de menú ${Math.round(bb.width)}×${Math.round(bb.height)} px`)
+  await t.click(); await p.waitForTimeout(500)
+  out((await t.getAttribute('aria-expanded')) === 'true' && await p.locator('#menu-movil').isVisible(), 'menú abre (aria-expanded=true)')
+  out(await p.evaluate(() => document.activeElement?.closest('#menu-movil') !== null), 'el foco entra al menú')
+  out(await p.evaluate(() => document.body.style.overflow) === 'hidden', 'el scroll de fondo se bloquea')
+  await p.screenshot({ path: 'screenshots/fase5-menu-390.png' })
+  await p.keyboard.press('Escape'); await p.waitForTimeout(200)
+  out((await t.getAttribute('aria-expanded')) === 'false' && await p.evaluate(() => document.activeElement === document.querySelector('button.nav-toggle')), 'Esc cierra y devuelve el foco al botón')
+  await t.click(); await p.locator('#menu-movil a', { hasText: 'Precios' }).click(); await p.waitForTimeout(600)
+  out(!(await p.locator('#menu-movil').isVisible()), 'el menú se cierra al navegar (' + p.url().replace(base, '') + ')')
+}
+await b.close()
