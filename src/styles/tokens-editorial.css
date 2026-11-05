@@ -57,9 +57,14 @@
    para que el cambio a la fuente real no mueva el layout (CLS). Sin la fuente local, se usa el genérico. */
 @font-face { font-family: 'DM Serif Display Fallback Times'; src: local('Times New Roman'), local('Liberation Serif'), local('Times'); size-adjust: 91.4%; }
 @font-face { font-family: 'DM Serif Display Fallback DejaVu'; src: local('DejaVu Serif'); size-adjust: 81%; }
+@font-face { font-family: 'DM Serif Display Fallback Mixed Times'; src: local('Times New Roman'), local('Liberation Serif'), local('Times'); size-adjust: 110%; }
+@font-face { font-family: 'DM Serif Display Fallback Mixed DejaVu'; src: local('DejaVu Serif'); size-adjust: 86%; }
 @font-face { font-family: 'DM Sans Fallback Arial'; src: local('Arial'), local('Liberation Sans'), local('Helvetica'); size-adjust: 92.8%; }
 @font-face { font-family: 'DM Sans Fallback DejaVu'; src: local('DejaVu Sans'); size-adjust: 82%; }
 :root {
-  --font-display-ed: 'DM Serif Display', 'DM Serif Display Fallback Times', 'DM Serif Display Fallback DejaVu', serif;
+  /* mayúsculas (titulares gigantes) */
+  --font-display-caps: 'DM Serif Display', 'DM Serif Display Fallback Times', 'DM Serif Display Fallback DejaVu', serif;
+  /* texto normal (títulos de sección, preguntas) */
+  --font-display-ed: 'DM Serif Display', 'DM Serif Display Fallback Mixed Times', 'DM Serif Display Fallback Mixed DejaVu', serif;
   --font-sans-ed: 'DM Sans', 'DM Sans Fallback Arial', 'DM Sans Fallback DejaVu', sans-serif;
 }

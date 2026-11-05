@@ -11,7 +11,7 @@ export default function LangSwitch({ className = '' }: { className?: string }) {
   const item = (l: Lang, label: string, name: string) =>
     l === lang
       ? <span className="lang-on" aria-current="true"><span aria-hidden="true">{label}</span><span className="sr">{name}</span></span>
-      : <Link className="lang-off" to={counterpart(pathname, l) + (hash || '')} hrefLang={l === 'en' ? 'en' : 'es-MX'} lang={l} aria-label={name}>{label}</Link>
+      : <Link className="lang-off" to={counterpart(pathname, l) + (hash || '')} hrefLang={l === 'en' ? 'en' : 'es-MX'} lang={l} aria-label={`${label}, ${name}`}>{label}</Link>
   return (
     <div className={'lang ' + className} role="group" aria-label={t.language}>
       {item('es', 'ES', 'Español')}

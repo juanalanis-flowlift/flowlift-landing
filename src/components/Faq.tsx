@@ -4,13 +4,13 @@ import { Plus } from 'lucide-react'
 export type FaqItem = { q: string; a: string }
 
 // Acordeón de una pregunta abierta a la vez.
-export default function Faq({ items }: { items: FaqItem[] }) {
-  const [open, setOpen] = useState(0)
+export default function Faq({ items, initial = 0, openAll = false }: { items: FaqItem[]; initial?: number; openAll?: boolean }) {
+  const [open, setOpen] = useState(initial)
   const uid = useId()
   return (
     <div className="faq-list">
       {items.map((it, i) => {
-        const isOpen = open === i
+        const isOpen = openAll || open === i
         return (
           <div className="faq-item" key={it.q}>
             <button

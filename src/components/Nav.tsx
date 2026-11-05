@@ -80,7 +80,7 @@ export default function Nav({ mode, here }: { mode: Mode; here: PageKey }) {
     <>
       <a className="skip" href="#contenido">{COMMON[lang].skip}</a>
       <header className="nav">
-        <SmartLink className="nav-brand" href="/" aria-label={COMMON[lang].footer.home}>
+        <SmartLink className="nav-brand" href="/" aria-label={product ? `flowlift ${product}, ${lang === 'en' ? 'home' : 'inicio'}` : COMMON[lang].footer.home}>
           <img src="/assets/brand/logo.svg" alt="flowlift" width={122} height={26} />
           {product && <span className="serif it nav-product">{product}</span>}
         </SmartLink>

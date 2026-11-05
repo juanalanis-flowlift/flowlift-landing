@@ -1,0 +1,1417 @@
+{
+ "eyebrow": "Help center",
+ "title": "How can we *help?*",
+ "lead": "Get answers to common questions on all things flowlift — for the people running their business with it every day.",
+ "popularLabel": "Popular searches:",
+ "popular": [
+  {
+   "t": "booking link",
+   "target": "section-booking-page"
+  },
+  {
+   "t": "OXXO Pay",
+   "target": "section-account-billing"
+  },
+  {
+   "t": "reminders",
+   "target": "section-notifications-reminders"
+  },
+  {
+   "t": "team plan",
+   "target": "section-account-billing"
+  }
+ ],
+ "cards": [
+  {
+   "t": "Get started",
+   "d": "Open your account, finish setup, and go live in under 10 minutes.",
+   "target": "section-getting-started"
+  },
+  {
+   "t": "Run your business",
+   "d": "Services, availability, bookings, your public page and reminders.",
+   "target": "section-business-setup"
+  },
+  {
+   "t": "Account & billing",
+   "d": "Plans, payments, language, analytics and your team.",
+   "target": "section-account-billing"
+  }
+ ],
+ "open": "Open",
+ "searchLabel": "Search the help center",
+ "guide": {
+  "eyebrow": "PROVIDER GUIDE",
+  "title": "Everything you can do in flowlift, *in plain language.*",
+  "counts": "{s} sections · {a} articles",
+  "tip": "Click any section title to jump to it. The sidebar follows you as you scroll.",
+  "tipLabel": "TIP"
+ },
+ "articles": "articles",
+ "article1": "article",
+ "one": "1 article found",
+ "many": "{n} articles found",
+ "none": "We couldn't find articles matching that search. Try another word.",
+ "sections": "Sections",
+ "expand": "Show all",
+ "collapse": "Hide all",
+ "support": {
+  "title": "Still need a *hand?*",
+  "sub": "We're here.",
+  "text": "If something isn't covered here, send us a note from the Send Feedback button inside your dashboard — a real human reads every message.",
+  "mail": "Email support",
+  "back": "Back to home"
+ },
+ "sectionsList": [
+  {
+   "id": "section-getting-started",
+   "n": "01",
+   "title": "Getting started",
+   "lead": "Open your account, run the setup wizard, and go live.",
+   "articles": [
+    {
+     "id": "article-create-account",
+     "title": "How to create your account",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Go to your flowlift sign-in page and click Sign up with Google or Sign up with Microsoft.",
+        "Complete the sign-in flow with your chosen provider.",
+        "You'll land automatically on the setup wizard to get your business ready."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-initial-setup",
+     "title": "How to complete initial setup (the wizard)",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "When you first sign in, a 3-step wizard walks you through the basics."
+      },
+      {
+       "t": "p",
+       "h": "Step 1 — Tell us about your business"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Type your Business name.",
+        "Choose your Business category from the dropdown (e.g., Hair Salon, Photography, etc.).",
+        "Select your Timezone — it defaults to Mexico City (CDMX). Change it if needed.",
+        "Enter your Business phone number.",
+        "Click Next."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Step 2 — Set your availability"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Click Set Your Schedule. This takes you to the Availability page.",
+        "Configure your working hours (see Setting your availability for details).",
+        "Come back and click Next once your schedule is saved."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Step 3 — Add your first service"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Click Add Your First Service. This takes you to the Services page.",
+        "Add at least one service (see Managing your services for details).",
+        "Come back and click Finish Setup."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-go-live",
+     "title": "How to go live for the first time",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "After completing Step 3, you'll see a confirmation screen with a checklist: Business set up ✓, Availability configured ✓, First service added ✓.",
+        "Click Go to Dashboard to open your main control panel.",
+        "Click Preview Booking Page (on the confirmation screen or in the dashboard) to see exactly what your customers will see.",
+        "Share your booking link with customers — you're live!"
+       ]
+      },
+      {
+       "t": "p",
+       "h": "02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-business-setup",
+   "n": "02",
+   "title": "Setting up your business",
+   "lead": "Identity, location, logo, policies and your booking URL.",
+   "articles": [
+    {
+     "id": "article-update-info",
+     "title": "How to update your business name, category, and description",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open the settings menu: on desktop, click the gear icon; on mobile, tap the small bubble with your business name.",
+        "A vertical menu opens. Choose Business Profile.",
+        "The Business Settings page opens with Business Information expanded. Update the Business Name and Business Type, and review the rest of the business details.",
+        "Scroll down to check Country, Phone, Email, and the automatically detected Timezone.",
+        "Changes save automatically. The fixed bar at the bottom shows the save status and whether any required section is still incomplete."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-logo",
+     "title": "How to add or change your logo",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open Settings with the desktop gear icon or the business-name bubble on mobile.",
+        "Choose Business Profile from the vertical menu.",
+        "In Business Information, use the Logo upload control and choose the image from your device.",
+        "Wait for the fixed bar to show that the changes are saved, then open Preview to confirm how the logo appears to customers."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-location",
+     "title": "How to add your location and contact info",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open Settings with the gear icon on desktop or the business-name bubble on mobile, then choose Business Profile.",
+        "In Business Information, complete Address and City.",
+        "Scroll down and complete Country, Phone (including its country code), and Email.",
+        "Review the automatically detected Timezone and wait for the bottom bar to confirm Changes saved."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Your address will appear on customer confirmation emails and on your public booking page."
+      }
+     ]
+    },
+    {
+     "id": "article-booking-url",
+     "title": "How to find and change your public booking page URL",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Your booking page URL looks like this: flowlift.co/book/your-slug"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Click Settings in the sidebar.",
+        "Go to the Booking Page tab.",
+        "Under Booking Page URL, you'll see your current slug (the short name at the end of the link).",
+        "Click the slug field to edit it (use only lowercase letters, numbers, and hyphens — no spaces).",
+        "Click Save. Your new link is active immediately."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Use the Copy button to copy the full link, or Preview to open it in a new tab."
+      }
+     ]
+    },
+    {
+     "id": "article-cancellation-policy",
+     "title": "How to add a cancellation policy",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open Settings with the desktop gear icon or the business-name bubble on mobile and choose Business Profile.",
+        "Expand the optional Policies card.",
+        "Choose My own, Flexible, 24 hours, or Strict. You can edit the selected policy text in the field below.",
+        "Turn on Show policy on booking page if customers should see it before booking.",
+        "Wait for the fixed bottom bar to confirm that the changes are saved."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-social-links",
+     "title": "How to add your social media links",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open Settings with the desktop gear icon or the business-name bubble on mobile and choose Business Profile.",
+        "Expand Policies and scroll to the optional Social media area.",
+        "Turn on the option to show social links on the booking page, then complete the social links the form requests.",
+        "Wait for the bottom bar to confirm that the changes are saved and use Preview to review the public result."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "03"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-services",
+   "n": "03",
+   "title": "Managing your services",
+   "lead": "Create, edit, hide and price what you offer.",
+   "articles": [
+    {
+     "id": "article-add-service",
+     "title": "How to add a new service",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Create services from the dashboard quick-actions menu. The documented example creates a 30-minute, MX$500 service, hides its description on the booking page, and enables an email reminder."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Tap the green + button in the bottom navigation and choose Services from the quick-actions menu.",
+        "Click + Add Service.",
+        "Enter the Service Name, optional Description, Duration and unit, Price, and Currency. You can also configure seasonal availability or a price range if needed.",
+        "Leave Active on, review Show Price on Booking Page, and turn Show Description on Booking Page on or off as desired.",
+        "To send a reminder, turn on Automatic Email Reminders and set Days before the appointment and Time of day.",
+        "Click Save Service. A success message appears and the service is added to the list; services with reminders show a Reminders label."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-price-range",
+     "title": "How to set a price range instead of a fixed price",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open the service add or edit dialog.",
+        "Toggle on Price Range.",
+        "Enter the minimum price in From and the maximum in To.",
+        "Click Save Service."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-edit-service",
+     "title": "How to edit a service",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open the green + quick-actions menu and choose Services.",
+        "Find the service and click the pencil icon on its card.",
+        "The Edit Service dialog opens with the current values already filled in. Change only the field you need, such as Price.",
+        "Click Save Service at the bottom of the dialog.",
+        "A success message appears and the service card shows the new value."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "The updated price and settings apply to future bookings. Existing bookings keep the details that were recorded when they were created."
+      }
+     ]
+    },
+    {
+     "id": "article-hide-service",
+     "title": "How to hide a service (without deleting it)",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Hiding a service removes it from your public booking page but keeps all its data."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Go to Services in the sidebar.",
+        "Click the eye icon on the service card.",
+        "The service is now hidden — the icon changes to show it's off. Click it again to bring it back."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "You can also toggle Active inside the edit dialog to do the same thing."
+      }
+     ]
+    },
+    {
+     "id": "article-delete-service",
+     "title": "How to delete a service",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Go to Services in the sidebar.",
+        "Click the trash can icon on the service card.",
+        "Confirm the deletion in the dialog that appears."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "This cannot be undone. If you just want to hide the service temporarily, use the eye icon instead."
+      }
+     ]
+    },
+    {
+     "id": "article-require-confirmation",
+     "title": "How to require your approval before a booking is confirmed",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Useful if you want to vet bookings before they're locked in."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Open the service edit dialog.",
+        "Toggle on Requires Confirmation.",
+        "Click Save Service."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "From now on, customers who book this service will see Booking Request Submitted and wait for your approval. You approve from the Bookings page."
+      }
+     ]
+    },
+    {
+     "id": "article-advance-notice",
+     "title": "How to require advance notice for a service",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "If customers need to book at least X hours ahead (e.g., you need prep time):"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Open the service edit dialog.",
+        "Toggle on Requires Advance Notice.",
+        "Enter the minimum number of hours in the Minimum hours of notice required field (e.g., 48 for 2 days).",
+        "Click Save Service."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-auto-reminders",
+     "title": "How to turn on automatic email reminders for a service",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Customers will automatically get a reminder email before their appointment."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Open the service edit dialog.",
+        "Toggle on Automatic Email Reminders.",
+        "Set Days before the appointment — for example, 1 sends it the day before.",
+        "Set Time of day — pick the time the reminder email goes out (e.g., 9:00 AM).",
+        "Click Save Service or Edit to save the service."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "The reminder is sent once per booking. If the customer reschedules, the reminder resets automatically. Automated communication is sent by email, not WhatsApp."
+      }
+     ]
+    },
+    {
+     "id": "article-service-photo",
+     "title": "How to add a photo to a service",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open the service edit dialog (you must be editing an existing service, not adding a new one).",
+        "Scroll down to Service Image.",
+        "Click Add Image and upload a photo from your device.",
+        "Click Save Service."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "04"
+      }
+     ],
+     "plan": "pro"
+    }
+   ]
+  },
+  {
+   "id": "section-availability",
+   "n": "04",
+   "title": "Setting your availability",
+   "lead": "Working days, hours, time off and slot duration.",
+   "articles": [
+    {
+     "id": "article-working-hours",
+     "title": "How to set your working days and hours",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Tap Availability (the clock icon) in the bottom navigation.",
+        "In Working Hours, click Edit.",
+        "Choose a day tab. Turn the Open / Closed switch on to open a closed day.",
+        "Set Start Time, End Time, and Slot Duration with the dropdowns. The time lists use 30-minute increments.",
+        "Changes are saved immediately and an Availability updated message appears. Click Done to close the editor.",
+        "Repeat the process for another day, or use Copy to… in the Business Profile availability card when you want to copy a schedule."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "A closed day has no bookable times. In the documented example, Sunday and Monday were both set to 9:00 AM–6:00 PM without changing the other days."
+      }
+     ]
+    },
+    {
+     "id": "article-add-break",
+     "title": "How to add a break to a working day",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Tap Availability in the bottom navigation and click Edit in Working Hours.",
+        "Choose the day tab and click + Add break in the Breaks section.",
+        "Set the break's start and end times with the two dropdowns. The counter shows how many of the three allowed breaks are in use.",
+        "Click Done. The break is saved immediately; reopen that day to verify it remains listed."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Customers cannot book during a break even though the business remains open for the rest of that day's working hours."
+      }
+     ]
+    },
+    {
+     "id": "article-copy-hours",
+     "title": "How to set the same hours for multiple days at once",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Click Edit Hours on the Availability page.",
+        "Configure one day the way you want it.",
+        "Click Copy To.",
+        "Select the other days you want to apply the same hours to (or click Select All).",
+        "Click Apply.",
+        "Click Done to save."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-full-day",
+     "title": "How to set a full-day schedule",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Click Edit Hours and select a day.",
+        "Toggle it Open.",
+        "Click the Full Day button — this sets the hours to 12:00 AM – 11:30 PM automatically.",
+        "Click Done."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-block-time",
+     "title": "How to block time off (vacation, appointments, breaks)",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Tap Availability in the bottom navigation and find Blocked Time.",
+        "Click + Add Blocked Time.",
+        "In Date Range, click one date for a single day or click a first and second date for a range. If a default date remains selected, click your intended first date again to reset the range.",
+        "Set Start Time and End Time. For a full-day block, use 12:00 AM and 11:30 PM.",
+        "Add an optional Reason, such as Vacation.",
+        "Click Add."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "A Blocked time added message appears. The new block is shown in the Blocked Time list and prevents bookings during that period; use its trash icon to remove it."
+      },
+      {
+       "t": "note",
+       "h": "Blocking more than one day at once requires a Pro+ plan."
+      }
+     ]
+    },
+    {
+     "id": "article-remove-block",
+     "title": "How to remove a blocked time",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Tap Availability in the bottom navigation.",
+        "Find the period in the Blocked Time list.",
+        "Click the trash icon next to it."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-customization",
+   "n": "05",
+   "title": "Customizing the app",
+   "lead": "Dark mode, language and the notification panel.",
+   "articles": [
+    {
+     "id": "article-dark-mode",
+     "title": "How to switch between dark mode and light mode",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open the settings menu: click the gear icon on desktop or the small business-name bubble on mobile.",
+        "Under Dashboard Preferences, click Theme. It switches immediately between Dark and Light.",
+        "Open the settings menu again to confirm the current theme or switch back."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "The theme preference applies only to the owner's dashboard. The public booking page remains in light mode."
+      }
+     ]
+    },
+    {
+     "id": "article-language",
+     "title": "How to change the app language (English / Spanish)",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open the settings menu with the gear icon on desktop or the small business-name bubble on mobile.",
+        "Under Dashboard Preferences, click Language. It is a two-position toggle: Spanish ⇄ English.",
+        "The entire dashboard switches language immediately, including navigation, buttons, tabs, and menus.",
+        "Open the menu again to confirm the active language; the row now offers the other language."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "This changes the owner's dashboard only. It does not change the language a customer sees on the public booking page."
+      }
+     ]
+    },
+    {
+     "id": "article-notifications",
+     "title": "How to view and dismiss notifications",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Click the bell icon in the top-right corner. Notifications opens with the unread count and Mark all as read.",
+        "Use All for the complete newest-first list and Unread for items you have not reviewed.",
+        "Use Urgent for new bookings and cancellations, Warnings for operational alerts such as a booking outside normal hours, and Info for summaries such as upcoming bookings or today's bookings.",
+        "Click View booking or View schedule when a notification includes a direct link to the related screen."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-appointments",
+   "n": "06",
+   "title": "Managing appointments",
+   "lead": "View, confirm, reschedule and add bookings yourself.",
+   "articles": [
+    {
+     "id": "article-view-upcoming",
+     "title": "How to view your upcoming bookings",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Tap Bookings in the bottom navigation. The section opens in List view.",
+        "Bookings are grouped by date in individual cards.",
+        "Use the filters All, Confirmed, Pending, Completed, No Show, or Cancelled.",
+        "A confirmed card shows the customer, service, price, time, status, and the Reschedule and Cancel actions."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-calendar-view",
+     "title": "How to switch to calendar view",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Tap Bookings in the bottom navigation.",
+        "Click Calendar next to List.",
+        "Use the arrows to move between weeks, click Today to return to the current week, and select a date in the seven-day row.",
+        "The selected day's heading shows the date, booking count, and estimated total. Scroll through the hourly agenda to find a booking.",
+        "Each confirmed booking card includes Reschedule and Cancel."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-confirm-pending",
+     "title": "How to confirm a pending booking",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "When a service requires your approval, new bookings come in as Pending."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Go to Bookings in the sidebar.",
+        "Find the pending booking (filter by Pending to find it quickly).",
+        "Click on the booking to open its details.",
+        "Click Confirm.",
+        "The customer automatically receives a confirmation email."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-cancel-booking",
+     "title": "How to cancel a booking",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Tap Bookings and, in List view, find the confirmed booking. Use the status filters if needed.",
+        "Click the red Cancel action on the booking card.",
+        "In Cancel this booking?, review the notice that a cancellation email will be sent.",
+        "Choose Keep booking to exit without changes or Yes, cancel to confirm.",
+        "The card remains in the list with a grey Cancelled status and its Reschedule, Cancel, and calendar actions disappear."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Cancellation always sends an automatic cancellation email to the customer. There is no silent-cancel option. The card remains in the list with the Cancelled status."
+      }
+     ]
+    },
+    {
+     "id": "article-no-show",
+     "title": "How to mark a customer as a no-show",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Go to Bookings and find the past appointment.",
+        "Click on it to open the details.",
+        "Click Mark No-Show."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "No-show data feeds into your no-show rate metric on the dashboard."
+      }
+     ]
+    },
+    {
+     "id": "article-reschedule",
+     "title": "How to reschedule a booking (request a new time)",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Tap Bookings, switch from List to Calendar, select the appointment's date, and scroll to its card.",
+        "Click Reschedule.",
+        "Review the Original Appointment details in the dialog.",
+        "Choose the new date and available time. Changing the date may select the first available time automatically, so review it before continuing.",
+        "Click the green Move to [date and time] button.",
+        "In Move this booking?, choose Cancel, Move Booking to move without an email, or Confirm with Customer to move it and email the customer.",
+        "Use the calendar arrows and select the new date to verify the booking appears there."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "After the move, the appointment disappears from the original day and appears on the new day. The customer is still confirmed."
+      }
+     ]
+    },
+    {
+     "id": "article-internal-notes",
+     "title": "How to add internal notes to a booking",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open any booking from the Bookings page.",
+        "Find the Internal Notes field in the details panel.",
+        "Type your notes (these are private — customers never see them).",
+        "Click Save."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-manual-booking",
+     "title": "How to create a manual booking",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Use this when a customer calls or walks in and you want to add their booking yourself."
+      },
+      {
+       "t": "sub",
+       "h": "Pro+ — single business calendar"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "From Overview, tap the green + button in the bottom navigation and choose Add Booking.",
+        "The booking opens in one business-wide calendar; there is no team member to select.",
+        "Open Select Service and choose the service. Its duration recalculates the end time and price.",
+        "Choose the date and an available time. Busy slots do not appear as available, and changing the date may reset the selected time, so review it before continuing.",
+        "Enter Customer name and Customer email, open More, and enter Customer phone. Phone is required even if it is not visibly marked; Notes are optional.",
+        "Click Book for [date and time]. The new card appears in Bookings → List with Confirmed status and does not show an assigned team member."
+       ]
+      },
+      {
+       "t": "sub",
+       "h": "Teams — choose a team member's calendar"
+      },
+      {
+       "t": "p",
+       "h": "On Teams, every booking must be placed on the correct team member's calendar."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "From Overview, tap the green + button and choose Add Booking from Quick Actions.",
+        "In New booking, first choose the team member under Team calendar.",
+        "Choose the service. flowlift uses that service's duration and price.",
+        "Review the selected person's calendar, where occupied times are marked Busy, and choose an open slot.",
+        "Open Client details and enter the customer's name, email, and phone. Add a private note if needed.",
+        "If the customer requests another date, select it and choose the new time.",
+        "When the time falls outside working hours, flowlift displays a warning. Choose Book it anyway to continue or Pick another time to return.",
+        "The booking appears in Bookings → List with its price and Confirmed status. Open it to review the details and verify that the confirmation email was sent."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "07"
+      }
+     ],
+     "plan": "pro"
+    }
+   ]
+  },
+  {
+   "id": "section-booking-page",
+   "n": "07",
+   "title": "Your booking page",
+   "lead": "Your public link, QR code, cover image and team photos.",
+   "articles": [
+    {
+     "id": "article-find-link",
+     "title": "How to find your public booking link",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Click Settings in the sidebar.",
+        "Go to the Booking Page tab.",
+        "Your full booking link is shown — it looks like flowlift.co/book/your-slug.",
+        "Click Copy to copy it to your clipboard."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "You can also find a share button in the sidebar and on the dashboard."
+      }
+     ]
+    },
+    {
+     "id": "article-share-link",
+     "title": "How to share your booking link",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Copy your link (see above).",
+        "Paste it anywhere — WhatsApp, Instagram bio, email signature, your website, Google Maps listing, etc.",
+        "Customers click it, pick a service, choose a date and time, fill in their details, and they're booked."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-public-booking-flow",
+     "title": "How a customer makes a public booking",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "The public booking page does not require the customer to sign in or create an account. It detects the browser language and keeps a three-step indicator visible: Service, Date &amp; Time, and Details."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Choose a service by clicking its selection circle. The card highlights, the fixed bottom bar shows the service and price, and Continue becomes active.",
+        "In Date &amp; Time, choose Any available or a specific team member, select a day in the seven-day calendar, and choose a time. Green means available, yellow means limited spaces, and grey means full or closed.",
+        "In Details, enter Full name, WhatsApp phone with country code, and Email. Use Add a note only if needed.",
+        "Accept the Terms and Conditions and Privacy Policy. Confirm booking becomes active only after the required details and consent are complete.",
+        "Click Confirm booking. While submitting, the button shows Processing.",
+        "The confirmation screen shows the service, date, time range, assigned staff member, address, and total. The customer can add it to Google, Outlook, or Apple Calendar, rate the experience, or click Book another appointment."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "If another customer takes the slot first, the booking is rejected and the customer must return to Date &amp; Time and choose another available slot."
+      }
+     ]
+    },
+    {
+     "id": "article-qr-code",
+     "title": "How to get a QR code for your booking page",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Click Settings in the sidebar → Booking Page tab.",
+        "You'll see a live QR code preview.",
+        "Click Download PNG or Download JPG to save it.",
+        "Print it and display it at your location so walk-in customers can scan and book."
+       ]
+      }
+     ],
+     "plan": "pro"
+    },
+    {
+     "id": "article-preview",
+     "title": "How to preview what customers see",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "From the Dashboard, click Preview Booking Page.",
+        "Or from Settings → Booking Page tab, click Preview.",
+        "Your public booking page opens in a new tab — this is exactly what your customers see."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-team-photos",
+     "title": "How to show team member photos on the booking page",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Go to Settings → Booking Page tab.",
+        "Toggle on Show Team Photos.",
+        "Customers will see team member photos and can pick who they'd like their appointment with."
+       ]
+      }
+     ],
+     "plan": "teams"
+    },
+    {
+     "id": "article-cover-image",
+     "title": "How to add a cover image to your booking page",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Go to Settings → Booking Page tab.",
+        "Under Cover Image, click Upload and choose a banner photo.",
+        "It appears at the top of your public booking page."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "08"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-notifications-reminders",
+   "n": "08",
+   "title": "Notifications & reminders",
+   "lead": "What gets sent automatically and how to control it.",
+   "articles": [
+    {
+     "id": "article-auto-sent",
+     "title": "What gets sent automatically",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "flowlift sends emails on your behalf without you doing anything:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Customer books an appointment → confirmation email (with date, time, calendar links, and your address) to the customer, plus a new booking notification email to you.",
+        "You confirm a pending booking → confirmation email to the customer.",
+        "You reschedule and choose Confirm with Customer → email to the customer with the new date and time. Choosing Move Booking moves it without that email.",
+        "You cancel a booking → automatic cancellation email to the customer.",
+        "Automatic reminder fires (if enabled) → reminder email to the customer before their appointment."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-set-reminders",
+     "title": "How to set up automatic reminders for a service",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "See How to turn on automatic email reminders for a service in the Services section above."
+      },
+      {
+       "t": "p",
+       "h": "Reminders are configured per service so you can have different rules for different types of appointments."
+      }
+     ]
+    },
+    {
+     "id": "article-about-whatsapp",
+     "title": "About WhatsApp",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "You can add your WhatsApp number to your business profile (it appears as a contact link on your booking page), but automated WhatsApp messages are not currently sent by the system. All automated communication happens via email."
+      },
+      {
+       "t": "p",
+       "h": "09"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-account-billing",
+   "n": "09",
+   "title": "Account & billing",
+   "lead": "Plans, upgrades, the billing portal and Settings.",
+   "articles": [
+    {
+     "id": "article-view-plan",
+     "title": "How to view your current plan",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Click your profile picture or initials in the top-right corner (or the settings gear).",
+        "Click Membership.",
+        "You'll see your current plan (Starter, Pro+, or Teams) and what's included."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-upgrade",
+     "title": "How to upgrade your plan",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Click your profile/initials → Membership.",
+        "Review the three plans: Starter (free, 1 active service, unlimited bookings, public booking page), Pro+ (unlimited services, service photos, QR codes, multi-day time blocks), Teams (everything in Pro+, plus team management, individual schedules and swimlane view).",
+        "Choose a billing interval: Monthly, Quarterly (3 months), or Annual (best value — 2 months free).",
+        "Click the plan you want. You'll be taken to a secure Stripe checkout page.",
+        "Enter your card details and complete payment.",
+        "Your plan upgrades instantly."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-manage-subscription",
+     "title": "How to manage or cancel your subscription",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Click your profile/initials → Membership.",
+        "Click Manage billing.",
+        "You'll be taken to the Stripe Billing Portal where you can update your payment method, view invoices, or cancel your subscription."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-update-info-settings",
+     "title": "How to update your business information in Settings",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open Settings by clicking the gear icon on desktop or the small business-name bubble on mobile.",
+        "In the vertical menu, choose Business Profile.",
+        "Business Settings opens with Business Information expanded. Update Logo, Cover, Business Name, Business Type, Address, City, Country, Phone, or Email; review the detected Timezone.",
+        "Expand Availability to review full-day settings, start and end times, slot duration, breaks, and Copy to….",
+        "Expand Services to review visible services, prices, durations, visibility, ordering, and the link to advanced service management.",
+        "Expand Policies to choose or edit the cancellation policy and control whether policy and social links appear publicly.",
+        "Open Preview to see the page exactly as a customer sees it. The fixed bottom bar confirms saves and required-section status."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "If the page says one required section is missing even though the visible fields look complete, expand Business Information and check for a required logo, cover image, or field further down."
+      },
+      {
+       "t": "p",
+       "h": "10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-analytics",
+   "n": "10",
+   "title": "Analytics",
+   "lead": "What your dashboard tells you and how to read it.",
+   "articles": [
+    {
+     "id": "article-dashboard",
+     "title": "What the Dashboard shows you",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Your Dashboard (Overview) is your business snapshot. Here's what each number means:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "This week appointments — total confirmed and pending bookings in the current week. The arrow shows how you compare to last week.",
+        "Estimated revenue — the total value of this week's bookings based on your service prices.",
+        "Pending — bookings waiting for your approval. Turns amber when action is needed.",
+        "No-show rate — the percentage of past appointments where the customer didn't show up, over the last 30 days."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-revenue-chart",
+     "title": "How to read the weekly revenue chart",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Go to Dashboard in the sidebar.",
+        "The Revenue · this week bar chart shows one bar per day of the current week.",
+        "Taller bars = more revenue on that day.",
+        "Hover over a bar to see the exact amount."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-todays-schedule",
+     "title": "How to see today's schedule",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Go to Dashboard.",
+        "The Today's Schedule card lists every appointment for today in order.",
+        "If a booking is happening right now, you'll see an IN PROGRESS NOW banner.",
+        "Click View all → to jump to the full Bookings page."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-top-services",
+     "title": "How to see your most popular services",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Go to Dashboard.",
+        "Scroll down to TOP SERVICES · THIS MONTH.",
+        "This list shows which services have been booked the most this month and how many times."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-deep-analytics",
+     "title": "About in-depth analytics reporting",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "flowlift can export a full data report to a Google Sheet (including all bookings and business info). This is an admin-level feature — contact your account manager or flowlift support to set it up for your account."
+      },
+      {
+       "t": "p",
+       "h": "11"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-customer-directory",
+   "n": "11",
+   "title": "Customer Directory",
+   "lead": "Keep track of the people who book with you, understand their history, and make repeat visits easier.",
+   "articles": [
+    {
+     "id": "article-dir-availability",
+     "title": "Availability",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "The Customer Directory is available on the Pro+ and Teams plans. It is a private business tool and is not visible to your customers."
+      },
+      {
+       "t": "note",
+       "h": "Starter accounts will see an option to upgrade instead."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-open",
+     "title": "How to open Your Clients",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Tap the green + button in the bottom navigation.",
+        "Choose Clients from the quick-actions menu.",
+        "The Clients screen opens with search, sorting, Export CSV, Add customer, and any Possible Matches alerts."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-dir-how-added",
+     "title": "How customers are added",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Customers are created automatically from your bookings. You do not need to add each person manually."
+      },
+      {
+       "t": "p",
+       "h": "flowlift groups bookings using the customer's phone number when available, with email used as a backup. Small formatting differences in the same phone number are combined when they represent the same customer."
+      },
+      {
+       "t": "p",
+       "h": "If a booking uses a known phone number with a different name, Clients shows a Possible Matches card with the saved name, received name, shared phone, and booking date."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Review the alert and decide whether both names belong to the same person.",
+        "Choose Not the same person to keep separate records, or click Update name.",
+        "In Update this customer's name?, review the old and new names and click Update name to confirm.",
+        "The alert disappears and the existing profile keeps its appointment history and amount spent under the updated name."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-dir-find",
+     "title": "How to find a customer",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Use the search box to search by name, phone number, or email.",
+        "Search works without accents, so \"Maria\" can find \"María.\"",
+        "Sort the list by Recent, A–Z, or Most visits.",
+        "Select a customer to open their complete profile."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-dir-profile",
+     "title": "What you can see in a customer profile",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Each profile can include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Phone number and email address.",
+        "Total visits.",
+        "Estimated amount spent on past confirmed appointments.",
+        "Number of no-shows.",
+        "Most recent visit.",
+        "Favorite or most frequently booked service.",
+        "Appointment history.",
+        "New or Risk labels when applicable."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "These summaries are calculated from your bookings. They update automatically when booking statuses change."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-contact",
+     "title": "How to contact a customer",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Open the customer profile and choose the available action:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Copy their phone number or email address.",
+        "Call them from a phone-enabled device.",
+        "Open a WhatsApp conversation when a phone number is available."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-dir-notes",
+     "title": "How to add private notes",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open Clients, search by name, and select the customer.",
+        "In the profile, find Private Notes and enter preferences or follow-up information.",
+        "Click Add note. The counter increases and the saved note appears with its creation date."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Use notes for preferences, service details, or other information your business needs to remember. You can also contact the customer or book from the same profile."
+      },
+      {
+       "t": "note",
+       "h": "Private notes are only available to authorized users of the business account."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-rebook",
+     "title": "How to book a repeat visit",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open the customer's profile and select Book again. The booking panel opens with the customer's name and email pre-filled.",
+        "Review or choose the service, select the date, and click the desired time in the calendar.",
+        "If the booking fails because the saved phone is not in the required E.164 international format, open More and enter the phone with its country code.",
+        "Click Book for [date and time]. The panel closes after success.",
+        "Open Bookings → Calendar, select the appointment date, and verify the new Confirmed card."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "The original appointment is not changed."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-create",
+     "title": "How to add a customer manually",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open Clients from the green + quick-actions menu and click Add customer next to Export CSV.",
+        "Enter the required Name and at least one contact method: Phone or Email. The private Note is optional.",
+        "Click Save customer. The modal closes and the client count increases.",
+        "Because a new customer has no recent activity, use search or A–Z to find the profile. It shows zero appointments and $0 spent.",
+        "Open the profile and choose Book again to schedule the first appointment; the button also works for customers with no previous bookings."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "A customer does not need an appointment before you can save their contact information."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-export",
+     "title": "How to export customer information",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "To export the complete directory:"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Open Your Clients.",
+        "Select Export.",
+        "Confirm the export."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "A CSV file will download with customer contact details, booking summaries, no-shows, favorite service, tags, and notes."
+      },
+      {
+       "t": "p",
+       "h": "You can also export an individual customer from their profile."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-delete",
+     "title": "How to delete a customer",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Open the customer's profile.",
+        "Select Delete customer.",
+        "Review the confirmation message carefully.",
+        "Confirm the deletion only when you are sure."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Deleting a customer removes their directory profile and anonymizes matching booking contact information. The booking records remain for business history and reporting, but personal details are removed. Customer cancellation and modification links are also revoked."
+      },
+      {
+       "t": "note",
+       "h": "This action cannot be undone. Export any information you need before deleting the customer."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

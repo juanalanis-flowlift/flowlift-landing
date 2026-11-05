@@ -80,7 +80,7 @@ img { max-width: 100%; }
 
 /* Titular gigante */
 .giant {
-  margin: 0; text-align: center; font-family: var(--font-display-ed); font-weight: 400;
+  margin: 0; text-align: center; font-family: var(--font-display-caps); font-weight: 400;
   text-transform: uppercase; line-height: 0.92; letter-spacing: -1.5px; color: var(--ink);
 }
 
@@ -120,7 +120,7 @@ img { max-width: 100%; }
 .foot { background: var(--surface-dark); color: var(--on-dark); position: relative; overflow: hidden; }
 .foot-cta { padding: 160px var(--gutter) 120px; display: flex; flex-direction: column; align-items: center; gap: 40px; text-align: center; position: relative; }
 .foot-title {
-  margin: 0; font-family: var(--font-display-ed); font-weight: 400; text-transform: uppercase;
+  margin: 0; font-family: var(--font-display-caps); font-weight: 400; text-transform: uppercase;
   font-size: clamp(54px, 8.5vw, 130px); line-height: 0.92; letter-spacing: -1.5px; color: var(--on-dark);
 }
 .foot-title .it { color: var(--green-mid); }

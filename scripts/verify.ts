@@ -6,7 +6,9 @@ import { serve } from '../server/static.mjs'
 import { launch } from './lib-browser'
 
 const PORT = 4174
-const ROUTES = [{ url: '/', name: 'home' }, { url: '/citas', name: 'citas' }]
+import { PAGES, LANGS } from '../src/i18n/routes'
+// Todas las páginas, en los dos idiomas.
+const ROUTES = (Object.keys(PAGES) as (keyof typeof PAGES)[]).flatMap((k) => LANGS.map((l) => ({ url: PAGES[k][l], name: (l === 'en' ? 'en-' : '') + k })))
 let fail = 0
 const report = (ok: boolean, msg: string) => { if (!ok) fail++; console.log(`${ok ? '✓' : '✗'} ${msg}`) }
 
@@ -49,6 +51,17 @@ for (const w of [390, 1280]) {
     const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
     report(over <= 0, `${r.name} @${w}px: sin scroll horizontal (sobrante ${over}px)`)
     report(errors.length === 0, `${r.name} @${w}px: sin errores de consola${errors.length ? ': ' + errors[0] : ''}`)
+
+    // Enlaces internos: todos resuelven (200 o redirección a un 200) y las anclas de la misma página existen
+    const links = await page.evaluate(() => [...document.querySelectorAll<HTMLAnchorElement>('a[href]')].map((a) => a.getAttribute('href')!))
+    const brokenAnchors = await page.evaluate(() => [...document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')].map((a) => a.getAttribute('href')!).filter((h) => h.length > 1 && !document.getElementById(decodeURIComponent(h.slice(1)))))
+    report(brokenAnchors.length === 0, `${r.name} @${w}px: anclas internas existen${brokenAnchors.length ? ': ' + [...new Set(brokenAnchors)].join(', ') : ''}`)
+    if (w === 1280) {
+      const paths = [...new Set(links.filter((h) => h.startsWith('/') && !h.startsWith('//')).map((h) => h.split('#')[0] || '/'))]
+      const bad: string[] = []
+      for (const h of paths) { const res = await page.request.get(`http://127.0.0.1:${PORT}${h}`); if (res.status() !== 200) bad.push(`${h} → ${res.status()}`) }
+      report(bad.length === 0, `${r.name}: ${paths.length} enlaces internos resuelven${bad.length ? ' (fallan: ' + bad.join(', ') + ')' : ''}`)
+    }
 
     // Íconos: todo <svg> debe ser de Lucide o decorativo (conectores del stage/nodos y logo)
     const badSvg = await page.evaluate(() => [...document.querySelectorAll('svg')].filter((s) => !s.classList.contains('lucide') && !s.closest('.stage-lines, .bfn-lines')).length)
@@ -106,7 +119,7 @@ for (const w of [390, 1280]) {
     await page.evaluate(() => scrollTo(0, 0))
     await page.addStyleTag({ content: '*,*::before,*::after{animation:none!important;transition:none!important}.draw{stroke-dashoffset:0!important}.tour-ph .phone-in>*{opacity:0!important}.tour-ph .phone-in>*:first-child{opacity:1!important}' })
     await page.waitForTimeout(300)
-    await page.screenshot({ path: `screenshots/final-${r.name}-${w}.png`, fullPage: true })
+    if (!r.name.startsWith('en-') || w === 1280) await page.screenshot({ path: `screenshots/final-${r.name}-${w}.jpg`, fullPage: true, type: 'jpeg', quality: 72 })
     await page.close()
   }
 }

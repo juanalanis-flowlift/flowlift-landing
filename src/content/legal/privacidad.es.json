@@ -1,0 +1,524 @@
+{
+ "title": "Aviso de Privacidad",
+ "subtitle": "de flowlift",
+ "meta": [
+  "Aviso de Privacidad Integral — v2.0",
+  "Última actualización: 12 de agosto de 2026"
+ ],
+ "intro": [
+  "El presente Aviso de Privacidad se emite en cumplimiento de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares publicada en el Diario Oficial de la Federación el 20 de marzo de 2025 (la \"Ley\") y demás disposiciones aplicables. La autoridad competente en la materia es la Secretaría Anticorrupción y Buen Gobierno."
+ ],
+ "facts": [
+  {
+   "label": "Responsable",
+   "value": "Juan Carlos Alanis Gomez",
+   "note": "juan.alanis@flowlift.co"
+  },
+  {
+   "label": "Autoridad",
+   "value": "SABG",
+   "note": "Secretaría Anticorrupción y Buen Gobierno."
+  },
+  {
+   "label": "Derechos ARCO",
+   "value": "20 días hábiles",
+   "note": "Plazo máximo de respuesta. El ejercicio es gratuito."
+  },
+  {
+   "label": "Datos del cliente final",
+   "value": "Negocio responsable",
+   "note": "flowlift actúa como encargado de esos datos."
+  },
+  {
+   "label": "Conservación",
+   "value": "30 días tras cierre",
+   "note": "Ventana para exportar tu info antes del borrado."
+  },
+  {
+   "label": "Cambios sustanciales",
+   "value": "15 días de aviso",
+   "note": "Por correo o dentro de la Plataforma."
+  }
+ ],
+ "tocLabel": "Contenido",
+ "sections": [
+  {
+   "n": 1,
+   "title": "Identidad y domicilio del responsable",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Juan Carlos Alanis Gomez, actuando como Persona Física con Actividad Empresarial, con domicilio en Paseo de la Turquesa #407, San Patricio Plus, C.P. 25204, Saltillo, Coahuila, México, es responsable del tratamiento de los datos personales en los términos descritos en el numeral 2."
+    },
+    {
+     "t": "p",
+     "h": "Persona encargada de datos personales: Juan Carlos Alanis Gomez — juan.alanis@flowlift.co"
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Juan Carlos Alanis Gomez, operando flowlift desde Saltillo, Coahuila, es quien responde por tus datos. Contáctalo en juan.alanis@flowlift.co.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 2,
+   "title": "Doble carácter de flowlift: responsable y encargado",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Es importante distinguir dos situaciones distintas:"
+    },
+    {
+     "t": "sub",
+     "h": "2.1. flowlift como responsable"
+    },
+    {
+     "t": "p",
+     "h": "Respecto de los datos personales de las personas que contratan o utilizan la Plataforma como negocio (los \"Usuarios\" o \"Negocios\"), de los miembros de equipo que éstos incorporen, y de las personas que se comunican con flowlift, flowlift es el responsable del tratamiento y este Aviso rige dicho tratamiento."
+    },
+    {
+     "t": "sub",
+     "h": "2.2. flowlift como encargado"
+    },
+    {
+     "t": "p",
+     "h": "Respecto de los datos personales de los clientes finales que cada Negocio recaba y administra a través de la Plataforma, el Negocio es el responsable y flowlift actúa únicamente como encargado, tratando dichos datos por cuenta y bajo instrucciones del Negocio."
+    },
+    {
+     "t": "p",
+     "h": "El cliente final que desee ejercer sus derechos sobre esos datos debe dirigirse al Negocio con el que agendó su cita, conforme al numeral 9.3."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "flowlift cuida los datos del negocio como responsable, y los datos de los clientes del negocio como encargado. El negocio es quien responde por esos últimos.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 3,
+   "title": "Datos personales que se recaban",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "3.1. De los Negocios (titulares de la cuenta)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Nombre de la persona responsable o representante",
+      "Nombre comercial del Negocio",
+      "Correo electrónico y teléfono",
+      "Domicilio o ubicación del Negocio",
+      "Datos de la cuenta con la que se autentica (Google o Microsoft)",
+      "Datos de uso de la Plataforma",
+      "Información de suscripción y facturación",
+      "Imágenes que cargue voluntariamente (logotipo, portada, fotografías de servicios)"
+     ]
+    },
+    {
+     "t": "sub",
+     "h": "3.2. De los miembros de equipo"
+    },
+    {
+     "t": "p",
+     "h": "Cuando un Negocio incorpora miembros de equipo, se tratan: nombre, correo electrónico, teléfono, cargo descriptivo, fotografía, servicios que puede realizar y su disponibilidad. El Negocio es responsable de contar con la autorización de cada miembro para incorporar dicha información a la Plataforma."
+    },
+    {
+     "t": "sub",
+     "h": "3.3. De los clientes finales (tratados como encargado, por cuenta del Negocio)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Nombre, correo electrónico y teléfono",
+      "Notas o mensajes que el propio cliente escriba al reservar",
+      "Notas privadas que el Negocio agregue sobre el cliente",
+      "Historial de reservaciones: fecha, servicio, precio y estado",
+      "Información derivada generada automáticamente a partir del historial: número de visitas, monto total gastado, inasistencias, fecha de última visita, servicio más frecuente y una etiqueta de comportamiento del cliente"
+     ]
+    },
+    {
+     "t": "p",
+     "h": "flowlift no recaba datos financieros de clientes finales. Actualmente la Plataforma no procesa pagos entre el Negocio y sus clientes."
+    },
+    {
+     "t": "sub",
+     "h": "3.4. Datos personales sensibles"
+    },
+    {
+     "t": "p",
+     "h": "flowlift no solicita datos personales sensibles (relativos a salud, origen étnico, creencias, preferencia sexual u otros que afecten la esfera más íntima del titular), y pide expresamente que no se capturen en los campos de texto libre de la Plataforma."
+    },
+    {
+     "t": "p",
+     "h": "Los campos de notas son de captura libre. Si un Negocio decide registrar en ellos información sensible, lo hace bajo su exclusiva responsabilidad como responsable del tratamiento, y deberá recabar previamente el consentimiento expreso y por escrito del titular, conforme a la Ley. flowlift no asume responsabilidad por dicho tratamiento."
+    },
+    {
+     "t": "sub",
+     "h": "3.5. Menores de edad"
+    },
+    {
+     "t": "p",
+     "h": "La Plataforma no está dirigida a menores de edad y no solicita fecha de nacimiento. Cuando un Negocio agende servicios para personas menores de edad, corresponde al Negocio recabar el consentimiento de quien ejerza la patria potestad o tutela."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "De los negocios: datos de cuenta y facturación. De los clientes del negocio: nombre, correo, teléfono e historial de citas. No se piden datos sensibles.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 4,
+   "title": "Finalidades del tratamiento",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "4.1. Finalidades primarias (necesarias para prestar el Servicio)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Crear y administrar cuentas de Usuario",
+      "Operar la Plataforma y procesar reservaciones",
+      "Enviar por correo electrónico confirmaciones, recordatorios, avisos de cancelación, solicitudes de cambio de horario y enlaces de acceso",
+      "Procesar suscripciones, cobros y facturación",
+      "Proveer soporte técnico y atender solicitudes",
+      "Prevenir fraude y proteger la seguridad del Servicio",
+      "Cumplir obligaciones legales y fiscales"
+     ]
+    },
+    {
+     "t": "sub",
+     "h": "4.2. Finalidades secundarias (no necesarias)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Análisis estadístico y mejora del producto",
+      "Envío de comunicaciones informativas o promocionales sobre flowlift, dirigidas únicamente a los Negocios (nunca a los clientes finales de éstos)"
+     ]
+    },
+    {
+     "t": "p",
+     "h": "Mecanismo para negar el consentimiento a finalidades secundarias: el titular puede manifestar su negativa enviando un correo a juan.alanis@flowlift.co con el asunto \"Finalidades secundarias\". La negativa no será motivo para negar el Servicio ni afectará las funciones contratadas."
+    },
+    {
+     "t": "p",
+     "h": "flowlift no envía comunicaciones promocionales a los clientes finales de los Negocios."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Tus datos se usan para operar la plataforma y enviarte notificaciones. Puedes negar el uso para marketing enviando un correo a juan.alanis@flowlift.co.",
+    "applies": "Aplica a: Negocio"
+   }
+  },
+  {
+   "n": 5,
+   "title": "Cookies, almacenamiento local y herramientas de medición",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "5.1. Cookie de sesión"
+    },
+    {
+     "t": "p",
+     "h": "Para las personas que inician sesión (Negocios y miembros de equipo) se utiliza una cookie técnica de sesión, con vigencia de siete días, indispensable para mantener la sesión iniciada. Los clientes finales no reciben esta cookie."
+    },
+    {
+     "t": "sub",
+     "h": "5.2. Almacenamiento local del navegador"
+    },
+    {
+     "t": "p",
+     "h": "La Plataforma guarda en el dispositivo del usuario preferencias funcionales como idioma, tema claro/oscuro, estado del menú, avisos ya cerrados, el paso del proceso de configuración, un identificador de sesión para consultar \"Mis citas\" y un registro de si ya se envió calificación de una reservación. Esta información permanece en el dispositivo."
+    },
+    {
+     "t": "sub",
+     "h": "5.3. Medición de uso (PostHog)"
+    },
+    {
+     "t": "p",
+     "h": "La Plataforma utiliza PostHog, un servicio de analítica cuyos servidores se ubican en Estados Unidos, para registrar visitas a páginas y eventos de calificación del servicio. PostHog puede recabar dirección IP, tipo de navegador y dirección de la página visitada, e instalar cookies propias. flowlift no envía a PostHog el nombre, correo ni teléfono de ninguna persona, y no vincula estos eventos a una identidad."
+    },
+    {
+     "t": "p",
+     "h": "El usuario puede deshabilitar o eliminar cookies desde la configuración de su navegador. Deshabilitar cookies técnicas puede impedir el uso de funciones de la Plataforma."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Solo una cookie técnica de sesión (7 días). El análisis de uso (PostHog) va a EUA sin datos identificables. Los clientes finales no reciben cookie de sesión.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 6,
+   "title": "Remisiones y transferencias de datos",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "flowlift no vende ni renta datos personales."
+    },
+    {
+     "t": "sub",
+     "h": "6.1. Remisiones a proveedores (encargados)"
+    },
+    {
+     "t": "p",
+     "h": "Para operar el Servicio, flowlift comparte datos con los siguientes proveedores, que los tratan únicamente por cuenta de flowlift y bajo obligaciones de confidencialidad. Estas remisiones no requieren el consentimiento del titular:"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "Proveedor",
+       "Finalidad",
+       "Datos"
+      ],
+      [
+       "Replit",
+       "Alojamiento de la aplicación y base de datos",
+       "Toda la información de la Plataforma"
+      ],
+      [
+       "Replit Object Storage",
+       "Almacenamiento de imágenes",
+       "Logotipos, portadas, fotos de servicios y de miembros"
+      ],
+      [
+       "Stripe",
+       "Procesamiento de pagos de suscripción",
+       "Datos de facturación del Negocio"
+      ],
+      [
+       "Resend",
+       "Envío de correo transaccional",
+       "Nombre, correo y detalles de la reservación"
+      ],
+      [
+       "Google / Microsoft",
+       "Autenticación de la cuenta",
+       "Correo electrónico y nombre"
+      ],
+      [
+       "PostHog",
+       "Analítica de uso",
+       "Datos de navegación descritos en el numeral 5.3"
+      ],
+      [
+       "HubSpot",
+       "Administración de la relación comercial",
+       "Nombre, correo, teléfono, nombre y ubicación del Negocio"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "h": "Si el envío de correo mediante el proveedor principal falla, flowlift puede utilizar un servidor de correo alterno para completar la entrega del mensaje."
+    },
+    {
+     "t": "p",
+     "h": "flowlift podrá actualizar esta lista. Los cambios se reflejarán en este Aviso conforme al numeral 11."
+    },
+    {
+     "t": "sub",
+     "h": "6.2. Transferencias"
+    },
+    {
+     "t": "p",
+     "h": "Fuera de los supuestos anteriores, flowlift no transfiere datos personales a terceros, salvo cuando sea requerido por autoridad competente o resulte legalmente exigible."
+    },
+    {
+     "t": "sub",
+     "h": "6.3. Transferencias internacionales"
+    },
+    {
+     "t": "p",
+     "h": "Algunos de los proveedores señalados almacenan o procesan información fuera del territorio mexicano, principalmente en Estados Unidos. Al aceptar este Aviso, el titular reconoce y consiente dicho tratamiento en tanto sea necesario para la prestación del Servicio."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "flowlift no vende datos. Los comparte solo con los proveedores necesarios para operar el servicio, todos bajo obligaciones de confidencialidad.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 7,
+   "title": "Conservación de los datos",
+   "blocks": [
+    {
+     "t": "ul",
+     "items": [
+      "Datos de la cuenta y de las reservaciones: se conservan mientras la cuenta permanezca activa. Tras la terminación, se conservan durante treinta (30) días naturales para que el Usuario solicite su exportación; transcurrido dicho plazo podrán eliminarse de forma permanente.",
+      "Sesiones de acceso: se eliminan automáticamente a los siete días.",
+      "Enlaces de acceso y modificación enviados a clientes finales: se eliminan automáticamente al vencer.",
+      "Información fiscal y de facturación: se conserva por los plazos que exige la legislación fiscal mexicana.",
+      "Registros anonimizados: cuando un Negocio elimina a un cliente de su directorio, se suprimen los datos identificables y se conserva un registro histórico de la reservación sin información que permita identificar a la persona."
+     ]
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Datos de cuenta: 30 días tras cerrarla. Sesiones: 7 días automáticos. Facturas: plazo fiscal mexicano.",
+    "applies": "Aplica a: Negocio"
+   }
+  },
+  {
+   "n": 8,
+   "title": "Seguridad",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "flowlift implementa medidas administrativas, técnicas y físicas razonables para proteger los datos personales contra daño, pérdida, alteración, destrucción o uso, acceso o tratamiento no autorizado, incluyendo control de accesos, cifrado en tránsito y separación de la información por Negocio."
+    },
+    {
+     "t": "p",
+     "h": "En caso de una vulneración de seguridad que afecte de forma significativa los derechos patrimoniales o morales de los titulares, flowlift lo notificará sin demora injustificada a los afectados y, tratándose de datos tratados por cuenta de un Negocio, a dicho Negocio."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "flowlift protege los datos con controles de acceso, cifrado en tránsito y separación por negocio. En caso de incidente te notificamos.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 9,
+   "title": "Derechos ARCO",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "9.1. Derechos"
+    },
+    {
+     "t": "p",
+     "h": "Todo titular tiene derecho a acceder a sus datos personales, rectificarlos cuando sean inexactos o incompletos, cancelarlos cuando considere que no se requieren para las finalidades señaladas, y oponerse a su tratamiento para fines específicos."
+    },
+    {
+     "t": "sub",
+     "h": "9.2. Procedimiento ante flowlift"
+    },
+    {
+     "t": "p",
+     "h": "La solicitud deberá enviarse a juan.alanis@flowlift.co e incluir:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Nombre del titular y medio para comunicarle la respuesta",
+      "Documento que acredite su identidad (o la personalidad de su representante)",
+      "Descripción clara de los datos respecto de los que se ejerce el derecho",
+      "Cualquier elemento que facilite la localización de los datos"
+     ]
+    },
+    {
+     "t": "p",
+     "h": "flowlift comunicará la determinación adoptada en un plazo máximo de veinte días hábiles contados a partir del día siguiente a la recepción de la solicitud y, de resultar procedente, la hará efectiva dentro de los quince días hábiles siguientes. Ambos plazos podrán ampliarse por una sola vez cuando las circunstancias lo justifiquen, notificándolo al titular. El ejercicio de estos derechos es gratuito."
+    },
+    {
+     "t": "sub",
+     "h": "9.3. Clientes finales"
+    },
+    {
+     "t": "p",
+     "h": "Si usted agendó una cita a través de la página de reservación de un negocio, el responsable de sus datos es dicho negocio. Diríjase directamente a él para ejercer sus derechos. flowlift, como encargado, pone a disposición de cada negocio las herramientas para acceder, exportar, rectificar y eliminar esa información, y lo apoyará cuando así se lo solicite."
+    },
+    {
+     "t": "sub",
+     "h": "9.4. Revocación del consentimiento"
+    },
+    {
+     "t": "p",
+     "h": "El titular puede revocar en cualquier momento el consentimiento otorgado, siempre que no lo impida una disposición legal o la subsistencia de la relación contractual. La solicitud se presenta por el mismo medio señalado en el numeral 9.2."
+    },
+    {
+     "t": "sub",
+     "h": "9.5. Autoridad"
+    },
+    {
+     "t": "p",
+     "h": "Si el titular considera que su derecho a la protección de datos personales ha sido vulnerado, puede acudir ante la Secretaría Anticorrupción y Buen Gobierno."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Puedes pedir acceso, corrección, cancelación u oposición. Respuesta en máximo 20 días hábiles. El ejercicio es gratuito. Los clientes del negocio deben dirigirse al negocio.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 10,
+   "title": "Consentimiento",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Al marcar la casilla correspondiente en el proceso de configuración de la cuenta o al confirmar una reservación en una página pública de reservación, el titular manifiesta su consentimiento expreso para el tratamiento de sus datos personales conforme a este Aviso. La Plataforma no permite completar dichos procesos sin esa aceptación, y registra la fecha y hora en que se otorga."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Aceptas este aviso con la casilla al crear tu cuenta o al confirmar una reservación. La plataforma no permite continuar sin esa aceptación.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 11,
+   "title": "Cambios al Aviso de Privacidad",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "flowlift podrá modificar el presente Aviso. Cuando los cambios sean sustanciales —en particular los relativos a las finalidades del tratamiento, los proveedores que reciben datos o las transferencias— se notificarán a los Usuarios por correo electrónico o dentro de la Plataforma con al menos quince (15) días naturales de anticipación a su entrada en vigor. La versión vigente estará siempre disponible en flowlift.co."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Si hay cambios importantes, te avisamos 15 días antes por correo o en la plataforma. La versión vigente siempre estará en flowlift.co.",
+    "applies": "Aplica a: Negocio"
+   }
+  },
+  {
+   "n": 12,
+   "title": "Idioma",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "El presente Aviso se emite en español. flowlift puede poner a disposición traducciones a otros idiomas únicamente por conveniencia del titular."
+    },
+    {
+     "t": "p",
+     "h": "En caso de discrepancia entre versiones, prevalecerá la versión en español."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Este aviso es en español. Las traducciones son de conveniencia. En caso de duda, la versión en español prevalece.",
+    "applies": "Aplica a: Legal"
+   }
+  },
+  {
+   "n": 13,
+   "title": "Contacto",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "juan.alanis@flowlift.co"
+    },
+    {
+     "t": "p",
+     "h": "Paseo de la Turquesa #407, San Patricio Plus, C.P. 25204, Saltillo, Coahuila, México."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Escríbenos. Contestamos por correo.",
+    "applies": "Aplica a: Ambos"
+   }
+  }
+ ],
+ "annex": null
+}

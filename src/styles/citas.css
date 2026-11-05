@@ -98,41 +98,6 @@
 .mock-b { font-size: 13px; font-weight: 600; }
 .mock-li { font-size: 13.5px; }
 
-/* [03] Precios */
-.sec-precios { padding: 120px 0; }
-.pricing { display: flex; flex-direction: column; gap: 48px; }
-.pr-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; }
-.pr-title { display: flex; flex-direction: column; gap: 14px; max-width: 640px; }
-.sw-row { display: inline-flex; align-items: center; gap: 12px; font-size: 15px; }
-.sw-on { color: var(--ink); font-weight: 600; }
-.sw {
-  all: unset; cursor: pointer; width: 44px; height: 26px; border-radius: var(--radius-full); position: relative; display: inline-block;
-  background-color: var(--grey-mid); transition: background-color var(--t-state) var(--ease-std);
-}
-.sw.on { background-color: var(--green-primary); }
-.knob {
-  position: absolute; top: 4px; left: 4px; width: 18px; height: 18px; border-radius: var(--radius-full); background: var(--white);
-  transition: transform var(--t-enter) var(--ease-spring);
-}
-.sw.on .knob { transform: translateX(18px); }
-.pr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ink); }
-.pr-c { padding: 36px 32px 40px; display: flex; flex-direction: column; gap: 18px; }
-.pr-c + .pr-c { border-left: 1px solid var(--paper-line); }
-.pr-feat { background: var(--white); }
-.pr-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-.pr-badge {
-  font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; background: var(--green-light);
-  padding: 4px 10px; border-radius: var(--radius-full);
-}
-.price { font-family: var(--font-display-ed); font-size: 72px; line-height: 1; letter-spacing: -1.5px; font-variant-numeric: tabular-nums; }
-.price .per { font-family: var(--font-sans-ed); font-size: 16px; letter-spacing: 0; color: var(--paper-ink-muted); }
-.pr-note { font-size: 14.5px; }
-.pr-items { display: flex; flex-direction: column; gap: 10px; }
-.pr-c .li { font-size: 15.5px; }
-.pr-c .pr-cta { margin-top: auto; align-self: flex-start; }
-.pr-foot { margin: 0; font-size: 14.5px; }
-.trust { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; border-top: 1px solid var(--paper-line); padding-top: 36px; }
-
 .sec-faq { padding: 40px 0 140px; }
 
 @supports (timeline-scope: --a) {
@@ -156,7 +121,5 @@
   .feat-ph { display: block; }
   .feat { min-height: auto; }
   .feat-h h3 { font-size: 34px; }
-  .pr { grid-template-columns: minmax(0, 1fr); }
-  .pr-c + .pr-c { border-left: none; border-top: 1px solid var(--paper-line); }
   .dots-dk { padding: 36px 16px; }
 }

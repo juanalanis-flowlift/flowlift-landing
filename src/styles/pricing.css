@@ -1,0 +1,91 @@
+/* Planes y precios: compartido por la sección de Citas y la página /precios. */
+/* [03] Precios */
+.sec-precios { padding: 120px 0; }
+.pricing { display: flex; flex-direction: column; gap: 48px; }
+.pr-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; }
+.pr-title { display: flex; flex-direction: column; gap: 14px; max-width: 640px; }
+.sw-row { display: inline-flex; align-items: center; gap: 12px; font-size: 15px; }
+.sw-on { color: var(--ink); font-weight: 600; }
+.sw {
+  all: unset; cursor: pointer; width: 44px; height: 26px; border-radius: var(--radius-full); position: relative; display: inline-block;
+  background-color: var(--grey-mid); transition: background-color var(--t-state) var(--ease-std);
+}
+.sw.on { background-color: var(--green-primary); }
+.knob {
+  position: absolute; top: 4px; left: 4px; width: 18px; height: 18px; border-radius: var(--radius-full); background: var(--white);
+  transition: transform var(--t-enter) var(--ease-spring);
+}
+.sw.on .knob { transform: translateX(18px); }
+.pr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ink); }
+.pr-c { padding: 36px 32px 40px; display: flex; flex-direction: column; gap: 18px; }
+.pr-c + .pr-c { border-left: 1px solid var(--paper-line); }
+.pr-feat { background: var(--white); }
+.pr-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.pr-badge {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; background: var(--green-light);
+  padding: 4px 10px; border-radius: var(--radius-full);
+}
+.price { font-family: var(--font-display-ed); font-size: 72px; line-height: 1; letter-spacing: -1.5px; font-variant-numeric: tabular-nums; }
+.price .per { font-family: var(--font-sans-ed); font-size: 16px; letter-spacing: 0; color: var(--paper-ink-muted); }
+.pr-note { font-size: 14.5px; }
+.pr-items { display: flex; flex-direction: column; gap: 10px; }
+.pr-c .li { font-size: 15.5px; }
+.pr-c .pr-cta { margin-top: auto; align-self: flex-start; }
+.pr-foot { margin: 0; font-size: 14.5px; }
+.trust { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; border-top: 1px solid var(--paper-line); padding-top: 36px; }
+
+
+@media (max-width: 900px) {
+  .pr { grid-template-columns: minmax(0, 1fr); }
+  .pr-c + .pr-c { border-left: none; border-top: 1px solid var(--paper-line); }
+}
+@media (prefers-reduced-motion: reduce) { .sw, .knob { transition: none; } }
+
+/* Página /precios: selector de periodo, tarjetas y tabla comparativa */
+.seg { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; margin-bottom: 40px; border: 1px solid var(--paper-border); border-radius: var(--radius-full); background: var(--white); }
+.seg-b {
+  all: unset; box-sizing: border-box; cursor: pointer; min-height: 44px; padding: 0 20px; border-radius: var(--radius-full);
+  display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: var(--ink);
+  transition: background-color var(--t-state) var(--ease-std), color var(--t-state) var(--ease-std);
+}
+.seg-b:hover { background-color: var(--paper-sunk); }
+.seg-b.on { background-color: var(--ink); color: var(--white); }
+.seg-b:focus-visible { outline: 2px solid var(--green-primary); outline-offset: 3px; }
+.seg-tag { font-size: 11.5px; font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase; background: var(--green-light); color: var(--ink); padding: 3px 8px; border-radius: var(--radius-full); }
+.pr-tag { margin: 0; }
+.pr-label { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--paper-ink-muted); }
+.price-free { font-size: 56px; }
+.was { display: block; font-size: 22px; color: var(--paper-ink-muted); font-variant-numeric: tabular-nums; margin-bottom: 4px; }
+.pr-save { font-size: 13.5px; color: var(--badge-success-fg); }
+.pr-page .pr-c { gap: 16px; }
+
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--paper-border); border-radius: 16px; background: var(--white); }
+.tbl-wrap:focus-visible { outline: 2px solid var(--green-primary); outline-offset: 3px; }
+.tbl { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 15px; }
+.tbl th, .tbl td { padding: 14px 18px; text-align: center; vertical-align: middle; border-top: 1px solid var(--paper-line-faint); }
+.tbl thead th { border-top: 0; font-size: 12.5px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--paper-ink-muted); background: var(--paper); }
+.tbl thead th:first-child, .tbl tbody th[scope='row'] { text-align: left; }
+.tbl tbody th[scope='row'] { font-weight: 400; color: var(--text-secondary); width: 46%; }
+.tbl .grp { text-align: left; font-family: var(--font-display-ed); font-weight: 400; font-size: 20px; background: var(--paper-sunk); border-top: 1px solid var(--ink); color: var(--ink); letter-spacing: 0; text-transform: none; }
+.tbl .hl { background: var(--green-pale); }
+.tbl thead .hl { color: var(--badge-success-fg); }
+.tbl .ck { color: var(--badge-success-fg); vertical-align: middle; }
+.tbl .mn { color: var(--grey-mid); vertical-align: middle; }
+
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--ink); }
+.steps > li { padding: 28px 24px 8px 0; display: flex; flex-direction: column; gap: 10px; }
+.steps > li + li { padding-left: 24px; border-left: 1px solid var(--paper-line); }
+.steps-n { font-size: 44px; line-height: 1; color: var(--green-primary-hover); font-variant-numeric: tabular-nums; }
+.steps-t { margin: 0; font-size: 24px; line-height: 1.2; font-weight: 400; }
+.steps-d { margin: 0; color: var(--paper-ink-muted); font-size: 15.5px; line-height: 1.55; }
+@media (max-width: 1000px) {
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .steps > li { padding-left: 0; padding-right: 24px; border-left: 0; padding-bottom: 28px; }
+  .steps > li:nth-child(2n) { padding-left: 24px; padding-right: 0; border-left: 1px solid var(--paper-line); }
+}
+@media (max-width: 560px) {
+  .steps { grid-template-columns: minmax(0, 1fr); }
+  .steps > li, .steps > li:nth-child(2n) { padding-left: 0; padding-right: 0; border-left: 0; border-bottom: 1px solid var(--paper-line); }
+  .seg { width: 100%; border-radius: 22px; }
+  .seg-b { flex: 1 1 100%; justify-content: space-between; }
+}

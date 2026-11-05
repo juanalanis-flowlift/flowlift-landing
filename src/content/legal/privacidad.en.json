@@ -1,0 +1,525 @@
+{
+ "title": "Privacy Notice",
+ "subtitle": "of flowlift",
+ "meta": [
+  "Privacy Notice (Aviso de Privacidad) — v2.0",
+  "Last updated: August 12, 2026"
+ ],
+ "intro": [
+  "This is a courtesy translation of the Spanish-language Privacy Notice (Aviso de Privacidad). flowlift operates under Mexican law, and the Spanish version is the binding one. In the event of any discrepancy, the Spanish version prevails.",
+  "This Privacy Notice is issued in accordance with the Federal Law on the Protection of Personal Data Held by Private Parties published in the Official Gazette of the Federation on March 20, 2025 (the \"Law\") and other applicable provisions. The competent authority in this area is the Ministry of Anti-Corruption and Good Governance (Secretaría Anticorrupción y Buen Gobierno)."
+ ],
+ "facts": [
+  {
+   "label": "Controller",
+   "value": "Juan Carlos Alanis Gomez",
+   "note": "juan.alanis@flowlift.co"
+  },
+  {
+   "label": "Authority",
+   "value": "SABG",
+   "note": "Secretaría Anticorrupción y Buen Gobierno (Mexico)."
+  },
+  {
+   "label": "ARCO / rights",
+   "value": "20 business days",
+   "note": "Maximum response time. Exercising rights is free of charge."
+  },
+  {
+   "label": "End customer data",
+   "value": "Business is controller",
+   "note": "flowlift acts as processor for that data."
+  },
+  {
+   "label": "Data retention",
+   "value": "30 days after closure",
+   "note": "Window to export your info before deletion."
+  },
+  {
+   "label": "Material changes",
+   "value": "15 days' notice",
+   "note": "By email or within the Platform."
+  }
+ ],
+ "tocLabel": "Contents",
+ "sections": [
+  {
+   "n": 1,
+   "title": "Identity and address of the controller",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Juan Carlos Alanis Gomez, acting as an Individual with Business Activity (Persona Física con Actividad Empresarial), with address at Paseo de la Turquesa #407, San Patricio Plus, C.P. 25204, Saltillo, Coahuila, Mexico, is responsible for the processing of personal data as described in section 2."
+    },
+    {
+     "t": "p",
+     "h": "Person in charge of personal data: Juan Carlos Alanis Gomez — juan.alanis@flowlift.co"
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "Juan Carlos Alanis Gomez, operating flowlift from Saltillo, Coahuila, is the person responsible for your data. Contact: juan.alanis@flowlift.co.",
+    "applies": "Applies to: Both"
+   }
+  },
+  {
+   "n": 2,
+   "title": "flowlift's dual role: controller and processor",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Two distinct situations need to be distinguished:"
+    },
+    {
+     "t": "sub",
+     "h": "2.1. flowlift as controller"
+    },
+    {
+     "t": "p",
+     "h": "With respect to the personal data of those who contract for or use the Platform as a business (the \"Users\" or \"Businesses\"), of the team members they add, and of people who contact flowlift, flowlift is the controller and this Notice governs that processing."
+    },
+    {
+     "t": "sub",
+     "h": "2.2. flowlift as processor"
+    },
+    {
+     "t": "p",
+     "h": "With respect to the personal data of end customers that each Business collects and manages through the Platform, the Business is the controller and flowlift acts solely as processor, handling that data on the Business's behalf and under its instructions."
+    },
+    {
+     "t": "p",
+     "h": "End customers wishing to exercise their rights over that data should contact the business with which they booked their appointment, as set out in section 9.3."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "flowlift is the controller for business data, and acts as processor for end customer data — the business is the controller there.",
+    "applies": "Applies to: Both"
+   }
+  },
+  {
+   "n": 3,
+   "title": "Personal data collected",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "3.1. From Businesses (account holders)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Name of the responsible person or representative",
+      "Trade name of the Business",
+      "Email address and telephone number",
+      "Address or location of the Business",
+      "Details of the account used to authenticate (Google or Microsoft)",
+      "Platform usage data",
+      "Subscription and billing information",
+      "Images uploaded voluntarily (logo, cover image, service photographs)"
+     ]
+    },
+    {
+     "t": "sub",
+     "h": "3.2. From team members"
+    },
+    {
+     "t": "p",
+     "h": "Where a Business adds team members, the following is processed: name, email address, telephone number, descriptive role, photograph, services they can perform and their availability. The Business is responsible for obtaining each member's authorization to add that information to the Platform."
+    },
+    {
+     "t": "sub",
+     "h": "3.3. From end customers (processed as processor, on the Business's behalf)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Name, email address and telephone number",
+      "Notes or messages the customer writes when booking",
+      "Private notes the Business adds about the customer",
+      "Booking history: date, service, price and status",
+      "Derived information generated automatically from that history: number of visits, total amount spent, no-shows, date of last visit, most frequent service and a customer behavior label"
+     ]
+    },
+    {
+     "t": "p",
+     "h": "flowlift does not collect financial data from end customers. The Platform does not currently process payments between the Business and its customers."
+    },
+    {
+     "t": "sub",
+     "h": "3.4. Sensitive personal data"
+    },
+    {
+     "t": "p",
+     "h": "flowlift does not request sensitive personal data (relating to health, ethnic origin, beliefs, sexual orientation or others affecting the data subject's most intimate sphere), and expressly asks that such data not be entered into the Platform's free-text fields."
+    },
+    {
+     "t": "p",
+     "h": "The notes fields are free-text. If a Business chooses to record sensitive information in them, it does so under its sole responsibility as data controller, and must first obtain the data subject's express written consent as required by the Law. flowlift accepts no responsibility for such processing."
+    },
+    {
+     "t": "sub",
+     "h": "3.5. Minors"
+    },
+    {
+     "t": "p",
+     "h": "The Platform is not directed at minors and does not request dates of birth. Where a Business books services for minors, it is that Business's responsibility to obtain consent from the person exercising parental authority or guardianship."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "From businesses: account and billing data. From end customers: name, email, phone and booking history. No sensitive data requested.",
+    "applies": "Applies to: Both"
+   }
+  },
+  {
+   "n": 4,
+   "title": "Purposes of processing",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "4.1. Primary purposes (necessary to provide the Service)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Creating and administering User accounts",
+      "Operating the Platform and processing bookings",
+      "Sending confirmations, reminders, cancellation notices, reschedule requests and access links by email",
+      "Processing subscriptions, charges and billing",
+      "Providing technical support and handling requests",
+      "Preventing fraud and protecting the security of the Service",
+      "Complying with legal and tax obligations"
+     ]
+    },
+    {
+     "t": "sub",
+     "h": "4.2. Secondary purposes (not necessary)"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Statistical analysis and product improvement",
+      "Sending informational or promotional communications about flowlift, addressed only to Businesses (never to their end customers)"
+     ]
+    },
+    {
+     "t": "p",
+     "h": "How to refuse consent for secondary purposes: the data subject may object by emailing juan.alanis@flowlift.co with the subject line \"Secondary purposes\". Refusal will not be grounds for denying the Service and will not affect the features contracted for."
+    },
+    {
+     "t": "p",
+     "h": "flowlift does not send promotional communications to Businesses' end customers."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "Your data is used to run the platform and send you notifications. You can opt out of marketing by emailing juan.alanis@flowlift.co.",
+    "applies": "Applies to: Business"
+   }
+  },
+  {
+   "n": 5,
+   "title": "Cookies, local storage and measurement tools",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "5.1. Session cookie"
+    },
+    {
+     "t": "p",
+     "h": "For people who sign in (Businesses and team members), a technical session cookie is used, valid for seven days, which is essential to keep the session active. End customers do not receive this cookie."
+    },
+    {
+     "t": "sub",
+     "h": "5.2. Browser local storage"
+    },
+    {
+     "t": "p",
+     "h": "The Platform stores functional preferences on the user's device, such as language, light/dark theme, menu state, dismissed notices, the current onboarding step, a session identifier for viewing \"My appointments\", and a record of whether feedback has already been submitted for a booking. This information stays on the device."
+    },
+    {
+     "t": "sub",
+     "h": "5.3. Usage measurement (PostHog)"
+    },
+    {
+     "t": "p",
+     "h": "The Platform uses PostHog, an analytics service whose servers are located in the United States, to record page views and service feedback events. PostHog may collect IP address, browser type and the address of the page visited, and may set its own cookies. flowlift does not send PostHog anyone's name, email address or telephone number, and does not link these events to an identity."
+    },
+    {
+     "t": "p",
+     "h": "Users can disable or delete cookies from their browser settings. Disabling technical cookies may prevent use of Platform features."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "One technical session cookie (7 days). Usage analytics (PostHog) go to the US with no identifiable data. End customers don't receive a session cookie.",
+    "applies": "Applies to: Both"
+   }
+  },
+  {
+   "n": 6,
+   "title": "Remittances and transfers of data",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "flowlift does not sell or rent personal data."
+    },
+    {
+     "t": "sub",
+     "h": "6.1. Remittances to providers (processors)"
+    },
+    {
+     "t": "p",
+     "h": "To operate the Service, flowlift shares data with the following providers, which process it solely on flowlift's behalf and under confidentiality obligations. These remittances do not require the data subject's consent:"
+    },
+    {
+     "t": "table",
+     "rows": [
+      [
+       "Provider",
+       "Purpose",
+       "Data"
+      ],
+      [
+       "Replit",
+       "Application and database hosting",
+       "All Platform information"
+      ],
+      [
+       "Replit Object Storage",
+       "Image storage",
+       "Logos, cover images, service and team member photos"
+      ],
+      [
+       "Stripe",
+       "Subscription payment processing",
+       "Business billing data"
+      ],
+      [
+       "Resend",
+       "Transactional email delivery",
+       "Name, email and booking details"
+      ],
+      [
+       "Google / Microsoft",
+       "Account authentication",
+       "Email address and name"
+      ],
+      [
+       "PostHog",
+       "Usage analytics",
+       "Browsing data described in section 5.3"
+      ],
+      [
+       "HubSpot",
+       "Commercial relationship management",
+       "Name, email, telephone, Business name and location"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "h": "If email delivery through the primary provider fails, flowlift may use an alternate mail server to complete delivery of the message."
+    },
+    {
+     "t": "p",
+     "h": "flowlift may update this list. Changes will be reflected in this Notice in accordance with section 11."
+    },
+    {
+     "t": "sub",
+     "h": "6.2. Transfers"
+    },
+    {
+     "t": "p",
+     "h": "Beyond the above, flowlift does not transfer personal data to third parties, except where required by a competent authority or otherwise legally required."
+    },
+    {
+     "t": "sub",
+     "h": "6.3. International transfers"
+    },
+    {
+     "t": "p",
+     "h": "Some of the providers listed store or process information outside Mexican territory, principally in the United States. By accepting this Notice, the data subject acknowledges and consents to such processing to the extent necessary to provide the Service."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "flowlift does not sell data. It shares only with providers needed to run the service, all under confidentiality obligations.",
+    "applies": "Applies to: Both"
+   }
+  },
+  {
+   "n": 7,
+   "title": "Data retention",
+   "blocks": [
+    {
+     "t": "ul",
+     "items": [
+      "Account and booking data: retained while the account remains active. Following termination, retained for thirty (30) calendar days during which the User may request export; after that it may be permanently deleted.",
+      "Access sessions: automatically deleted after seven days.",
+      "Access and modification links sent to end customers: automatically deleted on expiry.",
+      "Tax and billing information: retained for the periods required by Mexican tax legislation.",
+      "Anonymized records: when a Business deletes a customer from its directory, identifiable data is removed and a historical booking record is retained without information allowing identification of the person."
+     ]
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "Account data: 30 days after closure. Sessions: 7 days automatically. Tax records: Mexican tax law timelines.",
+    "applies": "Applies to: Business"
+   }
+  },
+  {
+   "n": 8,
+   "title": "Security",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "flowlift implements reasonable administrative, technical and physical measures to protect personal data against damage, loss, alteration, destruction, or unauthorized use, access or processing, including access controls, encryption in transit and separation of information by Business."
+    },
+    {
+     "t": "p",
+     "h": "In the event of a security breach significantly affecting data subjects' financial or moral rights, flowlift will notify those affected without undue delay and, in the case of data processed on a Business's behalf, will notify that Business."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "flowlift protects data with access controls, encryption in transit and per-business separation. In the event of a breach, we notify you.",
+    "applies": "Applies to: Both"
+   }
+  },
+  {
+   "n": 9,
+   "title": "Data subject rights (ARCO)",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "9.1. Rights"
+    },
+    {
+     "t": "p",
+     "h": "Every data subject has the right to access their personal data, rectify it where inaccurate or incomplete, cancel it where they consider it is not required for the stated purposes, and object to its processing for specific purposes."
+    },
+    {
+     "t": "sub",
+     "h": "9.2. Procedure with flowlift"
+    },
+    {
+     "t": "p",
+     "h": "Requests should be sent to juan.alanis@flowlift.co and include:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "The data subject's name and a means of communicating the response",
+      "A document evidencing their identity (or their representative's authority)",
+      "A clear description of the data in respect of which the right is being exercised",
+      "Any information that helps locate the data"
+     ]
+    },
+    {
+     "t": "p",
+     "h": "flowlift will communicate its determination within a maximum of twenty business days counted from the day after the request is received and, where the request is well-founded, will give effect to it within the following fifteen business days. Both periods may be extended once where circumstances justify it, with notice to the data subject. Exercising these rights is free of charge."
+    },
+    {
+     "t": "sub",
+     "h": "9.3. End customers"
+    },
+    {
+     "t": "p",
+     "h": "If you booked an appointment through a business's booking page, the controller of your data is that business. Please contact them directly to exercise your rights. flowlift, as processor, makes tools available to each business to access, export, rectify and delete that information, and will assist them on request."
+    },
+    {
+     "t": "sub",
+     "h": "9.4. Withdrawal of consent"
+    },
+    {
+     "t": "p",
+     "h": "The data subject may withdraw consent at any time, provided no legal provision or the continuation of the contractual relationship prevents it. Requests are submitted through the same channel indicated in section 9.2."
+    },
+    {
+     "t": "sub",
+     "h": "9.5. Authority"
+    },
+    {
+     "t": "p",
+     "h": "If a data subject considers that their right to personal data protection has been infringed, they may contact the Ministry of Anti-Corruption and Good Governance (Secretaría Anticorrupción y Buen Gobierno)."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "You can request access, correction, deletion or objection. Response within 20 business days, free of charge. End customers must contact the business.",
+    "applies": "Applies to: Both"
+   }
+  },
+  {
+   "n": 10,
+   "title": "Consent",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "By ticking the corresponding checkbox during account setup or when confirming a booking on a public booking page, the data subject gives their express consent to the processing of their personal data in accordance with this Notice. The Platform does not allow these processes to be completed without that acceptance, and records the date and time it is given."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "You give consent by ticking the checkbox when setting up your account or confirming a booking. The platform won't let you proceed without it.",
+    "applies": "Applies to: Both"
+   }
+  },
+  {
+   "n": 11,
+   "title": "Changes to this Privacy Notice",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "flowlift may amend this Notice. Where changes are material — in particular those relating to the purposes of processing, the providers receiving data, or transfers — they will be notified to Users by email or within the Platform at least fifteen (15) calendar days before they take effect. The version in force will always be available at flowlift.co."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "Material changes are notified 15 days in advance by email or within the platform. The current version is always at flowlift.co.",
+    "applies": "Applies to: Business"
+   }
+  },
+  {
+   "n": 12,
+   "title": "Language",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "This Notice is issued in Spanish. flowlift may make translations into other languages available solely for the data subject's convenience."
+    },
+    {
+     "t": "p",
+     "h": "In the event of any discrepancy between versions, the Spanish version prevails."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "This Notice is issued in Spanish. Translations are for convenience only. The Spanish version prevails in case of discrepancy.",
+    "applies": "Applies to: Legal"
+   }
+  },
+  {
+   "n": 13,
+   "title": "Contact",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "juan.alanis@flowlift.co"
+    },
+    {
+     "t": "p",
+     "h": "Paseo de la Turquesa #407, San Patricio Plus, C.P. 25204, Saltillo, Coahuila, Mexico."
+    }
+   ],
+   "simple": {
+    "label": "In plain terms",
+    "text": "Write to us. We respond by email.",
+    "applies": "Applies to: Both"
+   }
+  }
+ ],
+ "annex": null
+}

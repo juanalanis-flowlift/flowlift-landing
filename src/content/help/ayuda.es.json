@@ -1,0 +1,1417 @@
+{
+ "eyebrow": "Centro de ayuda",
+ "title": "¿Cómo te *ayudamos?*",
+ "lead": "Respuestas a las preguntas más comunes sobre flowlift — para quienes manejan su negocio con ella todos los días.",
+ "popularLabel": "Búsquedas populares:",
+ "popular": [
+  {
+   "t": "link de reservas",
+   "target": "section-booking-page"
+  },
+  {
+   "t": "OXXO Pay",
+   "target": "section-account-billing"
+  },
+  {
+   "t": "recordatorios",
+   "target": "section-notifications-reminders"
+  },
+  {
+   "t": "plan Teams",
+   "target": "section-account-billing"
+  }
+ ],
+ "cards": [
+  {
+   "t": "Empieza ya",
+   "d": "Abre tu cuenta, termina la configuración y ponte en línea en menos de 10 minutos.",
+   "target": "section-getting-started"
+  },
+  {
+   "t": "Maneja tu negocio",
+   "d": "Servicios, horarios, citas, tu página pública y recordatorios.",
+   "target": "section-business-setup"
+  },
+  {
+   "t": "Cuenta y cobros",
+   "d": "Planes, pagos, idioma, métricas y tu equipo.",
+   "target": "section-account-billing"
+  }
+ ],
+ "open": "Abrir",
+ "searchLabel": "Buscar en el centro de ayuda",
+ "guide": {
+  "eyebrow": "GUÍA DEL PROVEEDOR",
+  "title": "Todo lo que puedes hacer en flowlift, *en español claro.*",
+  "counts": "{s} secciones · {a} artículos",
+  "tip": "Haz clic en el título de cualquier sección para ir a ella. La barra lateral te acompaña mientras te desplazas.",
+  "tipLabel": "TIP"
+ },
+ "articles": "artículos",
+ "article1": "artículo",
+ "one": "1 artículo encontrado",
+ "many": "{n} artículos encontrados",
+ "none": "No encontramos artículos con esa búsqueda. Prueba con otra palabra.",
+ "sections": "Secciones",
+ "expand": "Mostrar todo",
+ "collapse": "Ocultar todo",
+ "support": {
+  "title": "¿Aún necesitas *ayuda?*",
+  "sub": "Aquí estamos.",
+  "text": "Si algo no está cubierto aquí, escríbenos desde el botón Enviar comentarios dentro de tu dashboard — una persona real lee cada mensaje.",
+  "mail": "Correo soporte",
+  "back": "Volver al inicio"
+ },
+ "sectionsList": [
+  {
+   "id": "section-getting-started",
+   "n": "01",
+   "title": "Primeros pasos",
+   "lead": "Abre tu cuenta, completa el asistente de configuración y sal en vivo.",
+   "articles": [
+    {
+     "id": "article-create-account",
+     "title": "Cómo crear tu cuenta",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Ve a tu página de inicio de sesión de flowlift y haz clic en Registrarse con Google o Registrarse con Microsoft.",
+        "Completa el flujo de inicio de sesión con el proveedor que elijas.",
+        "Llegarás automáticamente al asistente de configuración para preparar tu negocio."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-initial-setup",
+     "title": "Cómo completar la configuración inicial (el asistente)",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Al iniciar sesión por primera vez, un asistente de 3 pasos te guía por lo básico."
+      },
+      {
+       "t": "p",
+       "h": "Paso 1 — Cuéntanos sobre tu negocio"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Escribe el Nombre del negocio.",
+        "Elige tu Categoría del negocio en el menú desplegable (p. ej., Peluquería, Fotografía, etc.).",
+        "Selecciona tu Zona horaria — por defecto es Ciudad de México (CDMX). Cámbiala si lo necesitas.",
+        "Introduce el Teléfono del negocio.",
+        "Haz clic en Siguiente."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Paso 2 — Configura tu disponibilidad"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en Configurar tu horario. Esto te lleva a la página de Disponibilidad.",
+        "Configura tus horas de trabajo (ver Configurar tu disponibilidad para más detalles).",
+        "Regresa y haz clic en Siguiente una vez guardado tu horario."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Paso 3 — Agrega tu primer servicio"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en Agregar tu primer servicio. Esto te lleva a la página de Servicios.",
+        "Agrega al menos un servicio (ver Gestionar tus servicios para más detalles).",
+        "Regresa y haz clic en Finalizar configuración."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-go-live",
+     "title": "Cómo salir en vivo por primera vez",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Después de completar el Paso 3, verás una pantalla de confirmación con una lista: Negocio configurado ✓, Disponibilidad configurada ✓, Primer servicio agregado ✓.",
+        "Haz clic en Ir al panel para abrir tu panel principal de control.",
+        "Haz clic en Previsualizar página de reservas (en la pantalla de confirmación o en el panel) para ver exactamente lo que verán tus clientes.",
+        "Comparte tu enlace de reservas con tus clientes — ¡ya estás en vivo!"
+       ]
+      },
+      {
+       "t": "p",
+       "h": "02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-business-setup",
+   "n": "02",
+   "title": "Configurar tu negocio",
+   "lead": "Identidad, ubicación, logo, políticas y tu URL de reservas.",
+   "articles": [
+    {
+     "id": "article-update-info",
+     "title": "Cómo actualizar el nombre, categoría y descripción del negocio",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre el menú de configuración: en escritorio, haz clic en el ícono de engrane; en móvil, toca la pequeña burbuja con el nombre del negocio.",
+        "Se abre un menú vertical. Elige Perfil del negocio.",
+        "La página Configuración de Negocio abre con Datos del negocio expandido. Actualiza el Nombre del negocio y el Tipo de negocio, y revisa los demás datos.",
+        "Desplázate para revisar País, Teléfono, Correo electrónico y la Zona horaria detectada automáticamente.",
+        "Los cambios se guardan automáticamente. La barra fija inferior muestra el estado de guardado y si aún falta alguna sección obligatoria."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-logo",
+     "title": "Cómo agregar o cambiar tu logo",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre Configuración con el engrane en escritorio o la burbuja con el nombre del negocio en móvil.",
+        "Elige Perfil del negocio en el menú vertical.",
+        "En Datos del negocio, usa el control para subir Logo y elige la imagen de tu dispositivo.",
+        "Espera a que la barra fija indique que los cambios están guardados y abre Vista previa para confirmar cómo se muestra a los clientes."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-location",
+     "title": "Cómo agregar tu ubicación e información de contacto",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre Configuración con el engrane en escritorio o la burbuja con el nombre del negocio en móvil y elige Perfil del negocio.",
+        "En Datos del negocio, completa Dirección y Ciudad.",
+        "Desplázate y completa País, Teléfono (incluido su código de país) y Correo electrónico.",
+        "Revisa la Zona horaria detectada automáticamente y espera a que la barra inferior confirme Cambios guardados."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Tu dirección aparecerá en los correos de confirmación al cliente y en tu página pública de reservas."
+      }
+     ]
+    },
+    {
+     "id": "article-booking-url",
+     "title": "Cómo encontrar y cambiar la URL de tu página pública de reservas",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "La URL de tu página de reservas se ve así: flowlift.co/book/tu-slug"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en Configuración en la barra lateral.",
+        "Ve a la pestaña Página de reservas.",
+        "En URL de la página de reservas verás tu slug actual (el nombre corto al final del enlace).",
+        "Haz clic en el campo de slug para editarlo (usa solo letras minúsculas, números y guiones — sin espacios).",
+        "Haz clic en Guardar. Tu nuevo enlace estará activo de inmediato."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Usa el botón Copiar para copiar el enlace completo, o Previsualizar para abrirlo en una pestaña nueva."
+      }
+     ]
+    },
+    {
+     "id": "article-cancellation-policy",
+     "title": "Cómo agregar una política de cancelación",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre Configuración con el engrane en escritorio o la burbuja del negocio en móvil y elige Perfil del negocio.",
+        "Expande la tarjeta opcional Políticas.",
+        "Elige La mía, Flexible, 24 horas o Estricta. Puedes editar el texto de la política seleccionada en el campo inferior.",
+        "Activa Mostrar la política en la página de reserva si los clientes deben verla antes de reservar.",
+        "Espera a que la barra fija inferior confirme que los cambios están guardados."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-social-links",
+     "title": "Cómo agregar tus redes sociales",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre Configuración con el engrane en escritorio o la burbuja del negocio en móvil y elige Perfil del negocio.",
+        "Expande Políticas y baja al apartado opcional Redes sociales.",
+        "Activa la opción para mostrar enlaces sociales en la página de reservas y completa los enlaces que solicite el formulario.",
+        "Espera a que la barra inferior confirme el guardado y usa Vista previa para revisar el resultado público."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "03"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-services",
+   "n": "03",
+   "title": "Gestionar tus servicios",
+   "lead": "Crea, edita, oculta y pon precio a lo que ofreces.",
+   "articles": [
+    {
+     "id": "article-add-service",
+     "title": "Cómo agregar un nuevo servicio",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Crea servicios desde el menú de acciones rápidas. El ejemplo documentado crea un servicio de 30 minutos y MX$500, oculta su descripción en la página de reservas y activa un recordatorio por correo."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Toca el botón verde + de la navegación inferior y elige Servicios en el menú de acciones rápidas.",
+        "Haz clic en + Agregar servicio.",
+        "Escribe Nombre del servicio, Descripción opcional, Duración y unidad, Precio y Moneda. También puedes configurar disponibilidad por temporada o un rango de precio si lo necesitas.",
+        "Deja Activo encendido, revisa Mostrar precio en la página de reservas y activa o desactiva Mostrar descripción en la página de reservas.",
+        "Para enviar un recordatorio, activa Recordatorios automáticos por correo y configura Días antes de la cita y Hora del día.",
+        "Haz clic en Guardar servicio. Aparece un mensaje de éxito y el servicio se agrega a la lista; los servicios con recordatorios muestran la etiqueta Recordatorios."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-price-range",
+     "title": "Cómo establecer un rango de precio en lugar de un precio fijo",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre el cuadro de agregar o editar servicio.",
+        "Activa Rango de precio.",
+        "Introduce el precio mínimo en Desde y el máximo en Hasta.",
+        "Haz clic en Guardar servicio."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-edit-service",
+     "title": "Cómo editar un servicio",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre el menú verde de acciones rápidas (+) y elige Servicios.",
+        "Localiza el servicio y haz clic en el ícono del lápiz de su tarjeta.",
+        "El cuadro Editar servicio abre con los valores actuales. Cambia únicamente el campo necesario, como Precio.",
+        "Haz clic en Guardar servicio al final del cuadro.",
+        "Aparece un mensaje de éxito y la tarjeta del servicio muestra el nuevo valor."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "El precio y las opciones actualizadas aplican a las reservas futuras. Las reservas existentes conservan los datos registrados cuando se crearon."
+      }
+     ]
+    },
+    {
+     "id": "article-hide-service",
+     "title": "Cómo ocultar un servicio (sin eliminarlo)",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Ocultar un servicio lo retira de tu página pública de reservas pero conserva todos sus datos."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Ve a Servicios en la barra lateral.",
+        "Haz clic en el ícono del ojo en la tarjeta del servicio.",
+        "El servicio queda oculto — el ícono cambia para indicar que está apagado. Vuelve a hacer clic para reactivarlo."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "También puedes activar o desactivar Activo dentro del cuadro de edición para hacer lo mismo."
+      }
+     ]
+    },
+    {
+     "id": "article-delete-service",
+     "title": "Cómo eliminar un servicio",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Ve a Servicios en la barra lateral.",
+        "Haz clic en el ícono de papelera de la tarjeta del servicio.",
+        "Confirma la eliminación en el cuadro que aparece."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Esto no se puede deshacer. Si solo quieres ocultar el servicio temporalmente, usa el ícono del ojo."
+      }
+     ]
+    },
+    {
+     "id": "article-require-confirmation",
+     "title": "Cómo requerir tu aprobación antes de confirmar una reserva",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Útil si quieres revisar las reservas antes de confirmarlas."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Abre el cuadro de edición del servicio.",
+        "Activa Requiere confirmación.",
+        "Haz clic en Guardar servicio."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "A partir de ahora, los clientes que reserven este servicio verán Solicitud de reserva enviada y esperarán tu aprobación. Apruebas desde la página de Reservas."
+      }
+     ]
+    },
+    {
+     "id": "article-advance-notice",
+     "title": "Cómo requerir aviso previo para un servicio",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Si los clientes deben reservar con al menos X horas de antelación (p. ej., necesitas tiempo de preparación):"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Abre el cuadro de edición del servicio.",
+        "Activa Requiere aviso previo.",
+        "Introduce el número mínimo de horas en el campo Horas mínimas de aviso (p. ej., 48 para 2 días).",
+        "Haz clic en Guardar servicio."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-auto-reminders",
+     "title": "Cómo activar recordatorios automáticos por correo para un servicio",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Los clientes recibirán automáticamente un correo de recordatorio antes de su cita."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Abre el cuadro de edición del servicio.",
+        "Activa Recordatorios automáticos por correo.",
+        "Configura Días antes de la cita — por ejemplo, 1 lo envía el día anterior.",
+        "Configura Hora del día — elige la hora a la que se enviará el correo de recordatorio (p. ej., 9:00 a. m.).",
+        "Haz clic en Guardar servicio o Editar para guardar el servicio."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "El recordatorio se envía una sola vez por reserva. Si el cliente reagenda, se reinicia automáticamente. La comunicación automática se envía por correo, no por WhatsApp."
+      }
+     ]
+    },
+    {
+     "id": "article-service-photo",
+     "title": "Cómo agregar una foto a un servicio",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre el cuadro de edición del servicio (debes editar uno existente, no crear uno nuevo).",
+        "Baja hasta Imagen del servicio.",
+        "Haz clic en Agregar imagen y sube una foto desde tu dispositivo.",
+        "Haz clic en Guardar servicio."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "04"
+      }
+     ],
+     "plan": "pro"
+    }
+   ]
+  },
+  {
+   "id": "section-availability",
+   "n": "04",
+   "title": "Configurar tu disponibilidad",
+   "lead": "Días laborables, horarios, tiempo libre y duración de los espacios.",
+   "articles": [
+    {
+     "id": "article-working-hours",
+     "title": "Cómo establecer tus días y horas de trabajo",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Toca Disponibilidad (el ícono de reloj) en la navegación inferior.",
+        "En Horarios de trabajo, haz clic en Editar.",
+        "Elige la pestaña de un día. Activa el interruptor Abierto / Cerrado para abrir un día cerrado.",
+        "Configura Hora de inicio, Hora de fin y Duración de franja con los menús desplegables. Los horarios avanzan en intervalos de 30 minutos.",
+        "Los cambios se guardan de inmediato y aparece el aviso Disponibilidad actualizada. Haz clic en Listo para cerrar el editor.",
+        "Repite el proceso para otro día, o usa Copiar a… en la tarjeta de disponibilidad del Perfil del negocio cuando quieras replicar un horario."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Un día cerrado no ofrece horarios reservables. En el ejemplo documentado, domingo y lunes quedaron de 9:00 a. m. a 6:00 p. m. sin cambiar los demás días."
+      }
+     ]
+    },
+    {
+     "id": "article-add-break",
+     "title": "Cómo agregar un descanso a un día de trabajo",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Toca Disponibilidad en la navegación inferior y haz clic en Editar dentro de Horarios de trabajo.",
+        "Elige la pestaña del día y haz clic en + Agregar descanso dentro de Descansos.",
+        "Configura el inicio y fin del descanso con los dos menús. El contador muestra cuántos de los tres descansos permitidos están en uso.",
+        "Haz clic en Listo. El descanso se guarda de inmediato; vuelve a abrir ese día para verificar que siga en la lista."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Los clientes no pueden reservar durante el descanso, aunque el negocio permanezca abierto durante el resto del horario de ese día."
+      }
+     ]
+    },
+    {
+     "id": "article-copy-hours",
+     "title": "Cómo aplicar el mismo horario a varios días a la vez",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en Editar horario en la página de Disponibilidad.",
+        "Configura un día como quieres.",
+        "Haz clic en Copiar a.",
+        "Selecciona los demás días donde quieres aplicar el mismo horario (o haz clic en Seleccionar todos).",
+        "Haz clic en Aplicar.",
+        "Haz clic en Listo para guardar."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-full-day",
+     "title": "Cómo configurar un horario de día completo",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en Editar horario y selecciona un día.",
+        "Actívalo en Abierto.",
+        "Haz clic en el botón Día completo — esto establece el horario de 12:00 a. m. a 11:30 p. m. automáticamente.",
+        "Haz clic en Listo."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-block-time",
+     "title": "Cómo bloquear tiempo libre (vacaciones, citas, descansos)",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Toca Disponibilidad en la navegación inferior y busca Tiempo bloqueado.",
+        "Haz clic en + Agregar tiempo bloqueado.",
+        "En Rango de fechas, elige un día o haz clic en una primera y una segunda fecha para seleccionar un rango. Si queda marcada una fecha predeterminada, vuelve a hacer clic en tu primera fecha para reiniciar la selección.",
+        "Configura Hora de inicio y Hora de fin. Para un bloqueo de día completo, usa 00:00 y 23:30.",
+        "Agrega una Razón opcional, como Vacaciones.",
+        "Haz clic en Agregar."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Aparece el aviso Tiempo bloqueado agregado. El nuevo bloque se muestra en la lista Tiempo bloqueado e impide reservas durante ese periodo; usa el ícono de papelera para eliminarlo."
+      },
+      {
+       "t": "note",
+       "h": "Bloquear más de un día a la vez requiere un plan Pro+."
+      }
+     ]
+    },
+    {
+     "id": "article-remove-block",
+     "title": "Cómo quitar un tiempo bloqueado",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Toca Disponibilidad en la navegación inferior.",
+        "Localiza el periodo en la lista Tiempo bloqueado.",
+        "Haz clic en el ícono de papelera junto a él."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-customization",
+   "n": "05",
+   "title": "Personalizar la aplicación",
+   "lead": "Modo oscuro, idioma y el panel de notificaciones.",
+   "articles": [
+    {
+     "id": "article-dark-mode",
+     "title": "Cómo cambiar entre modo oscuro y modo claro",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre el menú de configuración: haz clic en el engrane en escritorio o en la pequeña burbuja con el nombre del negocio en móvil.",
+        "En Preferencias del panel, haz clic en Tema. Cambia de inmediato entre Oscuro y Claro.",
+        "Vuelve a abrir el menú de configuración para confirmar el tema actual o cambiarlo de nuevo."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "La preferencia de tema solo se aplica al panel del dueño. La página pública de reservas permanece en modo claro."
+      }
+     ]
+    },
+    {
+     "id": "article-language",
+     "title": "Cómo cambiar el idioma de la aplicación (inglés / español)",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre el menú de configuración con el engrane en escritorio o la pequeña burbuja con el nombre del negocio en móvil.",
+        "En Preferencias del panel, haz clic en Idioma. Es un interruptor de dos posiciones: Español ⇄ English.",
+        "Todo el panel cambia de inmediato, incluida la navegación, los botones, las pestañas y los menús.",
+        "Vuelve a abrir el menú para confirmar el idioma activo; la fila ahora ofrece el otro idioma."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Esto cambia únicamente el panel del dueño. No cambia el idioma que ve el cliente en la página pública de reservas."
+      }
+     ]
+    },
+    {
+     "id": "article-notifications",
+     "title": "Cómo ver y descartar notificaciones",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en el ícono de campana de la esquina superior derecha. Notificaciones abre con el contador de no leídas y Marcar todo leído.",
+        "Usa Todas para la lista completa ordenada de más reciente a más antigua, y Sin leer para lo que aún no has revisado.",
+        "Usa Urgentes para nuevas reservas y cancelaciones, Avisos para alertas operativas como una cita fuera del horario habitual, e Info para resúmenes de próximas reservas o reservas de hoy.",
+        "Haz clic en Ver reservación o Ver agenda cuando una notificación incluya un enlace directo a la pantalla relacionada."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-appointments",
+   "n": "06",
+   "title": "Gestionar citas",
+   "lead": "Ver, confirmar, reagendar y agregar reservas tú mismo.",
+   "articles": [
+    {
+     "id": "article-view-upcoming",
+     "title": "Cómo ver tus próximas reservas",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Toca Reservas en la navegación inferior. La sección abre en vista Lista.",
+        "Las reservas aparecen agrupadas por fecha en tarjetas individuales.",
+        "Usa los filtros Todas, Confirmada, Pendiente, Completada, No se presentó o Cancelada.",
+        "Una tarjeta confirmada muestra cliente, servicio, precio, horario, estado y las acciones Reagendar y Cancelar."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-calendar-view",
+     "title": "Cómo cambiar a vista de calendario",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Toca Reservas en la navegación inferior.",
+        "Haz clic en Calendario junto a Lista.",
+        "Usa las flechas para cambiar de semana, haz clic en Hoy para regresar a la semana actual y selecciona una fecha en la fila de siete días.",
+        "El encabezado del día muestra la fecha, el número de citas y el total estimado. Recorre la agenda por hora para encontrar una reserva.",
+        "Cada tarjeta confirmada incluye Reagendar y Cancelar."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-confirm-pending",
+     "title": "Cómo confirmar una reserva pendiente",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Cuando un servicio requiere tu aprobación, las nuevas reservas llegan como Pendientes."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Ve a Reservas en la barra lateral.",
+        "Localiza la reserva pendiente (filtra por Pendientes para encontrarla rápido).",
+        "Haz clic en la reserva para abrir sus detalles.",
+        "Haz clic en Confirmar.",
+        "El cliente recibe automáticamente un correo de confirmación."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-cancel-booking",
+     "title": "Cómo cancelar una reserva",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Toca Reservas y, en vista Lista, localiza la reserva confirmada. Usa los filtros de estado si lo necesitas.",
+        "Haz clic en la acción roja Cancelar de la tarjeta.",
+        "En ¿Cancelar esta reserva?, revisa el aviso de que se enviará un correo de cancelación.",
+        "Elige Mantener reserva para salir sin cambios o Sí, cancelar para confirmar.",
+        "La tarjeta permanece en la lista con estado gris Cancelada y desaparecen las acciones Reagendar, Cancelar y calendario."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Cancelar siempre envía un correo automático de cancelación al cliente. No existe la opción de cancelar en silencio. La tarjeta permanece en la lista con el estado Cancelada."
+      }
+     ]
+    },
+    {
+     "id": "article-no-show",
+     "title": "Cómo marcar a un cliente como ausencia",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Ve a Reservas y localiza la cita pasada.",
+        "Haz clic en ella para abrir los detalles.",
+        "Haz clic en Marcar como ausencia."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Los datos de ausencias alimentan la métrica de tasa de ausencias en tu panel."
+      }
+     ]
+    },
+    {
+     "id": "article-reschedule",
+     "title": "Cómo reagendar una reserva (proponer una nueva hora)",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Toca Reservas, cambia de Lista a Calendario, selecciona la fecha de la cita y recorre la agenda hasta su tarjeta.",
+        "Haz clic en Reagendar.",
+        "Revisa los datos de la Cita original en el diálogo.",
+        "Elige la nueva fecha y hora disponible. Cambiar de fecha puede seleccionar automáticamente el primer horario libre, así que revísalo antes de continuar.",
+        "Haz clic en el botón verde Mover al [fecha y hora].",
+        "En ¿Mover esta cita?, elige Cancelar, Mover cita para cambiarla sin correo, o Confirmar con cliente para moverla y enviarle un correo.",
+        "Usa las flechas del calendario y selecciona la nueva fecha para verificar que la reserva aparezca allí."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Después del cambio, la cita desaparece del día original y aparece en el nuevo día. El estado del cliente sigue siendo Confirmada."
+      }
+     ]
+    },
+    {
+     "id": "article-internal-notes",
+     "title": "Cómo agregar notas internas a una reserva",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre cualquier reserva desde la página de Reservas.",
+        "Localiza el campo Notas internas en el panel de detalles.",
+        "Escribe tus notas (son privadas — los clientes nunca las ven).",
+        "Haz clic en Guardar."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-manual-booking",
+     "title": "Cómo crear una reserva manual",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Usa esto cuando un cliente llama o llega en persona y quieres agregar su reserva tú mismo."
+      },
+      {
+       "t": "sub",
+       "h": "Pro+ — agenda única del negocio"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Desde Resumen, toca el botón verde + de la navegación inferior y elige Agregar reserva.",
+        "La reserva abre en una sola agenda del negocio; no hay que seleccionar un colaborador.",
+        "Abre Seleccionar servicio y elige el servicio. Su duración recalcula la hora final y el precio.",
+        "Elige la fecha y un horario disponible. Los espacios ocupados no aparecen disponibles y cambiar de fecha puede restablecer la hora seleccionada, así que revísala antes de continuar.",
+        "Escribe Nombre y Correo del cliente, abre Más y escribe Teléfono del cliente. El teléfono es obligatorio aunque no aparezca marcado; las Notas son opcionales.",
+        "Haz clic en Reservar para [fecha y hora]. La nueva tarjeta aparece en Reservas → Lista con estado Confirmada y no muestra un colaborador asignado."
+       ]
+      },
+      {
+       "t": "sub",
+       "h": "Teams — elige la agenda de un colaborador"
+      },
+      {
+       "t": "p",
+       "h": "En Teams, cada reserva debe colocarse en la agenda del colaborador correcto."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Desde Resumen, toca el botón verde + y elige Agregar reserva en Acciones rápidas.",
+        "En Nueva reserva, primero selecciona al colaborador dentro de Agenda del equipo.",
+        "Elige el servicio. flowlift usa la duración y el precio configurados para ese servicio.",
+        "Revisa el calendario de la persona seleccionada, donde los horarios ocupados aparecen como Ocupado, y elige un espacio libre.",
+        "Abre Datos del cliente y escribe nombre, correo y teléfono. Agrega una nota privada si la necesitas.",
+        "Si el cliente solicita otra fecha, selecciónala y elige el nuevo horario.",
+        "Cuando la hora queda fuera del horario de atención, flowlift muestra un aviso. Elige Agendar de todos modos para continuar o Elegir otra hora para regresar.",
+        "La reserva aparece en Reservas → Lista con su precio y estado Confirmada. Ábrela para revisar los detalles y verificar que se envió el correo de confirmación."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "07"
+      }
+     ],
+     "plan": "pro"
+    }
+   ]
+  },
+  {
+   "id": "section-booking-page",
+   "n": "07",
+   "title": "Tu página de reservas",
+   "lead": "Tu enlace público, código QR, imagen de portada y fotos del equipo.",
+   "articles": [
+    {
+     "id": "article-find-link",
+     "title": "Cómo encontrar tu enlace público de reservas",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en Configuración en la barra lateral.",
+        "Ve a la pestaña Página de reservas.",
+        "Se muestra tu enlace de reservas completo — se ve así: flowlift.co/book/tu-slug.",
+        "Haz clic en Copiar para copiarlo al portapapeles."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "También encuentras un botón de compartir en la barra lateral y en el panel."
+      }
+     ]
+    },
+    {
+     "id": "article-share-link",
+     "title": "Cómo compartir tu enlace de reservas",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Copia tu enlace (ver arriba).",
+        "Pégalo donde quieras — WhatsApp, bio de Instagram, firma de correo, tu sitio web, ficha de Google Maps, etc.",
+        "Los clientes hacen clic, eligen un servicio, fecha y hora, completan sus datos y quedan reservados."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-public-booking-flow",
+     "title": "Cómo hace un cliente una reserva pública",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "La página pública no requiere que el cliente inicie sesión ni cree una cuenta. Detecta el idioma del navegador y mantiene visible un indicador de tres pasos: Servicio, Fecha y hora, y Detalles."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Elige un servicio haciendo clic en su círculo de selección. La tarjeta se resalta, la barra fija inferior muestra servicio y precio, y Continuar queda activo.",
+        "En Fecha y hora, elige Cualquier disponible o un colaborador, selecciona un día del calendario de siete días y después un horario. Verde significa disponible, amarillo pocos espacios y gris lleno o cerrado.",
+        "En Detalles, escribe Nombre completo, teléfono de WhatsApp con código de país y Correo electrónico. Agregar una nota es opcional.",
+        "Acepta los Términos y condiciones y el Aviso de privacidad. Confirmar cita solo se activa cuando los datos obligatorios y el consentimiento están completos.",
+        "Haz clic en Confirmar cita. Mientras se envía, el botón muestra Procesando.",
+        "La confirmación muestra servicio, fecha, rango horario, colaborador, dirección y total. El cliente puede agregarla a Google, Outlook o Apple Calendar, calificar la experiencia o hacer clic en Agendar otra cita."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Si otra persona toma el horario primero, la reserva se rechaza y el cliente debe volver a Fecha y hora para elegir otro espacio disponible."
+      }
+     ]
+    },
+    {
+     "id": "article-qr-code",
+     "title": "Cómo obtener un código QR para tu página de reservas",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en Configuración en la barra lateral → pestaña Página de reservas.",
+        "Verás una previsualización en vivo del código QR.",
+        "Haz clic en Descargar PNG o Descargar JPG para guardarlo.",
+        "Imprímelo y colócalo en tu local para que los clientes que llegan en persona escaneen y reserven."
+       ]
+      }
+     ],
+     "plan": "pro"
+    },
+    {
+     "id": "article-preview",
+     "title": "Cómo previsualizar lo que ven los clientes",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Desde el Panel, haz clic en Previsualizar página de reservas.",
+        "O desde Configuración → pestaña Página de reservas, haz clic en Previsualizar.",
+        "Tu página pública de reservas se abre en una pestaña nueva — esto es exactamente lo que ven tus clientes."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-team-photos",
+     "title": "Cómo mostrar fotos de miembros del equipo en la página de reservas",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Ve a Configuración → pestaña Página de reservas.",
+        "Activa Mostrar fotos del equipo.",
+        "Los clientes verán las fotos del equipo y podrán elegir con quién quieren su cita."
+       ]
+      }
+     ],
+     "plan": "teams"
+    },
+    {
+     "id": "article-cover-image",
+     "title": "Cómo agregar una imagen de portada a tu página de reservas",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Ve a Configuración → pestaña Página de reservas.",
+        "En Imagen de portada, haz clic en Subir y elige una foto de banner.",
+        "Aparece en la parte superior de tu página pública de reservas."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "08"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-notifications-reminders",
+   "n": "08",
+   "title": "Notificaciones y recordatorios",
+   "lead": "Qué se envía automáticamente y cómo controlarlo.",
+   "articles": [
+    {
+     "id": "article-auto-sent",
+     "title": "Qué se envía automáticamente",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "flowlift envía correos en tu nombre sin que tengas que hacer nada:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "El cliente reserva una cita → correo de confirmación (con fecha, hora, enlaces de calendario y tu dirección) al cliente, más un correo de notificación de nueva reserva para ti.",
+        "Confirmas una reserva pendiente → correo de confirmación al cliente.",
+        "Reagendas y eliges Confirmar con cliente → correo al cliente con la nueva fecha y hora. Si eliges Mover cita, se cambia sin ese correo.",
+        "Cancelas una reserva → correo automático de cancelación al cliente.",
+        "Se dispara un recordatorio automático (si está activado) → correo de recordatorio al cliente antes de su cita."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-set-reminders",
+     "title": "Cómo configurar recordatorios automáticos para un servicio",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Consulta Cómo activar recordatorios automáticos por correo para un servicio en la sección Servicios."
+      },
+      {
+       "t": "p",
+       "h": "Los recordatorios se configuran por servicio para que puedas tener reglas distintas para distintos tipos de citas."
+      }
+     ]
+    },
+    {
+     "id": "article-about-whatsapp",
+     "title": "Acerca de WhatsApp",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Puedes añadir tu número de WhatsApp a tu perfil del negocio (aparece como enlace de contacto en tu página de reservas), pero el sistema no envía mensajes automáticos de WhatsApp por ahora. Toda la comunicación automatizada se hace por correo."
+      },
+      {
+       "t": "p",
+       "h": "09"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-account-billing",
+   "n": "09",
+   "title": "Cuenta y facturación",
+   "lead": "Planes, mejoras, el portal de facturación y Configuración.",
+   "articles": [
+    {
+     "id": "article-view-plan",
+     "title": "Cómo ver tu plan actual",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en tu foto de perfil o iniciales en la esquina superior derecha (o el engranaje de configuración).",
+        "Haz clic en Membresía.",
+        "Verás tu plan actual (Starter, Pro+ o Teams) y qué incluye."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-upgrade",
+     "title": "Cómo mejorar tu plan",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en tu perfil/iniciales → Membresía.",
+        "Revisa los tres planes: Starter (gratis, 1 servicio activo, reservas ilimitadas, página pública de reservas), Pro+ (servicios ilimitados, fotos de servicios, códigos QR, bloques de tiempo de varios días), Teams (todo lo de Pro+, más gestión de equipo, horarios individuales y vista swimlane).",
+        "Elige un intervalo de facturación: Mensual, Trimestral (3 meses) o Anual (mejor valor — 2 meses gratis).",
+        "Haz clic en el plan que quieras. Te llevará a una página segura de pago de Stripe.",
+        "Introduce los datos de tu tarjeta y completa el pago.",
+        "Tu plan se actualiza al instante."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-manage-subscription",
+     "title": "Cómo gestionar o cancelar tu suscripción",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Haz clic en tu perfil/iniciales → Membresía.",
+        "Haz clic en Gestionar facturación.",
+        "Te llevará al Portal de facturación de Stripe donde puedes actualizar tu método de pago, ver facturas o cancelar tu suscripción."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-update-info-settings",
+     "title": "Cómo actualizar la información del negocio en Configuración",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre Configuración haciendo clic en el engrane en escritorio o en la pequeña burbuja con el nombre del negocio en móvil.",
+        "En el menú vertical, elige Perfil del negocio.",
+        "Configuración de Negocio abre con Datos del negocio expandido. Actualiza Logo, Portada, Nombre del negocio, Tipo de negocio, Dirección, Ciudad, País, Teléfono o Correo; revisa la Zona horaria detectada.",
+        "Expande Disponibilidad para revisar día completo, inicio, fin, duración de franja, descansos y Copiar a….",
+        "Expande Servicios para revisar servicios visibles, precios, duración, visibilidad, orden y el enlace para administrar servicios avanzados.",
+        "Expande Políticas para elegir o editar la política de cancelación y controlar si la política y las redes sociales aparecen públicamente.",
+        "Abre Vista previa para ver la página tal como la ve un cliente. La barra fija inferior confirma el guardado y el estado de las secciones obligatorias."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "Si la página indica que falta una sección obligatoria aunque los campos visibles parezcan completos, expande Datos del negocio y revisa si falta un logo, portada u otro campo más abajo."
+      },
+      {
+       "t": "p",
+       "h": "10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-analytics",
+   "n": "10",
+   "title": "Analíticas",
+   "lead": "Qué te dice tu panel y cómo leerlo.",
+   "articles": [
+    {
+     "id": "article-dashboard",
+     "title": "Lo que te muestra el Panel",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Tu Panel (Resumen) es la foto general de tu negocio. Esto significa cada número:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Citas de esta semana — total de reservas confirmadas y pendientes de la semana actual. La flecha indica cómo te comparas con la semana pasada.",
+        "Ingresos estimados — el valor total de las reservas de esta semana según los precios de tus servicios.",
+        "Pendientes — reservas en espera de tu aprobación. Se pone ámbar cuando se requiere acción.",
+        "Tasa de ausencias — el porcentaje de citas pasadas en las que el cliente no asistió, en los últimos 30 días."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-revenue-chart",
+     "title": "Cómo leer el gráfico de ingresos semanales",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Ve al Panel en la barra lateral.",
+        "El gráfico de barras Ingresos · esta semana muestra una barra por cada día de la semana actual.",
+        "Barras más altas = más ingresos ese día.",
+        "Pasa el cursor sobre una barra para ver el monto exacto."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-todays-schedule",
+     "title": "Cómo ver la agenda de hoy",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Ve al Panel.",
+        "La tarjeta Agenda de hoy lista cada cita de hoy en orden.",
+        "Si una reserva está ocurriendo ahora mismo, verás un banner EN CURSO AHORA.",
+        "Haz clic en Ver todas → para ir a la página completa de Reservas."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-top-services",
+     "title": "Cómo ver tus servicios más populares",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Ve al Panel.",
+        "Baja hasta SERVICIOS PRINCIPALES · ESTE MES.",
+        "Esta lista muestra qué servicios se han reservado más este mes y cuántas veces."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-deep-analytics",
+     "title": "Acerca de los reportes analíticos detallados",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "flowlift puede exportar un reporte completo a una Hoja de Google (incluyendo todas las reservas e información del negocio). Es una función de nivel administrador — contacta a tu gestor de cuenta o al soporte de flowlift para activarla en tu cuenta."
+      },
+      {
+       "t": "p",
+       "h": "11"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section-customer-directory",
+   "n": "11",
+   "title": "Directorio de clientes",
+   "lead": "Lleva el registro de quienes reservan contigo, entiende su historial y facilita las visitas repetidas.",
+   "articles": [
+    {
+     "id": "article-dir-availability",
+     "title": "Disponibilidad",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "El Directorio de clientes está disponible en los planes Pro+ y Teams. Es una herramienta privada del negocio y no es visible para tus clientes."
+      },
+      {
+       "t": "note",
+       "h": "Las cuentas Starter verán una opción para mejorar el plan."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-open",
+     "title": "Cómo abrir Tus clientes",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Toca el botón verde + de la navegación inferior.",
+        "Elige Clientes en el menú de acciones rápidas.",
+        "La pantalla Clientes abre con buscador, ordenamiento, Exportar CSV, Agregar cliente y cualquier alerta de Posibles coincidencias."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-dir-how-added",
+     "title": "Cómo se agregan los clientes",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Los clientes se crean automáticamente a partir de tus reservas. No necesitas agregar a cada persona de forma manual."
+      },
+      {
+       "t": "p",
+       "h": "flowlift agrupa las reservas usando el número de teléfono del cliente cuando está disponible, y el correo electrónico como respaldo. Pequeñas diferencias de formato en el mismo número se combinan cuando representan al mismo cliente."
+      },
+      {
+       "t": "p",
+       "h": "Si una reserva usa un teléfono conocido con otro nombre, Clientes muestra una tarjeta Posibles coincidencias con el nombre guardado, el recibido, el teléfono compartido y la fecha de la reserva."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Revisa la alerta y decide si ambos nombres corresponden a la misma persona.",
+        "Elige No es la misma persona para conservar registros separados, o haz clic en Actualizar nombre.",
+        "En ¿Actualizar el nombre de este cliente?, revisa el nombre anterior y el nuevo y haz clic en Actualizar nombre para confirmar.",
+        "La alerta desaparece y el perfil existente conserva su historial de citas y monto gastado bajo el nombre actualizado."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-dir-find",
+     "title": "Cómo encontrar a un cliente",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Usa el buscador para buscar por nombre, número de teléfono o correo electrónico.",
+        "La búsqueda funciona sin acentos, así que \"Maria\" puede encontrar a \"María\".",
+        "Ordena la lista por Recientes, A–Z o Más visitas.",
+        "Selecciona un cliente para abrir su perfil completo."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-dir-profile",
+     "title": "Qué puedes ver en el perfil de un cliente",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Cada perfil puede incluir:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Número de teléfono y correo electrónico.",
+        "Total de visitas.",
+        "Monto estimado gastado en citas anteriores confirmadas.",
+        "Número de ausencias (no-shows).",
+        "Visita más reciente.",
+        "Servicio favorito o más reservado.",
+        "Historial de citas.",
+        "Etiquetas Nuevo o En riesgo cuando aplique."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Estos resúmenes se calculan a partir de tus reservas. Se actualizan automáticamente cuando cambia el estado de las reservas."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-contact",
+     "title": "Cómo contactar a un cliente",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Abre el perfil del cliente y elige la acción disponible:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Copiar su número de teléfono o correo electrónico.",
+        "Llamarle desde un dispositivo con función de llamadas.",
+        "Abrir una conversación de WhatsApp cuando haya un número de teléfono disponible."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "article-dir-notes",
+     "title": "Cómo agregar notas privadas",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre Clientes, busca por nombre y selecciona al cliente.",
+        "En el perfil, busca Notas privadas y escribe preferencias o información de seguimiento.",
+        "Haz clic en Agregar nota. El contador aumenta y la nota aparece con su fecha de creación."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Usa las notas para preferencias, detalles del servicio u otra información que tu negocio necesite recordar. Desde el mismo perfil también puedes contactar al cliente o agendarle una cita."
+      },
+      {
+       "t": "note",
+       "h": "Las notas privadas solo están disponibles para los usuarios autorizados de la cuenta del negocio."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-rebook",
+     "title": "Cómo agendar una visita repetida",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre el perfil del cliente y selecciona Agendar de nuevo. El panel abre con el nombre y correo del cliente prellenados.",
+        "Revisa o elige el servicio, selecciona la fecha y haz clic en el horario deseado dentro del calendario.",
+        "Si la reserva falla porque el teléfono guardado no tiene el formato internacional E.164 requerido, abre Más y escribe el teléfono con su código de país.",
+        "Haz clic en Reservar para [fecha y hora]. El panel se cierra cuando se completa correctamente.",
+        "Abre Reservas → Calendario, selecciona la fecha y verifica la nueva tarjeta Confirmada."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "La cita original no se modifica."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-create",
+     "title": "Cómo agregar un cliente manualmente",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre Clientes desde el menú verde de acciones rápidas (+) y haz clic en Agregar cliente junto a Exportar CSV.",
+        "Escribe el Nombre obligatorio y al menos un dato de contacto: Teléfono o Correo electrónico. La Nota privada es opcional.",
+        "Haz clic en Guardar cliente. El modal se cierra y aumenta el contador de clientes.",
+        "Como el cliente nuevo no tiene actividad reciente, usa el buscador o A–Z para encontrarlo. Su perfil muestra cero citas y $0 gastado.",
+        "Abre el perfil y elige Agendar de nuevo para programar su primera cita; el botón también funciona sin reservas anteriores."
+       ]
+      },
+      {
+       "t": "note",
+       "h": "No necesitas que el cliente tenga una cita antes de guardar sus datos de contacto."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-export",
+     "title": "Cómo exportar la información de clientes",
+     "blocks": [
+      {
+       "t": "p",
+       "h": "Para exportar el directorio completo:"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Abre Tus clientes.",
+        "Selecciona Exportar.",
+        "Confirma la exportación."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Se descargará un archivo CSV con datos de contacto, resúmenes de reservas, ausencias, servicio favorito, etiquetas y notas."
+      },
+      {
+       "t": "p",
+       "h": "También puedes exportar un cliente individual desde su perfil."
+      }
+     ]
+    },
+    {
+     "id": "article-dir-delete",
+     "title": "Cómo eliminar un cliente",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Abre el perfil del cliente.",
+        "Selecciona Eliminar cliente.",
+        "Lee el mensaje de confirmación con cuidado.",
+        "Confirma la eliminación solo cuando estés seguro."
+       ]
+      },
+      {
+       "t": "p",
+       "h": "Eliminar un cliente borra su perfil del directorio y anonimiza la información de contacto en las reservas relacionadas. Los registros de reservas permanecen para el historial y los reportes del negocio, pero los datos personales se eliminan. Los enlaces de cancelación y modificación del cliente también quedan revocados."
+      },
+      {
+       "t": "note",
+       "h": "Esta acción no se puede deshacer. Exporta cualquier información que necesites antes de eliminar al cliente."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

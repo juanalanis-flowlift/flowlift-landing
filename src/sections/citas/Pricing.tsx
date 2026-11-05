@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../../styles/pricing.css'
 import { ArrowRight, Check, CreditCard, Lock, ShieldCheck, UserCheck, type LucideIcon } from 'lucide-react'
 import Pill from '../../components/Pill'
 import { LINKS } from '../../config'

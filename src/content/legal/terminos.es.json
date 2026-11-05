@@ -1,0 +1,848 @@
+{
+ "title": "Términos y Condiciones",
+ "subtitle": "de flowlift",
+ "meta": [
+  "Versión legal en español (México) — v2.0",
+  "Última actualización: 12 de agosto de 2026"
+ ],
+ "intro": [
+  "Los presentes Términos y Condiciones (los \"Términos\") regulan el acceso y uso de la plataforma tecnológica denominada flowlift (la \"Plataforma\" o el \"Servicio\"), operada por Juan Carlos Alanis Gomez, actuando como Persona Física con Actividad Empresarial, con domicilio en Paseo de la Turquesa #407, San Patricio Plus, C.P. 25204, Saltillo, Coahuila, México.",
+  "Al registrarse y utilizar la Plataforma como usuario comercial (el \"Negocio\" o \"Usuario\"), usted acepta expresamente quedar obligado por los presentes Términos."
+ ],
+ "facts": [
+  {
+   "label": "Prueba gratis",
+   "value": "14 días",
+   "note": "Sin tarjeta y sin cobro durante la prueba."
+  },
+  {
+   "label": "Moneda",
+   "value": "MXN",
+   "note": "Todos los precios se cobran en pesos mexicanos."
+  },
+  {
+   "label": "Al terminar la prueba",
+   "value": "Plan Starter",
+   "note": "Si no agregas método de pago, no hay cobro y tus datos se conservan."
+  },
+  {
+   "label": "Si cierras tu cuenta",
+   "value": "30 días",
+   "note": "Ventana para exportar tus datos antes del borrado."
+  },
+  {
+   "label": "Cambios a estos Términos",
+   "value": "15 días de aviso",
+   "note": "Para cambios sustanciales de precio, cobro o datos."
+  },
+  {
+   "label": "Tribunales",
+   "value": "Saltillo, Coahuila",
+   "note": "Legislación de los Estados Unidos Mexicanos."
+  }
+ ],
+ "tocLabel": "Contenido",
+ "sections": [
+  {
+   "n": 1,
+   "title": "Naturaleza del Servicio",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "flowlift es una plataforma tecnológica de gestión de reservaciones que permite a negocios recibir y administrar solicitudes de reserva realizadas por clientes finales."
+    },
+    {
+     "t": "p",
+     "h": "flowlift actúa únicamente como intermediario tecnológico y proveedor de software, y no presta servicios al cliente final, no controla la ejecución de los servicios del Negocio ni forma parte de la relación contractual entre el Negocio y sus clientes."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "flowlift es el software donde el negocio recibe y administra sus citas. El servicio lo presta el negocio, no flowlift.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 2,
+   "title": "Registro y Uso de la Cuenta",
+   "blocks": [
+    {
+     "t": "clause",
+     "n": "2.1",
+     "h": "El Servicio está disponible únicamente para personas físicas o morales legalmente capacitadas para realizar actividades comerciales."
+    },
+    {
+     "t": "clause",
+     "n": "2.2",
+     "h": "El Usuario es responsable de:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "La veracidad de la información proporcionada",
+      "El resguardo y uso de sus credenciales de acceso",
+      "Todas las actividades realizadas desde su cuenta"
+     ]
+    },
+    {
+     "t": "clause",
+     "n": "2.3",
+     "h": "El acceso a la cuenta puede realizarse mediante proveedores de autenticación de terceros (por ejemplo, Google o Microsoft). El Usuario acepta que el uso de dichos proveedores está sujeto también a sus propios términos y políticas de privacidad."
+    },
+    {
+     "t": "sub",
+     "h": "2.4. Miembros de equipo"
+    },
+    {
+     "t": "p",
+     "h": "En los planes que lo permiten, el Usuario puede invitar a miembros de su equipo, quienes tendrán acceso limitado a su propio perfil, sus reservaciones asignadas, su disponibilidad y sus bloqueos de tiempo. Los miembros de equipo son usuarios autorizados del Negocio, no titulares de la cuenta. El Usuario (titular) es el único responsable de:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Las invitaciones que emite y de la información de sus miembros de equipo que carga en la Plataforma",
+      "Contar con la autorización de cada miembro para el tratamiento de sus datos personales dentro de la Plataforma",
+      "Las acciones realizadas por sus miembros de equipo dentro del Servicio",
+      "Revocar oportunamente el acceso de miembros que dejen de colaborar con el Negocio"
+     ]
+    },
+    {
+     "t": "p",
+     "h": "El cargo o función asignado a un miembro (por ejemplo, \"estilista\" o \"barbero\") es únicamente descriptivo y no constituye un sistema de permisos diferenciados."
+    },
+    {
+     "t": "sub",
+     "h": "2.5. Cuentas configuradas con asistencia de flowlift"
+    },
+    {
+     "t": "p",
+     "h": "flowlift puede configurar total o parcialmente una cuenta a solicitud del Usuario (por ejemplo, durante una demostración o proceso de onboarding asistido). En estos casos, la titularidad de la cuenta se transfiere al Usuario una vez que éste completa el proceso de reclamación con una cuenta de correo electrónico válida. A partir de ese momento, el Usuario asume la responsabilidad plena sobre la cuenta, su contenido y su configuración."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Tú cuidas tus accesos y respondes por lo que pasa en tu cuenta, incluyendo a tu equipo. Si te ayudamos a configurarla, la cuenta pasa a ser tuya al reclamarla.",
+    "applies": "Aplica a: Negocio"
+   }
+  },
+  {
+   "n": 3,
+   "title": "Clientes Finales",
+   "blocks": [
+    {
+     "t": "clause",
+     "n": "3.1",
+     "h": "Los clientes finales no crean cuentas en flowlift."
+    },
+    {
+     "t": "sub",
+     "h": "3.2. Aceptación expresa"
+    },
+    {
+     "t": "p",
+     "h": "Cuando el cliente final realiza una reservación a través de la página pública de reservación del Negocio, debe aceptar de forma expresa los presentes Términos y el Aviso de Privacidad de flowlift mediante una casilla de verificación obligatoria. La reservación no puede completarse sin dicha aceptación, y flowlift registra la fecha y hora en que ésta se otorga."
+    },
+    {
+     "t": "p",
+     "h": "Cuando sea el propio Negocio quien registre una reservación directamente en la Plataforma en nombre de un cliente, corresponderá al Negocio informar a dicho cliente sobre el tratamiento de sus datos personales y recabar el consentimiento que resulte aplicable."
+    },
+    {
+     "t": "sub",
+     "h": "3.3. Términos propios del Negocio"
+    },
+    {
+     "t": "p",
+     "h": "Cuando el Negocio habilite sus propios términos o políticas en su página de reservación, el cliente final deberá aceptarlos por separado. Dichos términos son responsabilidad exclusiva del Negocio; flowlift únicamente los muestra."
+    },
+    {
+     "t": "clause",
+     "n": "3.4",
+     "h": "Toda relación comercial, contractual o de servicio existe exclusivamente entre el Negocio y el cliente final. flowlift no asume responsabilidad alguna por el comportamiento de los clientes, inasistencias, cancelaciones o disputas."
+    },
+    {
+     "t": "sub",
+     "h": "3.5. Enlaces de acceso"
+    },
+    {
+     "t": "p",
+     "h": "flowlift puede enviar al cliente final enlaces de un solo uso o de vigencia limitada para consultar, modificar o cancelar su reservación. El cliente final es responsable del resguardo de dichos enlaces. flowlift podrá revocarlos cuando el Negocio elimine los datos del cliente o por motivos de seguridad."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "El cliente no crea cuenta: acepta estos Términos con una casilla al agendar. Su relación de servicio es con el negocio.",
+    "applies": "Aplica a: Cliente"
+   }
+  },
+  {
+   "n": 4,
+   "title": "Reservaciones y Disponibilidad",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Las reservaciones pueden confirmarse automáticamente o requerir aprobación del Negocio, según la configuración elegida por el Usuario."
+    },
+    {
+     "t": "p",
+     "h": "flowlift no garantiza la exactitud de la disponibilidad publicada ni la asistencia del cliente final."
+    },
+    {
+     "t": "p",
+     "h": "El Negocio es el único responsable de:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Definir su disponibilidad, horarios y servicios (incluyendo servicios de temporada o con horarios especiales)",
+      "Confirmar o rechazar solicitudes",
+      "Cumplir con las reservaciones aceptadas"
+     ]
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "El negocio define su disponibilidad y decide si confirma automático o a mano. flowlift no garantiza que el cliente asista.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 5,
+   "title": "Cancelaciones y Políticas del Negocio",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Cada Negocio define sus propias políticas de cancelación, inasistencias y condiciones del servicio."
+    },
+    {
+     "t": "p",
+     "h": "flowlift se limita a mostrar dichas políticas y no las aplica ni las hace cumplir, ni participa en disputas o reembolsos entre el Negocio y sus clientes finales."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Las políticas de cancelación son del negocio. flowlift solo las muestra y no interviene en reembolsos ni disputas.",
+    "applies": "Aplica a: Cliente"
+   }
+  },
+  {
+   "n": 6,
+   "title": "Suscripciones, Tarifas y Prueba Gratuita",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "6.1. Planes de suscripción"
+    },
+    {
+     "t": "p",
+     "h": "flowlift ofrece un plan gratuito (Starter) y planes de pago (Pro+ y Teams), que pueden contratarse con periodicidad mensual o anual, según las opciones disponibles en la Plataforma."
+    },
+    {
+     "t": "p",
+     "h": "Todos los precios se expresan y se cobran en pesos mexicanos (MXN). El precio, la periodicidad de cobro y las características de cada plan serán los que se muestren al Usuario en la Plataforma antes de completar la contratación."
+    },
+    {
+     "t": "p",
+     "h": "Los impuestos aplicables, comisiones bancarias o cargos por conversión de moneda que el banco emisor del Usuario pudiera aplicar (por ejemplo, en tarjetas extranjeras) son responsabilidad del Usuario."
+    },
+    {
+     "t": "sub",
+     "h": "6.2. Precios promocionales"
+    },
+    {
+     "t": "p",
+     "h": "flowlift puede ofrecer precios de lanzamiento, descuentos por tiempo limitado o promociones específicas. Dichos precios están sujetos a disponibilidad y vigencia, y aplican únicamente bajo las condiciones mostradas al momento de la contratación."
+    },
+    {
+     "t": "p",
+     "h": "Salvo que se indique lo contrario, la suscripción se renovará al precio contratado. Cualquier modificación al precio de renovación será notificada al Usuario con anticipación razonable, y el Usuario podrá cancelar antes de la fecha de renovación si no está de acuerdo."
+    },
+    {
+     "t": "sub",
+     "h": "6.3. Elegibilidad para la prueba gratuita"
+    },
+    {
+     "t": "p",
+     "h": "flowlift ofrece una prueba gratuita de catorce (14) días naturales para los planes Pro+ y Teams. No se requiere tarjeta de crédito o débito para iniciar la prueba."
+    },
+    {
+     "t": "p",
+     "h": "La prueba gratuita está limitada a una sola prueba por Negocio, cuenta o propietario, según los criterios de identificación que flowlift determine razonablemente. La prueba no podrá repetirse mediante la creación de cuentas adicionales, cambios de correo electrónico, cambios de propietario, cambios de plan u otros medios destinados a obtener una prueba adicional."
+    },
+    {
+     "t": "p",
+     "h": "flowlift se reserva el derecho de determinar la elegibilidad y de rechazar, cancelar o limitar una prueba gratuita cuando considere razonablemente que se está intentando abusar de la promoción o incumplir estos Términos."
+    },
+    {
+     "t": "sub",
+     "h": "6.4. Inicio y duración de la prueba"
+    },
+    {
+     "t": "p",
+     "h": "La prueba comienza cuando flowlift activa la suscripción de prueba del Usuario y tiene una duración de catorce (14) días naturales, salvo que la Plataforma indique expresamente un periodo diferente."
+    },
+    {
+     "t": "p",
+     "h": "La fecha y hora de terminación de la prueba, así como la zona horaria aplicable, serán las que se muestren en la Plataforma o en las comunicaciones enviadas al Usuario. La prueba no se extenderá por falta de uso, interrupciones de disponibilidad, días festivos, cambios de plan o cualquier otra circunstancia, salvo que flowlift lo confirme expresamente por escrito."
+    },
+    {
+     "t": "sub",
+     "h": "6.5. Ausencia de cobro durante la prueba"
+    },
+    {
+     "t": "p",
+     "h": "No se realizará ningún cobro durante el periodo de prueba."
+    },
+    {
+     "t": "p",
+     "h": "Antes de que finalice la prueba, flowlift enviará al Usuario un recordatorio indicando la fecha de terminación y las acciones necesarias para continuar utilizando las funciones del plan de pago."
+    },
+    {
+     "t": "sub",
+     "h": "6.6. Conversión a plan de pago"
+    },
+    {
+     "t": "p",
+     "h": "Si el Usuario agrega y mantiene un método de pago válido antes de que termine la prueba, la suscripción podrá convertirse automáticamente en una suscripción de pago al finalizar el periodo de prueba. En ese momento, flowlift o su proveedor de pagos podrá cobrar el precio correspondiente al plan seleccionado, con la periodicidad elegida por el Usuario."
+    },
+    {
+     "t": "p",
+     "h": "El Usuario es responsable de revisar el precio, la periodicidad, el método de pago y la fecha de inicio de los cargos antes de agregar un método de pago o continuar con la suscripción."
+    },
+    {
+     "t": "sub",
+     "h": "6.7. Si el Usuario no agrega un método de pago"
+    },
+    {
+     "t": "p",
+     "h": "Si la prueba termina y el Usuario no ha agregado un método de pago válido, no se realizará ningún cobro."
+    },
+    {
+     "t": "p",
+     "h": "En ese caso, la suscripción de pago se pausará y la cuenta cambiará automáticamente al plan gratuito Starter. El cambio de plan limitará el acceso a determinadas funciones de los planes de pago, pero los datos del Negocio y sus reservaciones se conservarán, salvo que la cuenta sea eliminada conforme a estos Términos."
+    },
+    {
+     "t": "p",
+     "h": "El Usuario podrá recuperar el acceso al plan de pago agregando un método de pago válido y siguiendo las instrucciones disponibles en la Plataforma, sujeto a la disponibilidad del plan y a las condiciones vigentes en ese momento."
+    },
+    {
+     "t": "sub",
+     "h": "6.8. Cancelación"
+    },
+    {
+     "t": "p",
+     "h": "El Usuario puede cancelar la suscripción desde la Plataforma o mediante los medios de contacto indicados por flowlift."
+    },
+    {
+     "t": "p",
+     "h": "La cancelación durante la prueba gratuita evitará la conversión a una suscripción de pago, siempre que se complete antes de que termine el periodo de prueba."
+    },
+    {
+     "t": "p",
+     "h": "La cancelación de una suscripción de pago impedirá futuras renovaciones. El Usuario conservará el acceso a las funciones del plan hasta el final del periodo ya pagado."
+    },
+    {
+     "t": "p",
+     "h": "El Usuario debe conservar la confirmación de cancelación y verificar que ésta haya sido procesada correctamente."
+    },
+    {
+     "t": "sub",
+     "h": "6.9. Renovación automática"
+    },
+    {
+     "t": "p",
+     "h": "Las suscripciones de pago con tarjeta se renovarán automáticamente por periodos sucesivos de la misma duración (mensual o anual, según corresponda), salvo que el Usuario las cancele antes de la fecha de renovación."
+    },
+    {
+     "t": "sub",
+     "h": "6.10. Pagos en efectivo mediante OXXO"
+    },
+    {
+     "t": "p",
+     "h": "flowlift puede ofrecer la contratación de paquetes trimestrales pagaderos en efectivo a través de OXXO. Estos pagos tienen las siguientes características particulares:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Son pagos únicos que otorgan acceso al plan seleccionado por un periodo de tres (3) meses. No se renuevan automáticamente.",
+      "La confirmación del pago no es inmediata: puede tardar hasta el siguiente día hábil en reflejarse. El acceso al plan de pago se activará únicamente cuando el pago sea confirmado por el proveedor de pagos.",
+      "El comprobante de pago (voucher) tiene una fecha de vencimiento. Si no se paga dentro de ese plazo, la orden se cancela sin costo y sin activación del plan.",
+      "Al finalizar el periodo de tres meses, la cuenta cambiará automáticamente al plan gratuito Starter, salvo que el Usuario contrate nuevamente.",
+      "Salvo que la ley aplicable disponga lo contrario, los pagos realizados mediante OXXO no son reembolsables una vez activado el periodo correspondiente."
+     ]
+    },
+    {
+     "t": "sub",
+     "h": "6.11. Pagos rechazados"
+    },
+    {
+     "t": "p",
+     "h": "Si un cobro es rechazado, vencido, revertido o no puede procesarse, flowlift podrá intentar procesarlo nuevamente y podrá suspender, pausar, limitar o cancelar el acceso a las funciones de pago hasta que se regularice la situación."
+    },
+    {
+     "t": "p",
+     "h": "El Usuario deberá mantener actualizados sus datos de facturación y su método de pago."
+    },
+    {
+     "t": "sub",
+     "h": "6.12. Reembolsos"
+    },
+    {
+     "t": "p",
+     "h": "Salvo que la ley aplicable, una promoción específica o flowlift indiquen expresamente lo contrario, los pagos correspondientes a periodos de suscripción ya iniciados no son reembolsables."
+    },
+    {
+     "t": "p",
+     "h": "Cualquier reembolso aprobado se realizará al método de pago original, cuando sea técnicamente posible. Las comisiones bancarias, cargos por conversión de moneda o costos cobrados por terceros podrán no ser recuperables."
+    },
+    {
+     "t": "sub",
+     "h": "6.13. Cambios de plan"
+    },
+    {
+     "t": "p",
+     "h": "El Usuario podrá cambiar de plan cuando la Plataforma lo permita:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Mejoras de plan (upgrade): aplican de forma inmediata y el cobro se prorratea respecto del periodo en curso.",
+      "Reducciones de plan (downgrade): el Usuario conserva su plan actual hasta el final del ciclo de facturación pagado, y a partir de esa fecha aplica el plan menor."
+     ]
+    },
+    {
+     "t": "p",
+     "h": "El Usuario no tendrá derecho a una nueva prueba gratuita por cambiar de plan o por contratar nuevamente una suscripción después de haber utilizado la prueba inicial."
+    },
+    {
+     "t": "sub",
+     "h": "6.14. Disponibilidad de la promoción"
+    },
+    {
+     "t": "p",
+     "h": "La prueba gratuita no constituye una oferta permanente. flowlift podrá modificar, suspender o eliminar la promoción para nuevos Usuarios. Cualquier prueba ya iniciada continuará conforme a las condiciones mostradas al momento de su activación, salvo que sea necesario realizar un cambio por motivos legales, de seguridad, fraude o funcionamiento del Servicio."
+    },
+    {
+     "t": "sub",
+     "h": "6.15. Facturación fiscal (CFDI)"
+    },
+    {
+     "t": "p",
+     "h": "El Usuario que requiera Comprobante Fiscal Digital por Internet (CFDI) deberá solicitarlo a través de los medios de contacto indicados en estos Términos, proporcionando sus datos fiscales completos, dentro del mes calendario en que se haya realizado el pago. flowlift no está obligado a emitir CFDI de periodos anteriores una vez cerrado el mes fiscal correspondiente."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Precios en pesos. La prueba dura 14 días sin tarjeta: si agregas método de pago se convierte en plan de pago, si no, pasas a Starter sin cobro. Los periodos ya iniciados no se reembolsan.",
+    "applies": "Aplica a: Negocio"
+   }
+  },
+  {
+   "n": 7,
+   "title": "Pagos e Integraciones Futuras",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Actualmente, flowlift no procesa pagos entre el Negocio y sus clientes finales. Los cobros que realiza flowlift corresponden únicamente a la suscripción del Usuario a la Plataforma."
+    },
+    {
+     "t": "p",
+     "h": "Los pagos de suscripción son procesados por proveedores externos, incluyendo Stripe. El Usuario acepta que el procesamiento del pago está sujeto también a los términos y políticas de privacidad del proveedor correspondiente."
+    },
+    {
+     "t": "p",
+     "h": "flowlift no almacena directamente los datos completos de tarjetas bancarias. El Usuario autoriza al proveedor de pagos a almacenar y procesar la información necesaria para efectuar los cargos autorizados."
+    },
+    {
+     "t": "p",
+     "h": "El Usuario acepta que flowlift podrá integrar en el futuro funcionalidades adicionales de pago (por ejemplo, cobro de anticipos a clientes finales), las cuales estarán sujetas a términos adicionales que serán comunicados oportunamente."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Hoy flowlift solo cobra tu suscripción, no los pagos de tus clientes. Stripe procesa los cobros y flowlift no guarda tus datos de tarjeta.",
+    "applies": "Aplica a: Negocio"
+   }
+  },
+  {
+   "n": 8,
+   "title": "Propiedad de la Información y Licencia de Uso",
+   "blocks": [
+    {
+     "t": "clause",
+     "n": "8.1",
+     "h": "El Negocio conserva la titularidad de sus logotipos, información comercial, datos de reservaciones y datos de sus clientes."
+    },
+    {
+     "t": "clause",
+     "n": "8.2",
+     "h": "El Usuario otorga a flowlift una licencia no exclusiva, mundial y libre de regalías para usar dicha información exclusivamente para operar, mantener, proteger y prestar el Servicio al Usuario, incluyendo el envío por correo electrónico de confirmaciones, recordatorios, avisos de cancelación, solicitudes de cambio de horario y enlaces de acceso a sus clientes finales, por instrucción y en nombre del Negocio."
+    },
+    {
+     "t": "p",
+     "h": "flowlift no envía comunicaciones promocionales ni publicitarias a los clientes finales del Negocio. Si en el futuro se habilitan canales adicionales de notificación (por ejemplo, mensajería móvil), se informará al Usuario y, cuando corresponda, se recabará el consentimiento aplicable."
+    },
+    {
+     "t": "clause",
+     "n": "8.3",
+     "h": "flowlift podrá utilizar información agregada y anonimizada (que no permita identificar al Usuario, a su Negocio ni a sus clientes) para fines estadísticos y de mejora del Servicio."
+    },
+    {
+     "t": "clause",
+     "n": "8.4",
+     "h": "El uso del nombre comercial, logotipo o testimonios del Negocio con fines de promoción o mercadotecnia de flowlift requerirá autorización previa y expresa del Usuario, la cual podrá ser revocada en cualquier momento."
+    },
+    {
+     "t": "clause",
+     "n": "8.5",
+     "h": "flowlift conserva todos los derechos sobre el software, marca, diseño, código y demás elementos de la Plataforma."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Tu información y tus clientes son tuyos. flowlift la usa solo para operar el servicio y no manda publicidad a tus clientes. Usar tu marca requiere tu permiso.",
+    "applies": "Aplica a: Negocio"
+   }
+  },
+  {
+   "n": 9,
+   "title": "Protección de Datos Personales",
+   "blocks": [
+    {
+     "t": "sub",
+     "h": "9.1. Marco legal aplicable"
+    },
+    {
+     "t": "p",
+     "h": "flowlift trata datos personales conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares vigente en México, publicada en el Diario Oficial de la Federación el 20 de marzo de 2025, su reglamento y demás disposiciones aplicables. La autoridad competente en la materia es la Secretaría Anticorrupción y Buen Gobierno."
+    },
+    {
+     "t": "sub",
+     "h": "9.2. Datos del Usuario"
+    },
+    {
+     "t": "p",
+     "h": "Respecto de los datos personales del Usuario (titular de la cuenta), flowlift actúa como responsable y los trata conforme al Aviso de Privacidad disponible en la Plataforma."
+    },
+    {
+     "t": "sub",
+     "h": "9.3. Datos de los clientes finales"
+    },
+    {
+     "t": "p",
+     "h": "Respecto de los datos personales de los clientes finales que el Negocio recaba, almacena o administra a través de la Plataforma, el Negocio actúa como responsable y flowlift actúa como encargado."
+    },
+    {
+     "t": "p",
+     "h": "Estos datos incluyen: nombre, correo electrónico, teléfono, notas privadas que el Negocio agregue, y el historial de reservaciones (fecha, servicio, precio y estado). El directorio de clientes genera además información derivada a partir de dicho historial, como número de visitas, monto total gastado, inasistencias, última visita, servicio más frecuente y una etiqueta de comportamiento del cliente. El Negocio reconoce que esta información derivada constituye tratamiento de datos personales bajo su responsabilidad y debe reflejarse en su propio aviso de privacidad."
+    },
+    {
+     "t": "sub",
+     "h": "9.4. Obligaciones de flowlift como encargado"
+    },
+    {
+     "t": "p",
+     "h": "En su carácter de encargado, flowlift se obliga a:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Tratar los datos personales únicamente conforme a las instrucciones del Negocio y para prestar el Servicio",
+      "Abstenerse de tratar los datos personales para finalidades propias distintas a las señaladas en estos Términos",
+      "Implementar medidas de seguridad administrativas, técnicas y físicas razonables",
+      "Guardar confidencialidad respecto de los datos personales tratados",
+      "No transferir los datos personales a terceros, salvo a los subencargados señalados en la cláusula 9.6, por instrucción del Negocio o por requerimiento de autoridad competente",
+      "Suprimir o devolver los datos personales al concluir la relación contractual, conforme a la cláusula 11"
+     ]
+    },
+    {
+     "t": "sub",
+     "h": "9.5. Obligaciones del Negocio como responsable"
+    },
+    {
+     "t": "p",
+     "h": "El Negocio garantiza que:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Cuenta con base legal y, cuando corresponda, con el consentimiento necesario para recabar y tratar los datos de sus clientes finales",
+      "Pone a disposición de sus clientes finales un aviso de privacidad propio, cuando la ley lo requiera",
+      "Atenderá directamente las solicitudes de derechos ARCO (acceso, rectificación, cancelación y oposición) que reciba de sus clientes finales"
+     ]
+    },
+    {
+     "t": "sub",
+     "h": "9.5.bis. Herramientas ARCO disponibles"
+    },
+    {
+     "t": "p",
+     "h": "flowlift pone a disposición del Negocio, dentro de la Plataforma, herramientas para exportar, rectificar y eliminar la información de sus clientes finales."
+    },
+    {
+     "t": "p",
+     "h": "El Usuario reconoce que la función de eliminación opera de la siguiente forma: se suprimen los datos identificables del cliente (nombre, correo electrónico, teléfono y notas), se revocan los enlaces de acceso previamente emitidos, y se conserva un registro histórico anonimizado de las reservaciones (fecha, servicio, precio y estado) que ya no permite identificar al cliente. Dicho registro anonimizado se mantiene por razones operativas, contables y estadísticas del propio Negocio."
+    },
+    {
+     "t": "sub",
+     "h": "9.6. Subencargados e infraestructura"
+    },
+    {
+     "t": "p",
+     "h": "El Servicio se apoya en proveedores de infraestructura y servicios de terceros que pueden alojar o procesar información, entre ellos: Replit (alojamiento de aplicación y base de datos), Stripe (procesamiento de pagos), Resend (correo transaccional) y proveedores de autenticación como Google y Microsoft. flowlift podrá actualizar esta lista, manteniendo obligaciones de protección de datos equivalentes con cada proveedor, y notificará al Usuario la incorporación de nuevos proveedores que traten datos de sus clientes finales."
+    },
+    {
+     "t": "sub",
+     "h": "9.7. Transferencias internacionales"
+    },
+    {
+     "t": "p",
+     "h": "El Usuario reconoce que algunos de estos proveedores pueden almacenar o procesar información fuera del territorio mexicano, y autoriza dichas transferencias en tanto sean necesarias para la prestación del Servicio."
+    },
+    {
+     "t": "sub",
+     "h": "9.8. Incidentes de seguridad"
+    },
+    {
+     "t": "p",
+     "h": "En caso de una vulneración de seguridad que afecte de manera significativa los datos personales tratados por cuenta del Negocio, flowlift notificará al Usuario sin demora injustificada, con la información razonablemente disponible."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "De los datos de tus clientes tú eres el responsable y flowlift el encargado. Hay herramientas para exportar, corregir y eliminar; al eliminar queda un historial anonimizado.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 10,
+   "title": "Uso Prohibido",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Queda estrictamente prohibido utilizar la Plataforma para:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Actividades ilegales o fraudulentas",
+      "Representaciones falsas sobre la identidad del Negocio o sus servicios",
+      "Violación de derechos de terceros",
+      "Envío de comunicaciones no solicitadas (spam) a personas que no sean clientes del Negocio",
+      "Intentos de vulnerar, sobrecargar o realizar ingeniería inversa sobre la Plataforma"
+     ]
+    },
+    {
+     "t": "p",
+     "h": "El uso indebido o ilegal dará lugar a la terminación inmediata del contrato sin derecho a reembolso."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Nada ilegal, engañoso, spam ni intentos de romper la plataforma. El uso indebido termina el contrato sin reembolso.",
+    "applies": "Aplica a: Negocio"
+   }
+  },
+  {
+   "n": 11,
+   "title": "Suspensión, Terminación y Conservación de Datos",
+   "blocks": [
+    {
+     "t": "clause",
+     "n": "11.1",
+     "h": "flowlift se reserva el derecho de suspender o cancelar cuentas, eliminar contenido o restringir el acceso cuando exista incumplimiento de estos Términos, falta de pago, requerimiento legal o riesgo para la seguridad del Servicio."
+    },
+    {
+     "t": "clause",
+     "n": "11.2",
+     "h": "El Usuario puede solicitar la eliminación de su cuenta en cualquier momento."
+    },
+    {
+     "t": "sub",
+     "h": "11.3. Periodo de conservación"
+    },
+    {
+     "t": "p",
+     "h": "Salvo en casos de fraude, actividad ilícita o requerimiento de autoridad, tras la terminación de la cuenta flowlift conservará los datos del Negocio durante un periodo de treinta (30) días naturales, durante el cual el Usuario podrá solicitar su exportación en un formato de uso común. Transcurrido dicho plazo, la información podrá ser eliminada de forma permanente sin obligación adicional de conservación."
+    },
+    {
+     "t": "clause",
+     "n": "11.4",
+     "h": "La terminación no exime al Usuario del pago de cantidades devengadas antes de la fecha de terminación."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Puedes cerrar tu cuenta cuando quieras. Después de cerrarla tienes 30 días para exportar tu información.",
+    "applies": "Aplica a: Negocio"
+   }
+  },
+  {
+   "n": 12,
+   "title": "Exclusión de Garantías",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "La Plataforma se proporciona \"tal cual\" y \"según disponibilidad\"."
+    },
+    {
+     "t": "p",
+     "h": "flowlift no garantiza disponibilidad continua e ininterrumpida, resultados comerciales, ni el cumplimiento de las reservaciones por parte de los clientes finales."
+    },
+    {
+     "t": "p",
+     "h": "Nada en esta cláusula limita las garantías que resulten irrenunciables conforme a la legislación mexicana aplicable."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "El servicio se ofrece tal cual. No prometemos operación ininterrumpida ni resultados comerciales.",
+    "applies": "Aplica a: Legal"
+   }
+  },
+  {
+   "n": 13,
+   "title": "Limitación de Responsabilidad",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "La responsabilidad total de flowlift frente al Usuario no excederá el monto efectivamente pagado por el Usuario durante los tres (3) meses anteriores al evento que origine la reclamación."
+    },
+    {
+     "t": "p",
+     "h": "En ningún caso flowlift será responsable por daños indirectos, incidentales o consecuenciales, incluyendo pérdida de ingresos, clientela u oportunidades comerciales."
+    },
+    {
+     "t": "p",
+     "h": "Esta limitación no aplica en casos de dolo o mala fe, ni respecto de responsabilidades que no puedan limitarse conforme a la ley aplicable."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "El límite de responsabilidad de flowlift es lo que pagaste en los últimos 3 meses. No cubre daños indirectos.",
+    "applies": "Aplica a: Legal"
+   }
+  },
+  {
+   "n": 14,
+   "title": "Indemnización",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "El Usuario se obliga a sacar en paz y a salvo a flowlift de cualquier reclamación derivada de:"
+    },
+    {
+     "t": "ul",
+     "items": [
+      "Los servicios que el Negocio presta a sus clientes finales",
+      "Disputas con clientes finales",
+      "Incumplimiento legal o regulatorio del Negocio, incluyendo materia de protección de datos personales",
+      "Uso indebido de la Plataforma"
+     ]
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Si algo de tu operación con tus clientes genera una reclamación, te toca responder por ella.",
+    "applies": "Aplica a: Legal"
+   }
+  },
+  {
+   "n": 15,
+   "title": "Legislación Aplicable y Jurisdicción",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Estos Términos se rigen por las leyes de los Estados Unidos Mexicanos."
+    },
+    {
+     "t": "p",
+     "h": "Para la interpretación y cumplimiento de los presentes Términos, las partes se someten a la jurisdicción de los tribunales competentes de la ciudad de Saltillo, Coahuila, renunciando a cualquier otro fuero que pudiera corresponderles por razón de sus domicilios presentes o futuros."
+    },
+    {
+     "t": "p",
+     "h": "Lo anterior sin perjuicio de los derechos que la legislación aplicable en materia de protección al consumidor otorgue a los Usuarios que califiquen como consumidores."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Aplica la ley mexicana y los tribunales de Saltillo, Coahuila, sin afectar tus derechos como consumidor.",
+    "applies": "Aplica a: Legal"
+   }
+  },
+  {
+   "n": 16,
+   "title": "Modificaciones",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "flowlift podrá modificar estos Términos. Cuando los cambios sean sustanciales —particularmente los relativos a precios, facturación o tratamiento de datos personales— flowlift los notificará al Usuario por correo electrónico o dentro de la Plataforma con al menos quince (15) días naturales de anticipación a su entrada en vigor."
+    },
+    {
+     "t": "p",
+     "h": "El uso continuado del Servicio después de la fecha de entrada en vigor implica la aceptación de las modificaciones. Si el Usuario no está de acuerdo, podrá cancelar su suscripción antes de esa fecha."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Si cambiamos algo importante te avisamos 15 días antes. Si no estás de acuerdo, puedes cancelar antes de que entre en vigor.",
+    "applies": "Aplica a: Ambos"
+   }
+  },
+  {
+   "n": 17,
+   "title": "Idioma",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "Los presentes Términos se emiten en español. flowlift puede poner a disposición traducciones a otros idiomas únicamente por conveniencia del Usuario."
+    },
+    {
+     "t": "p",
+     "h": "En caso de discrepancia entre versiones, prevalecerá la versión en español."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Este documento es en español. Las traducciones son de conveniencia. En caso de duda, la versión en español prevalece.",
+    "applies": "Aplica a: Legal"
+   }
+  },
+  {
+   "n": 18,
+   "title": "Contacto",
+   "blocks": [
+    {
+     "t": "p",
+     "h": "juan.alanis@flowlift.co"
+    },
+    {
+     "t": "p",
+     "h": "Paseo de la Turquesa #407, San Patricio Plus, C.P. 25204, Saltillo, Coahuila, México."
+    }
+   ],
+   "simple": {
+    "label": "En simple",
+    "text": "Escríbenos. Contestamos por correo.",
+    "applies": "Aplica a: Ambos"
+   }
+  }
+ ],
+ "annex": {
+  "n": null,
+  "title": "Anexo A — Aviso visible en el punto de contratación",
+  "blocks": [
+   {
+    "t": "p",
+    "h": "Este texto no forma parte de los Términos: debe mostrarse directamente junto al botón de inicio de prueba y en el checkout."
+   },
+   {
+    "t": "p",
+    "h": "Prueba gratuita de 14 días. No se requiere tarjeta y no se realiza ningún cobro durante la prueba. Si agregas un método de pago y no cancelas antes de que termine, tu suscripción se convertirá automáticamente en un plan de pago al precio y periodicidad que se muestran arriba, en pesos mexicanos. Si no agregas un método de pago, no se realiza ningún cobro y tu cuenta cambia al plan Starter. Tus datos y reservaciones se conservan."
+   },
+   {
+    "t": "p",
+    "h": "Pago en efectivo por 3 meses. Es un pago único, no se renueva automáticamente. Tu plan se activa cuando OXXO confirma el pago (puede tardar hasta el siguiente día hábil)."
+   }
+  ]
+ }
+}

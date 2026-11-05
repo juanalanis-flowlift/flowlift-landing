@@ -21,7 +21,7 @@ const PAGES = [
 
 // Se ejecuta dentro de la página.
 function extract() {
-  const SKIP = 'header, footer, nav, aside, script, style, svg, noscript'
+  const SKIP = 'footer, nav, aside, script, style, svg, noscript'
   const ALLOWED = { STRONG: 'strong', B: 'strong', EM: 'em', I: 'em', A: 'a', BR: 'br', CODE: 'code' }
   const inline = (node) => {
     let out = ''
@@ -31,7 +31,14 @@ function extract() {
       if (n.matches('svg, script, style')) continue
       const tag = ALLOWED[n.tagName]
       const inner = inline(n)
-      if (!tag) { out += inner; continue }
+      if (!tag) {
+        // los <span> en negritas o cursiva (términos de la interfaz, énfasis) se conservan como <strong> / <em>
+        const cs = getComputedStyle(n), ps = getComputedStyle(n.parentElement)
+        if (inner && parseInt(cs.fontWeight) >= 600 && parseInt(ps.fontWeight) < 600) out += `<strong>${inner}</strong>`
+        else if (inner && cs.fontStyle === 'italic' && ps.fontStyle !== 'italic') out += `<em>${inner}</em>`
+        else out += inner
+        continue
+      }
       if (tag === 'br') { out += '<br>'; continue }
       if (tag === 'a') {
         const href = n.getAttribute('href') || ''
@@ -47,6 +54,8 @@ function extract() {
   const events = []
   const walk = (el) => {
     if (el.matches?.(SKIP)) return
+    // el <header> del sitio se omite; el de cada artículo (con el título de la sección) se conserva
+    if (el.tagName === 'HEADER' && !el.closest('article')) return
     if (el.hidden) return
     const t = el.tagName
     if (/^H[1-6]$/.test(t)) { const h = inline(el); if (h) events.push({ t: 'h', level: +t[1], h, id: el.id || undefined }); return }
@@ -59,6 +68,11 @@ function extract() {
     }
     if (el.id && /^(section-|article-)/.test(el.id)) events.push({ t: 'anchor', id: el.id })
     if (el.children.length === 0 || !hasBlockChild(el)) {
+      // tarjetas con varias partes (etiqueta · valor · nota): se guardan por separado en `parts`
+      const kids = [...el.children].filter((c) => c.textContent.trim())
+      if (kids.length >= 2 && kids.every((c) => !c.matches('button, svg'))) {
+        events.push({ t: 'text', h: inline(el), parts: kids.map((c) => inline(c)) }); return
+      }
       const h = inline(el)
       if (h && !el.matches('button, input, select, textarea')) events.push({ t: 'text', h })
       else if (h && el.matches('button') && el.getAttribute('aria-expanded') !== null) events.push({ t: 'text', h, button: true })
